@@ -2,8 +2,10 @@
 
 var init = function() {
 	// Add map container
-	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div><div id='select-menu'></div><div id='selected-list'></div>";
+	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div><div id='select-menu'></div><div id='selected-list'><ul id='list'></ul></div>";
 	var container = document.getElementById("map-container");
+
+	var selected_list = [];
 
 	// Add upper level
 	var top_floor = document.createElement("DIV");
@@ -45,8 +47,11 @@ var addSlideSelectMenu = function() {
 var onSelectSlide = function(slide) {
 	var map = document.getElementById("top-floor"), 
 		overlay,
+		list = document.getElementById("list"),
+		listitem,
 		val = slide.getAttribute("value"),
 		id = val + "-overlay",
+		lid = val + "-list",
 		path = "./assets/img/map/slide/" + val + ".gif";
 
 	if(slide.checked) {
@@ -55,9 +60,26 @@ var onSelectSlide = function(slide) {
 		overlay.setAttribute("class", "map-slide");
 		overlay.setAttribute("src", path);
 		map.appendChild(overlay);
+
+		listitem = document.createElement("LI");
+		listitem.setAttribute("id", lid);
+		listitem.innerHTML = config.slides[val];
+
+		var swath;
+		if(config.slide_colors[val]) {
+			swath = document.createElement("SPAN");
+			swath.style.marginLeft = "15px";
+			swath.style.backgroundColor = config.slide_colors[val];
+			swath.innerHTML = "&nbsp&nbsp&nbsp";
+			listitem.appendChild(swath);
+		}
+
+		list.appendChild(listitem);
 	}
 	else {
 		overlay = document.getElementById(id);
+		listitem = document.getElementById(lid);
+		list.removeChild(listitem);
 		map.removeChild(overlay);
 	}
 }

@@ -8,6 +8,12 @@ div#map-container {
 	left: 0;
 }
 
+div#selected-list {
+	position: relative;
+    top: 0;
+    left: 45em;
+}
+
 div#select-menu {
 	position: relative;
 	top: 47em;
