@@ -8,6 +8,11 @@ div#map-container {
 	left: 0;
 }
 
+div#select-menu {
+	position: relative;
+	top: 47em;
+}
+
 img.map-base,
 img.map-slide {
 	position: absolute;
