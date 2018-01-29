@@ -1,0 +1,16 @@
+body {
+
+}
+
+div#map-container {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+img.map-base,
+img.map-slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
