@@ -12,6 +12,7 @@ div#selected-list {
 	position: relative;
     top: 0;
     left: 45em;
+    width: 50%;
 }
 
 div#select-menu {

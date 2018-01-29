@@ -39,7 +39,7 @@ var addSlideSelectMenu = function() {
 		slide.setAttribute("value", key);
 		slide.setAttribute("onclick", "onSelectSlide(this)");
 		select_form.appendChild(slide);
-		slide.innerHTML = config.slides[key];
+		select_form.innerHTML += (config.slides[key] + "<br />");
 	}
 	menu.appendChild(select_form);
 }
