@@ -2,7 +2,7 @@
 
 var init = function() {
 	// Add map container
-	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div><div id='select-menu'></div>";
+	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div><div id='select-menu'></div><div id='selected-list'></div>";
 	var container = document.getElementById("map-container");
 
 	// Add upper level
@@ -23,12 +23,6 @@ var addBaseImages = function() {
 	top_base.setAttribute("class", "map-base");
 	top_base.setAttribute("src", "./assets/img/map/base/top_base.png");
 	top_floor.appendChild(top_base);
-
-	var testImg = document.createElement("IMG");
-	testImg.setAttribute("id", "test-img");
-	testImg.setAttribute("class", "map-slide");
-	testImg.setAttribute("src", "./assets/img/map/slide/top_frr.gif");
-	top_floor.appendChild(testImg);
 }
 
 var addSlideSelectMenu = function() {
@@ -41,13 +35,31 @@ var addSlideSelectMenu = function() {
 		slide.setAttribute("type", "checkbox");
 		slide.setAttribute("name", key);
 		slide.setAttribute("value", key);
+		slide.setAttribute("onclick", "onSelectSlide(this)");
 		select_form.appendChild(slide);
+		slide.innerHTML = config.slides[key];
 	}
 	menu.appendChild(select_form);
 }
 
-var onSelectRoom = function(test) {
+var onSelectSlide = function(slide) {
+	var map = document.getElementById("top-floor"), 
+		overlay,
+		val = slide.getAttribute("value"),
+		id = val + "-overlay",
+		path = "./assets/img/map/slide/" + val + ".gif";
 
+	if(slide.checked) {
+		overlay = document.createElement("IMG");
+		overlay.setAttribute("id", id);
+		overlay.setAttribute("class", "map-slide");
+		overlay.setAttribute("src", path);
+		map.appendChild(overlay);
+	}
+	else {
+		overlay = document.getElementById(id);
+		map.removeChild(overlay);
+	}
 }
 
 $(document).ready(function() {
