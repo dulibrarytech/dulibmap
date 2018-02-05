@@ -33,6 +33,7 @@ var addSlideSelectMenu = function() {
 
 	var slide;
 	for(var key in config.slides) {
+			console.log("slide", key);
 		slide = document.createElement("INPUT");
 		slide.setAttribute("type", "checkbox");
 		slide.setAttribute("name", key);
