@@ -33,7 +33,7 @@ var addSlideSelectMenu = function() {
 
 	var slide;
 	for(var key in config.slides) {
-			console.log("slide", key);
+			// console.log("slide", key);
 		slide = document.createElement("INPUT");
 		slide.setAttribute("type", "checkbox");
 		slide.setAttribute("name", key);
@@ -84,6 +84,10 @@ var onSelectSlide = function(slide) {
 		map.removeChild(overlay);
 	}
 }
+
+// var onSelectIcon = function(icon) {
+	
+// }
 
 $(document).ready(function() {
 	init();
