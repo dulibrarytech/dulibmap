@@ -31,16 +31,18 @@ var addSlideSelectMenu = function() {
 	var menu = document.getElementById("select-menu");
 		select_form = document.createElement("FORM");
 
-	var slide;
-	for(var key in config.slides) {
-			// console.log("slide", key);
-		slide = document.createElement("INPUT");
-		slide.setAttribute("type", "checkbox");
-		slide.setAttribute("name", key);
-		slide.setAttribute("value", key);
-		slide.setAttribute("onclick", "onSelectSlide(this)");
-		select_form.appendChild(slide);
-		select_form.innerHTML += (config.slides[key] + "<br />");
+	var slide, img;
+	for(var floor in config.slides) {
+		for(var key in config.slides[floor]) {
+			img = config.slides[floor][key];
+			slide = document.createElement("INPUT");
+			slide.setAttribute("type", "checkbox");
+			slide.setAttribute("name", key);
+			slide.setAttribute("value", key);
+			slide.setAttribute("onclick", "onSelectSlide(this)");
+			select_form.appendChild(slide);
+			select_form.innerHTML += (img + "<br />");
+		}
 	}
 	menu.appendChild(select_form);
 }
@@ -86,7 +88,7 @@ var onSelectSlide = function(slide) {
 }
 
 // var onSelectIcon = function(icon) {
-	
+
 // }
 
 $(document).ready(function() {
