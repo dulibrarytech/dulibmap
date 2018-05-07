@@ -1,17 +1,26 @@
 var config = {
 
+	"map_base": {
+
+		"top": "top_base_tech_900.png"
+	},
+
 	"slides": {
 
 		"top_floor" : {
 
-			"top_frr"			: "Faculty Reading Room",
-			"top_cfwlc"			: "Center for World Languages and Cultures",
-			"top_euc"			: "Extended Use Carrels",
-			"top_gr"			: "Gottesfeld Room",
-			"top_qrr"			: "Quinette Reading Room",
-			"top_bw-print"		: "Black and White Printer",
-			"top_color-print"	: "Color Printer",
-			"top_scanner"		: "Scanner"
+			"Study Rooms" : {
+
+				"top_frr"			: "Faculty Reading Room",
+				"top_euc"			: "Extended Use Carrels",
+				"top_gr"			: "Gottesfeld Room",
+				"top_qrr"			: "Quinette Reading Room"
+			},
+
+			"Offices" : {
+
+				"top_cfwlc"			: "Center for World Languages and Cultures"
+			}
 		},
 
 		"main_floor" : {
@@ -25,8 +34,8 @@ var config = {
 
 	"slide_colors": {
 
-		"top_frr"   : "#99d9ea",
-		"top_cfwlc" : "#b5e61d",
+		"top_frr"   : "#93d9f9",
+		"top_cfwlc" : "#c1ffd8",
 		"top_euc"   : "#b5e61d",
 		"top_gr"	: "#e8c9fb",
 		"top_qrr"	: "#f3c5c5"

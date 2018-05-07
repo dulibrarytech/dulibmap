@@ -17,7 +17,12 @@ div#selected-list {
 
 div#select-menu {
 	position: relative;
-	top: 47em;
+	    top: 37px;
+    left: 915px;
+}
+
+div#select-menu > form {
+	width: 45%;
 }
 
 img.map-base,

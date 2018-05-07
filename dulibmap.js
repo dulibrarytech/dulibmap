@@ -23,7 +23,7 @@ var addBaseImages = function() {
 
 	top_base.setAttribute("id", "top_base");
 	top_base.setAttribute("class", "map-base");
-	top_base.setAttribute("src", "./assets/img/map/base/top_base.png");
+	top_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.top);
 	top_floor.appendChild(top_base);
 }
 
@@ -34,14 +34,22 @@ var addSlideSelectMenu = function() {
 	var slide, img;
 	for(var floor in config.slides) {
 		for(var key in config.slides[floor]) {
-			img = config.slides[floor][key];
-			slide = document.createElement("INPUT");
-			slide.setAttribute("type", "checkbox");
-			slide.setAttribute("name", key);
-			slide.setAttribute("value", key);
-			slide.setAttribute("onclick", "onSelectSlide(this)");
-			select_form.appendChild(slide);
-			select_form.innerHTML += (img + "<br />");
+
+			// Insert label and hr
+			console.log("TEST key is", key);
+			select_form.innerHTML += ("<h3>" + key + "</h3><hr><br>");
+			// Loop rooms in the section, add under the current section label
+			for(var room in config.slides[floor][key]) {
+				img = config.slides[floor][key][room];
+				slide = document.createElement("INPUT");
+				slide.setAttribute("type", "checkbox");
+				slide.setAttribute("name", room);
+				slide.setAttribute("value", room);
+				slide.setAttribute("onclick", "onSelectSlide(this)");
+				select_form.appendChild(slide);
+				select_form.innerHTML += (img + "<br />");
+			}
+			select_form.innerHTML += "<br>";
 		}
 	}
 	menu.appendChild(select_form);
@@ -64,25 +72,25 @@ var onSelectSlide = function(slide) {
 		overlay.setAttribute("src", path);
 		map.appendChild(overlay);
 
-		listitem = document.createElement("LI");
-		listitem.setAttribute("id", lid);
-		listitem.innerHTML = config.slides[val];
+		// listitem = document.createElement("LI");
+		// listitem.setAttribute("id", lid);
+		// listitem.innerHTML = config.slides[val];
 
-		var swath;
-		if(config.slide_colors[val]) {
-			swath = document.createElement("SPAN");
-			swath.style.marginLeft = "15px";
-			swath.style.backgroundColor = config.slide_colors[val];
-			swath.innerHTML = "&nbsp&nbsp&nbsp";
-			listitem.appendChild(swath);
-		}
+		// var swath;
+		// if(config.slide_colors[val]) {
+		// 	swath = document.createElement("SPAN");
+		// 	swath.style.marginLeft = "15px";
+		// 	swath.style.backgroundColor = config.slide_colors[val];
+		// 	swath.innerHTML = "&nbsp&nbsp&nbsp";
+		// 	listitem.appendChild(swath);
+		// }
 
-		list.appendChild(listitem);
+		//list.appendChild(listitem);
 	}
 	else {
 		overlay = document.getElementById(id);
-		listitem = document.getElementById(lid);
-		list.removeChild(listitem);
+		// listitem = document.getElementById(lid);
+		// list.removeChild(listitem);
 		map.removeChild(overlay);
 	}
 }
