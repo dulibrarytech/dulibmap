@@ -28,16 +28,19 @@ var addBaseImages = function() {
 }
 
 var addSlideSelectMenu = function() {
-	var menu = document.getElementById("select-menu");
+	var menu = document.getElementById("select-menu"),
+		
+		// Top floor
 		select_form = document.createElement("FORM");
+		select_form.setAttribute("id", "top-floor-select");
 
 	var slide, img;
 	for(var floor in config.slides) {
 		for(var key in config.slides[floor]) {
 
 			// Insert label and hr
-			console.log("TEST key is", key);
-			select_form.innerHTML += ("<h3>" + key + "</h3><hr><br>");
+			select_form.innerHTML += ("<h3>" + key + "</h3>");
+
 			// Loop rooms in the section, add under the current section label
 			for(var room in config.slides[floor][key]) {
 				img = config.slides[floor][key][room];
@@ -49,7 +52,7 @@ var addSlideSelectMenu = function() {
 				select_form.appendChild(slide);
 				select_form.innerHTML += (img + "<br />");
 			}
-			select_form.innerHTML += "<br>";
+			select_form.innerHTML += "<br><br>";
 		}
 	}
 	menu.appendChild(select_form);

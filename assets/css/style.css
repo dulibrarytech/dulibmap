@@ -1,5 +1,10 @@
 body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
 
+hr {
+	border-color: #a8996e;
 }
 
 div#map-container {
@@ -17,12 +22,23 @@ div#selected-list {
 
 div#select-menu {
 	position: relative;
-	    top: 37px;
-    left: 915px;
+    top: 936px;
+    left: 15px;
 }
 
 div#select-menu > form {
-	width: 45%;
+	width: 855px;
+}
+
+div#select-menu > form h3 {
+	background:#a8996e;
+	padding: 4px 11px;
+	text-transform: uppercase;
+	color: white;
+}
+
+div#select-menu > form input[type*="checkbox"] {
+	margin-right: 10px;
 }
 
 img.map-base,
