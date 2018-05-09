@@ -3,15 +3,25 @@
 	<head>
 		<title>Anderson Academic Commons Floor Map</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=2.12">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=2.15">
 	</head>
 	<body>
-		<!-- <h3>Library Map</h3> -->
-		<div id="dulibmap"></div>
+		<div id="main">
+			
+			<div id="dulibmap" class="content-col-9"></div>
+			<div id="floor-select" class="content-col-3">
+				<ul>
+					<li id="top-floor" class="floor-option" onclick="selectFloor('top')">Top Floor</li>
+					<li id="main-floor" class="floor-option active" onclick="selectFloor('main')">Main Floor</li>
+					<li id="bottom-floor" class="floor-option" onclick="selectFloor('bottom')">Bottom Floor</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 	<footer>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="./config/config.js"></script>
 		<script src="dulibmap.js"></script>
+		<script src="./assets/js/events.js"></script>
 	</footer>
 </html>

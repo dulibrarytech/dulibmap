@@ -20,6 +20,11 @@ var config = {
 			"Offices" : {
 
 				"top_cfwlc"			: "Center for World Languages and Cultures"
+			},
+
+			"Meeting Rooms" : {
+
+				"top_loft"			: "The Loft"
 			}
 		},
 
@@ -38,7 +43,8 @@ var config = {
 		"top_cfwlc" : "#c1ffd8",
 		"top_euc"   : "#b5e61d",
 		"top_gr"	: "#e8c9fb",
-		"top_qrr"	: "#f3c5c5"
+		"top_qrr"	: "#f3c5c5",
+		"top_loft"	: "#fdde89"
 	},
 
 	"labels" : {

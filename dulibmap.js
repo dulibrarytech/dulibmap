@@ -27,6 +27,7 @@ var addBaseImages = function() {
 	top_floor.appendChild(top_base);
 }
 
+// Add each floor here, hide all but main on default
 var addSlideSelectMenu = function() {
 	var menu = document.getElementById("select-menu"),
 		
@@ -56,6 +57,11 @@ var addSlideSelectMenu = function() {
 		}
 	}
 	menu.appendChild(select_form);
+}
+
+// Used by page menu
+var showFloor = function(floor) {
+
 }
 
 var onSelectSlide = function(slide) {

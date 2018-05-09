@@ -7,6 +7,28 @@ hr {
 	border-color: #a8996e;
 }
 
+div#main {
+	width: 60%;
+}
+
+.content-col-3 {
+    float: left;
+    width: 22.999999%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0.5em;
+}
+
+.content-col-9 {
+    float: left;
+    width: 72.999999%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 0.5em;
+}
+
 div#map-container {
 	position: relative;
 	top: 0;
@@ -46,4 +68,26 @@ img.map-slide {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+div#floor-select {
+	margin-top: 30px;
+}
+
+div#floor-select ul li {
+	list-style: none;
+    padding: 10px 15px;
+    background: #e5e3e1;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #181818;
+    font-size: 15px;
+}
+
+div#floor-select ul li.active {
+	background: #a8996e;
+}
+
+div#floor-select ul li:hover {
+	cursor: pointer;
 }
