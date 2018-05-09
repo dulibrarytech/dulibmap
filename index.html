@@ -3,19 +3,26 @@
 	<head>
 		<title>Anderson Academic Commons Floor Map</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=2.15">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=2.2">
 	</head>
 	<body>
 		<div id="main">
-			
-			<div id="dulibmap" class="content-col-9"></div>
-			<div id="floor-select" class="content-col-3">
-				<ul>
-					<li id="top-floor" class="floor-option" onclick="selectFloor('top')">Top Floor</li>
-					<li id="main-floor" class="floor-option active" onclick="selectFloor('main')">Main Floor</li>
-					<li id="bottom-floor" class="floor-option" onclick="selectFloor('bottom')">Bottom Floor</li>
-				</ul>
+			<div class="content-col-9">
+				<div id="dulibmap"></div>
 			</div>
+			<div class="content-col-3">
+				<div id="floor-select">
+					<ul>
+						<li id="top-floor" class="floor-option" onclick="selectFloor('top')">Top Floor</li>
+						<li id="main-floor" class="floor-option active" onclick="selectFloor('main')">Main Floor</li>
+						<li id="bottom-floor" class="floor-option" onclick="selectFloor('bottom')">Bottom Floor</li>
+					</ul>
+				</div>
+				<div id="legend">
+					<h3>Map Key</h3>
+					<hr>
+					<img src="./assets/img/map/icons/Legend.png" />
+				</div>
 		</div>
 	</body>
 	<footer>
