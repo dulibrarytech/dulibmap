@@ -41,7 +41,7 @@ var config = {
 
 		"top_frr"   : "#93d9f9",
 		"top_cfwlc" : "#c1ffd8",
-		"top_euc"   : "#b5e61d",
+		"top_euc"   : "#e0f992",
 		"top_gr"	: "#e8c9fb",
 		"top_qrr"	: "#f3c5c5",
 		"top_loft"	: "#fdde89"

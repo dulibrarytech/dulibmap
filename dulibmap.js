@@ -2,7 +2,7 @@
 
 var init = function() {
 	// Add map container
-	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div><div id='select-menu'></div><div id='selected-list'><ul id='list'></ul></div>";
+	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div>";
 	var container = document.getElementById("map-container");
 
 	var selected_list = [];
@@ -11,7 +11,22 @@ var init = function() {
 	var top_floor = document.createElement("DIV");
 	top_floor.setAttribute("id", "top-floor");
 	top_floor.setAttribute("class", "base-map");
+	top_floor.style.display = "block";
 	container.appendChild(top_floor);
+
+	// Add main level
+	var main_floor = document.createElement("DIV");
+	main_floor.setAttribute("id", "main-floor");
+	main_floor.setAttribute("class", "base-map");
+	main_floor.style.display = "none";
+	container.appendChild(main_floor);
+
+	// Add lower level
+	var bottom_floor = document.createElement("DIV");
+	bottom_floor.setAttribute("id", "bottom-floor");
+	bottom_floor.setAttribute("class", "base-map");
+	bottom_floor.style.display = "none";
+	container.appendChild(bottom_floor);
 
 	addBaseImages();
 	addSlideSelectMenu();
@@ -29,11 +44,13 @@ var addBaseImages = function() {
 
 // Add each floor here, hide all but main on default
 var addSlideSelectMenu = function() {
-	var menu = document.getElementById("select-menu"),
-		
-		// Top floor
-		select_form = document.createElement("FORM");
-		select_form.setAttribute("id", "top-floor-select");
+
+	// Top floor
+	var menu = document.createElement("DIV");
+	menu.setAttribute("class", "select-menu");
+	document.getElementById("top-floor").appendChild(menu);
+	var select_form = document.createElement("FORM");
+	select_form.setAttribute("id", "top-floor-select");
 
 	var slide, img;
 	for(var floor in config.slides) {
@@ -57,11 +74,15 @@ var addSlideSelectMenu = function() {
 		}
 	}
 	menu.appendChild(select_form);
+
+	// Main floor
+
+	// Bottom floor
 }
 
 // Used by page menu
 var showFloor = function(floor) {
-
+	// TODO get 'floor' element, set display to block, set display of other floors to hidden
 }
 
 var onSelectSlide = function(slide) {
@@ -103,10 +124,6 @@ var onSelectSlide = function(slide) {
 		map.removeChild(overlay);
 	}
 }
-
-// var onSelectIcon = function(icon) {
-
-// }
 
 $(document).ready(function() {
 	init();

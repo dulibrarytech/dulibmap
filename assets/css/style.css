@@ -43,24 +43,24 @@ div#selected-list {
     width: 50%;
 }
 
-div#select-menu {
+div.select-menu {
 	position: relative;
     top: 936px;
     left: 15px;
 }
 
-div#select-menu > form {
+div.select-menu > form {
 	width: 855px;
 }
 
-div#select-menu > form h3 {
+div.select-menu > form h3 {
 	background:#a8996e;
 	padding: 4px 11px;
 	text-transform: uppercase;
 	color: white;
 }
 
-div#select-menu > form input[type*="checkbox"] {
+div.select-menu > form input[type*="checkbox"] {
 	margin-right: 10px;
 }
 
