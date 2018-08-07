@@ -1,6 +1,6 @@
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 hr {
@@ -9,7 +9,7 @@ hr {
 }
 
 div#main {
-	width: 65%;
+	/*width: 65%;*/
 }
 
 .content-col-3 {
@@ -21,9 +21,19 @@ div#main {
     padding: 0.5em;
 }
 
+.content-col-6 {
+    float: left;
+    width: 49.999999%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 52%;
+    max-width: 52%;
+    padding: 0.5em;
+}
+
 .content-col-9 {
     float: left;
-    width: 72.999999%;
+   /* width: 72.999999%;*/
+    width: 68.999999%;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
@@ -31,9 +41,10 @@ div#main {
 }
 
 div#map-container {
-	position: relative;
-	top: 0;
-	left: 0;
+    position: relative;
+    top: 310px;
+    left: 0;
+   /* width: 68%;*/
 }
 
 div#selected-list {
@@ -45,12 +56,15 @@ div#selected-list {
 
 div.select-menu {
 	position: relative;
-    top: 936px;
-    left: 15px;
+    /* top: 0px; */
+    bottom: 240px;
+    float: right;
+    /* left: 930px; */
+    width: 28%;
 }
 
 div.select-menu > form {
-	width: 855px;
+	/*width: 855px;*/
 }
 
 div.select-menu > form h3 {
@@ -69,20 +83,23 @@ img.map-slide {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 68%;
 }
 
 div#floor-select {
-	margin-top: 17px;
+	margin-top: 5px;
+    float: right;
+    width: 30%;
 }
 
 div#floor-select ul li {
 	list-style: none;
-    padding: 10px 15px;
+    padding: 16px 22px;
     background: #e5e3e1;
     margin-bottom: 10px;
     font-weight: bold;
     color: #181818;
-    font-size: 15px;
+/*    font-size: 15px;*/
 }
 
 div#floor-select ul li.active {
@@ -95,12 +112,25 @@ div#floor-select ul li:hover {
 }
 
 div#legend {
-	padding-left: 40px;
-	margin-top: 100px;
+	/*padding-left: 40px;*/
+	margin-top: 0px;
+	width: 65%;
+    float: left;
+}
+
+div#legend h3,
+div#legend img {
+	margin-left: 6px;
 }
 
 div#legend > img {
 	position: relative;
     top: 10px;
     left: -10px;
+}
+
+@media only screen and (min-device-width : 1600px) {
+	#main {
+		width: 70%;
+	}
 }
