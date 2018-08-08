@@ -1,5 +1,7 @@
 var config = {
 
+	"base_url": "http://localhost/dulibmap",
+
 	"map_base": {
 
 		"top": "top_base_tech_900.png"

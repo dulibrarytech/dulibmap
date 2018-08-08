@@ -38,7 +38,7 @@ var addBaseImages = function() {
 
 	top_base.setAttribute("id", "top_base");
 	top_base.setAttribute("class", "map-base");
-	top_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.top);
+	top_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.top);
 	top_floor.appendChild(top_base);
 }
 
@@ -93,7 +93,7 @@ var onSelectSlide = function(slide) {
 		val = slide.getAttribute("value"),
 		id = val + "-overlay",
 		lid = val + "-list",
-		path = "./assets/img/map/slide/" + val + ".gif";
+		path = config.base_url + "/assets/img/map/slide/" + val + ".gif";
 
 	if(slide.checked) {
 		overlay = document.createElement("IMG");
