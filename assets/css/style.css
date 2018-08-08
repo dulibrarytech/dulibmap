@@ -8,10 +8,6 @@ hr {
 	border-width: 1px;
 }
 
-div#main {
-	/*width: 65%;*/
-}
-
 .content-col-3 {
     float: left;
     width: 22.999999%;
@@ -127,10 +123,4 @@ div#legend > img {
 	position: relative;
     top: 10px;
     left: -10px;
-}
-
-@media only screen and (min-device-width : 1600px) {
-	#main {
-		width: 70%;
-	}
 }
