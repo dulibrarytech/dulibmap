@@ -62,7 +62,7 @@ var addSlideSelectMenu = function() {
 		name = key.replace(" ", "").toLowerCase();
 		slide.setAttribute("name", name);
 		slide.setAttribute("value", key);
-		slide.setAttribute("onclick", "onSelectSlide(this)");
+		slide.setAttribute("onclick", "onSelectGroup(this, 'top-floor')");
 		select_form.appendChild(slide);
 		select_form.innerHTML += (key + "<br />");
 	}
@@ -79,43 +79,31 @@ var showFloor = function(floor) {
 	// TODO get 'floor' element, set display to block, set display of other floors to hidden
 }
 
-var onSelectSlide = function(slide) {
-	var map = document.getElementById("top-floor"), 
-		overlay,
-		list = document.getElementById("list"),
-		listitem,
-		val = slide.getAttribute("value"),
-		id = val + "-overlay",
-		lid = val + "-list",
-		path = config.base_url + "/assets/img/map/slide/" + val + ".gif";
+var onSelectGroup = function(selection, floor) {
 
-	if(slide.checked) {
-		overlay = document.createElement("IMG");
-		overlay.setAttribute("id", id);
-		overlay.setAttribute("class", "map-slide");
-		overlay.setAttribute("src", path);
-		map.appendChild(overlay);
+	var slides = [], map, rooms, overlay, path,
+	    group = selection.getAttribute("value"),
+	    groupName = selection.getAttribute("name"),
+	    map = document.getElementById(floor);
+		rooms = config.slides[floor.replace("-", "_")][group];
 
-		// listitem = document.createElement("LI");
-		// listitem.setAttribute("id", lid);
-		// listitem.innerHTML = config.slides[val];
-
-		// var swath;
-		// if(config.slide_colors[val]) {
-		// 	swath = document.createElement("SPAN");
-		// 	swath.style.marginLeft = "15px";
-		// 	swath.style.backgroundColor = config.slide_colors[val];
-		// 	swath.innerHTML = "&nbsp&nbsp&nbsp";
-		// 	listitem.appendChild(swath);
-		// }
-
-		//list.appendChild(listitem);
+	if(selection.checked) {
+		for(var key in rooms) {
+			id = key + "-overlay";
+			path = config.base_url + "/assets/img/map/slide/" + key + ".gif";
+			overlay = document.createElement("IMG");
+			overlay.setAttribute("id", id);
+			overlay.setAttribute("class", "map-slide");
+			overlay.setAttribute("src", path);
+			map.appendChild(overlay);
+		}
 	}
 	else {
-		overlay = document.getElementById(id);
-		// listitem = document.getElementById(lid);
-		// list.removeChild(listitem);
-		map.removeChild(overlay);
+		for(var key in rooms) {
+			id = key + "-overlay";
+			overlay = document.getElementById(id);
+			map.removeChild(overlay);
+		}	
 	}
 }
 
