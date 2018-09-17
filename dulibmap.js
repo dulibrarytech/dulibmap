@@ -53,27 +53,21 @@ var addSlideSelectMenu = function() {
 	select_form.setAttribute("id", "top-floor-select");
 
 	var slide, img;
-	for(var floor in config.slides) {
-		for(var key in config.slides[floor]) {
+	select_form.innerHTML += ("<h3>Room Select</h3>");
 
-			// Insert label and hr
-			select_form.innerHTML += ("<h3>" + key + "</h3>");
+	for(var key in config.slides["top_floor"]) {
 
-			// Loop rooms in the section, add under the current section label
-			for(var room in config.slides[floor][key]) {
-				img = config.slides[floor][key][room];
-				slide = document.createElement("INPUT");
-				slide.setAttribute("type", "checkbox");
-				slide.setAttribute("name", room);
-				slide.setAttribute("value", room);
-				slide.setAttribute("onclick", "onSelectSlide(this)");
-				select_form.appendChild(slide);
-				select_form.innerHTML += (img + "<br />");
-			}
-			select_form.innerHTML += "<br><br>";
-		}
+		slide = document.createElement("INPUT");
+		slide.setAttribute("type", "checkbox");
+		name = key.replace(" ", "").toLowerCase();
+		slide.setAttribute("name", name);
+		slide.setAttribute("value", key);
+		slide.setAttribute("onclick", "onSelectSlide(this)");
+		select_form.appendChild(slide);
+		select_form.innerHTML += (key + "<br />");
 	}
 	menu.appendChild(select_form);
+	
 
 	// Main floor
 
