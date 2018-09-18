@@ -57,19 +57,19 @@ var addFloorSelectMenu = function(mapContainer) {
 	floor.setAttribute("id", "top-floor-select");
 	floor.setAttribute("class", "floor-option");
 	floor.classList.add("active");
-	floor.setAttribute("onclick", "selectFloor('top')");
+	floor.setAttribute("onclick", "onSelectFloor(this)");
 	floor.innerHTML = "Top Floor";
 	list.appendChild(floor);
 	floor = document.createElement("LI");
 	floor.setAttribute("id", "main-floor-select");
 	floor.setAttribute("class", "floor-option");
-	floor.setAttribute("onclick", "selectFloor('main')");
+	floor.setAttribute("onclick", "onSelectFloor(this)");
 	floor.innerHTML = "Main Floor";
 	list.appendChild(floor);
 	floor = document.createElement("LI");
 	floor.setAttribute("id", "bottom-floor-select");
 	floor.setAttribute("class", "floor-option");
-	floor.setAttribute("onclick", "selectFloor('bottom')");
+	floor.setAttribute("onclick", "onSelectFloor(this)");
 	floor.innerHTML = "Bottom Floor";
 	list.appendChild(floor);
 
@@ -115,18 +115,21 @@ var addSlideSelectMenu = function() {
 	}
 	menu.appendChild(select_form);
 	
-
 	// Main floor
 
 	// Bottom floor
 }
 
-var selectFloor = function(floor) {
-	console.log("TEST floor", floor);
+var onSelectFloor = function(floor) {
+	var floors = document.getElementsByClassName("floor-option");
+	for(var i=0; i<floors.length; i++) {
+		floors[i].classList.remove("active");
+	}
+	floor.classList.add("active");
 }
 
 var onSelectGroup = function(selection, floor) {
-
+	console.log("TEST grp");
 	var slides = [], map, rooms, overlay, path,
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
