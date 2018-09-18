@@ -75,12 +75,26 @@ var addFloorSelectMenu = function(mapContainer) {
 
 var addBaseImages = function() {
 	var top_floor = document.getElementById("top-floor"),
-		top_base = document.createElement("IMG");
+		top_base = document.createElement("IMG"),
+		main_floor = document.getElementById("main-floor"),
+		main_base = document.createElement("IMG"),
+		bottom_floor = document.getElementById("bottom-floor"),
+		bottom_base = document.createElement("IMG");
 
-	top_base.setAttribute("id", "top_base");
+	top_base.setAttribute("id", "top-base");
 	top_base.setAttribute("class", "map-base");
 	top_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.top_floor);
 	top_floor.appendChild(top_base);
+
+	main_base.setAttribute("id", "main-base");
+	main_base.setAttribute("class", "map-base");
+	main_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.main_floor);
+	main_floor.appendChild(main_base);
+
+	bottom_base.setAttribute("id", "bottom-base");
+	bottom_base.setAttribute("class", "map-base");
+	bottom_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.bottom_floor);
+	bottom_floor.appendChild(bottom_base);
 }
 
 // Add each floor here, hide all but main on default
@@ -98,7 +112,6 @@ var addSlideSelectMenu = function() {
 	select_form.innerHTML += ("<h3>Room Select</h3>");
 
 	for(var key in config.maps["top_floor"]) {
-
 		slide = document.createElement("INPUT");
 		slide.setAttribute("type", "checkbox");
 		name = key.replace(" ", "").toLowerCase();

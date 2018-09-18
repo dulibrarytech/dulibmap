@@ -5,7 +5,9 @@ var config = {
 
 	"map_base": {
 
-		"top_floor": "top_base_tech_900.png"
+		"top_floor": "top_base_tech_900.png",
+		"main_floor": "main_base_900.png",
+		"bottom_floor": "bottom_base_900.png"
 	},
 
 	"default_map": "top_floor",
@@ -20,6 +22,12 @@ var config = {
 
 		"top_floor" : {
 
+			"Study Rooms" : {
+
+				"top_sgs"			: "Small Group Study",
+				"top_lgs"			: "Large Group Study"
+			},
+
 			"Reading Rooms" : {
 
 				"top_frr"			: "Faculty Reading Room",
@@ -30,24 +38,18 @@ var config = {
 
 			},
 
+			"Meeting Rooms" : {
+
+				"top_loft"			: "The Loft",
+				"top_wtr"			: "Wohlauer Teleconference Room"
+			},
+
 			"Offices" : {
 
 				"top_ds"			: "Dean's Suite",
 				"top_cfwlc"			: "Center for World Languages and Cultures",
 				"top_wpf"			: "Writing Program Faculty",
 				"top_otl" 			: "Office of Teaching and Learning"
-			},
-
-			"Study Rooms" : {
-
-				"top_sgs"			: "Small Group Study",
-				"top_lgs"			: "Large Group Study"
-			},
-
-			"Meeting Rooms" : {
-
-				"top_loft"			: "The Loft",
-				"top_wtr"			: "Wohlauer Teleconference Room"
 			}
 		},
 
