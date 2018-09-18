@@ -5,10 +5,18 @@ var config = {
 
 	"map_base": {
 
-		"top": "top_base_tech_900.png"
+		"top_floor": "top_base_tech_900.png"
 	},
 
-	"slides": {
+	"default_map": "top_floor",
+
+	"map_labels": {
+		"top_floor": "Top Floor",
+		"main_floor": "Main Floor",
+		"bottom_floor": "Bottom Floor"
+	},
+
+	"maps": {
 
 		"top_floor" : {
 

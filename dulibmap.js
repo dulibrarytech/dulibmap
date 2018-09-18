@@ -52,26 +52,21 @@ var addLegend = function(mapContainer) {
 var addFloorSelectMenu = function(mapContainer) {
 	var menu = document.createElement("DIV"),
 		list = document.createElement("UL"),
-		floor = document.createElement("LI");
+		floor,
+		id;
 
-	floor.setAttribute("id", "top-floor-select");
-	floor.setAttribute("class", "floor-option");
-	floor.classList.add("active");
-	floor.setAttribute("onclick", "onSelectFloor(this)");
-	floor.innerHTML = "Top Floor";
-	list.appendChild(floor);
-	floor = document.createElement("LI");
-	floor.setAttribute("id", "main-floor-select");
-	floor.setAttribute("class", "floor-option");
-	floor.setAttribute("onclick", "onSelectFloor(this)");
-	floor.innerHTML = "Main Floor";
-	list.appendChild(floor);
-	floor = document.createElement("LI");
-	floor.setAttribute("id", "bottom-floor-select");
-	floor.setAttribute("class", "floor-option");
-	floor.setAttribute("onclick", "onSelectFloor(this)");
-	floor.innerHTML = "Bottom Floor";
-	list.appendChild(floor);
+	for(var key in config.maps) {
+		id = key.replace("_", "-") + "-select";
+		floor = document.createElement("LI");
+		floor.setAttribute("id", id);
+		floor.setAttribute("class", "floor-option");
+		floor.setAttribute("onclick", "onSelectFloor(this)");
+		floor.innerHTML = config.map_labels[key];
+		if(config.default_map == key) {
+			floor.classList.add("active");
+		}
+		list.appendChild(floor);
+	}
 
 	menu.setAttribute("class", "floor-select");
 	menu.appendChild(list);
@@ -84,7 +79,7 @@ var addBaseImages = function() {
 
 	top_base.setAttribute("id", "top_base");
 	top_base.setAttribute("class", "map-base");
-	top_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.top);
+	top_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.top_floor);
 	top_floor.appendChild(top_base);
 }
 
@@ -102,7 +97,7 @@ var addSlideSelectMenu = function() {
 	var slide, img;
 	select_form.innerHTML += ("<h3>Room Select</h3>");
 
-	for(var key in config.slides["top_floor"]) {
+	for(var key in config.maps["top_floor"]) {
 
 		slide = document.createElement("INPUT");
 		slide.setAttribute("type", "checkbox");
@@ -145,7 +140,7 @@ var onSelectGroup = function(selection, floor) {
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
 	    map = document.getElementById(floor);
-		rooms = config.slides[floor.replace("-", "_")][group];
+		rooms = config.maps[floor.replace("-", "_")][group];
 
 	if(selection.checked) {
 		for(var key in rooms) {
