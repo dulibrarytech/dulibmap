@@ -121,15 +121,26 @@ var addSlideSelectMenu = function() {
 }
 
 var onSelectFloor = function(floor) {
+	// Update the menuitem as selected
 	var floors = document.getElementsByClassName("floor-option");
 	for(var i=0; i<floors.length; i++) {
 		floors[i].classList.remove("active");
 	}
 	floor.classList.add("active");
+
+	// Hide all maps
+	var maps = document.getElementsByClassName("base-map");
+	for(i=0; i<maps.length; i++) {
+		maps[i].style.display = "none";
+	}
+
+	// Set the selected map as visible
+	var floorID = floor.getAttribute("id").replace("-select", ""),
+		map = document.getElementById(floorID);
+		map.style.display = "block";
 }
 
 var onSelectGroup = function(selection, floor) {
-	console.log("TEST grp");
 	var slides = [], map, rooms, overlay, path,
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
