@@ -50,7 +50,32 @@ var addLegend = function(mapContainer) {
 }
 
 var addFloorSelectMenu = function(mapContainer) {
+	var menu = document.createElement("DIV"),
+		list = document.createElement("UL"),
+		floor = document.createElement("LI");
 
+	floor.setAttribute("id", "top-floor-select");
+	floor.setAttribute("class", "floor-option");
+	floor.classList.add("active");
+	floor.setAttribute("onclick", "selectFloor('top')");
+	floor.innerHTML = "Top Floor";
+	list.appendChild(floor);
+	floor = document.createElement("LI");
+	floor.setAttribute("id", "main-floor-select");
+	floor.setAttribute("class", "floor-option");
+	floor.setAttribute("onclick", "selectFloor('main')");
+	floor.innerHTML = "Main Floor";
+	list.appendChild(floor);
+	floor = document.createElement("LI");
+	floor.setAttribute("id", "bottom-floor-select");
+	floor.setAttribute("class", "floor-option");
+	floor.setAttribute("onclick", "selectFloor('bottom')");
+	floor.innerHTML = "Bottom Floor";
+	list.appendChild(floor);
+
+	menu.setAttribute("class", "floor-select");
+	menu.appendChild(list);
+	mapContainer.appendChild(menu);
 }
 
 var addBaseImages = function() {

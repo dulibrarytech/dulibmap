@@ -98,13 +98,13 @@ img.map-slide {
 	width: 68%;
 }
 
-div#floor-select {
+div.floor-select {
 	margin-top: 3px;
     float: right;
     width: 30%;
 }
 
-div#floor-select ul li {
+div.floor-select ul li {
 	list-style: none;
     padding: 16px 22px;
     background: #e5e3e1;
@@ -114,12 +114,12 @@ div#floor-select ul li {
 /*    font-size: 15px;*/
 }
 
-div#floor-select ul li.active {
+div.floor-select ul li.active {
 	background: #a8996e;
 	color: white;
 }
 
-div#floor-select ul li:hover {
+div.floor-select ul li:hover {
 	cursor: pointer;
 }
 
