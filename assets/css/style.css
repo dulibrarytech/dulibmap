@@ -8,6 +8,10 @@ hr {
 	border-width: 1px;
 }
 
+#map {
+    /* OU content width is 525px */
+}
+
 .content-col-3 {
     float: left;
     width: 22.999999%;
@@ -36,10 +40,22 @@ hr {
     padding: 0.5em;
 }
 
+form.floor-select h3 {
+    margin-top: 0;
+}
+
+div.base-map {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    top: 35px;
+}
+
 div#map-container {
     position: relative;
-    top: 310px;
-    left: 0;
+/*    top: 310px;
+    left: 0;*/
    /* width: 68%;*/
 }
 
@@ -51,9 +67,9 @@ div#selected-list {
 }
 
 div.select-menu {
-	position: relative;
+	    position: relative;
     /* top: 0px; */
-    bottom: 240px;
+    /* bottom: 240px; */
     float: right;
     /* left: 930px; */
     width: 28%;
@@ -63,7 +79,7 @@ div.select-menu > form {
 	/*width: 855px;*/
 }
 
-div.select-menu > form h3 {
+h3 {
 	background:#a8996e;
 	padding: 4px 11px;
 	text-transform: uppercase;
@@ -83,7 +99,7 @@ img.map-slide {
 }
 
 div#floor-select {
-	margin-top: 5px;
+	margin-top: 3px;
     float: right;
     width: 30%;
 }

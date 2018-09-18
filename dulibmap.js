@@ -4,9 +4,12 @@ var init = function() {
 	// Add map container
 	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div>";
 	var container = document.getElementById("map-container");
-
 	var selected_list = [];
 
+	addLegend(container);
+	addFloorSelectMenu(container);
+
+	// addFloors()?
 	// Add upper level
 	var top_floor = document.createElement("DIV");
 	top_floor.setAttribute("id", "top-floor");
@@ -30,6 +33,24 @@ var init = function() {
 
 	addBaseImages();
 	addSlideSelectMenu();
+
+}
+
+var addLegend = function(mapContainer) {
+	var legend = document.createElement("DIV"),
+		legendHeader = document.createElement("H3"),
+		legendImage = document.createElement("IMG");
+
+	legend.setAttribute("id", "legend");
+	legendHeader.innerHTML = "Legend";
+	legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)
+	legend.appendChild(legendHeader);
+	legend.appendChild(legendImage);
+	mapContainer.appendChild(legend);
+}
+
+var addFloorSelectMenu = function(mapContainer) {
+
 }
 
 var addBaseImages = function() {
@@ -51,6 +72,7 @@ var addSlideSelectMenu = function() {
 	document.getElementById("top-floor").appendChild(menu);
 	var select_form = document.createElement("FORM");
 	select_form.setAttribute("id", "top-floor-select");
+	select_form.setAttribute("class", "floor-select");
 
 	var slide, img;
 	select_form.innerHTML += ("<h3>Room Select</h3>");
@@ -74,9 +96,8 @@ var addSlideSelectMenu = function() {
 	// Bottom floor
 }
 
-// Used by page menu
-var showFloor = function(floor) {
-	// TODO get 'floor' element, set display to block, set display of other floors to hidden
+var selectFloor = function(floor) {
+	console.log("TEST floor", floor);
 }
 
 var onSelectGroup = function(selection, floor) {

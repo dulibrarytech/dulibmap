@@ -1,6 +1,7 @@
 var config = {
 
 	"base_url": "http://localhost/dulibmap",
+	"legend_image": "Legend-H.png",
 
 	"map_base": {
 
