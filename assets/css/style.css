@@ -87,7 +87,7 @@ h3 {
 }
 
 div.select-menu > form input[type*="checkbox"] {
-	margin-right: 10px;
+    margin: 20px 10px 0 0;
 }
 
 img.map-base,

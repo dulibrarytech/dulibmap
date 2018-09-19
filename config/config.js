@@ -13,6 +13,7 @@ var config = {
 	"default_map": "top_floor",
 
 	"map_labels": {
+		
 		"top_floor": "Top Floor",
 		"main_floor": "Main Floor",
 		"bottom_floor": "Bottom Floor"
