@@ -46,10 +46,9 @@ form.floor-select h3 {
 
 div.base-map {
     display: block;
-    float: left;
     position: relative;
+    bottom: 180px;
     width: 100%;
-    top: 35px;
 }
 
 div#map-container {
@@ -67,12 +66,12 @@ div#selected-list {
 }
 
 div.select-menu {
-	    position: relative;
+    position: relative;
     /* top: 0px; */
     /* bottom: 240px; */
-    float: right;
-    /* left: 930px; */
-    width: 28%;
+    /*float: right;*/
+    left: 968px; 
+    width: 360px;
 }
 
 div.select-menu > form {
@@ -95,13 +94,14 @@ img.map-slide {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 68%;
+	width: 900px;
 }
 
 div.floor-select {
-	margin-top: 3px;
-    float: right;
-    width: 30%;
+    width: 400px;
+    position: relative;
+    left: 927px;
+    bottom: 276px;
 }
 
 div.floor-select ul li {
@@ -124,10 +124,10 @@ div.floor-select ul li:hover {
 }
 
 div#legend {
-	/*padding-left: 40px;*/
-	margin-top: 0px;
-	width: 68%;
-    float: left;
+    width: 900px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 div#legend h3,
