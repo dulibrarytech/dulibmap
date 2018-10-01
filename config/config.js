@@ -63,6 +63,17 @@ var config = {
 		}
 	},
 
+	"room_clickmaps" : {
+
+	},
+
+	"room_action": {
+		"top_frr": {
+			"type": "external",
+			"value": "http://www.google.com"
+		}
+	},
+
 	"slide_colors": {
 
 		"top_frr"   : "#93d9f9",

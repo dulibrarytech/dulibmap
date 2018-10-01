@@ -193,17 +193,29 @@ var addAreaToClickMap = function(roomID, floor) {
 	area.setAttribute("id", roomID + "-area");
 	area.setAttribute("shape", "poly");
 	area.setAttribute("onclick", "onSelectRoom(this.id)");
-	area.setAttribute("coords", "449,788,534,788,536,865,449,865");
+
+	if(config.room_clickmaps[roomID]) {
+		area.setAttribute("coords", config.room_clickmaps[roomID]);
+	}
 	clickMap.appendChild(area);
 }
 
 var onSelectRoom = function(areaID) {
 	var roomID = areaID.replace("-area", ""),
 		overlayID = roomID + "-overlay",
-		overlay = document.getElementById(overlayID);
+		overlay = document.getElementById(overlayID),
+		action;
 	
+	// Make sure the room slide is visible.  If not, do not execue the action
 	if(overlay) {
-		console.log(overlay);
+		var action = config.room_action[roomID].type;
+		if(action == "internal") {
+			// Load stored html (for this room) in a modal dialog?
+		}
+		else if(action == "external") {
+			// Open the external link for this room in a new browser window
+			window.open(config.room_action[roomID].value);
+		}
 	}
 }
 
