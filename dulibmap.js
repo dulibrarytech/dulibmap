@@ -33,7 +33,7 @@ var init = function() {
 
 	addBaseImages();
 	addSlideSelectMenu();
-
+	addClickMap(container);
 }
 
 var addLegend = function(mapContainer) {
@@ -71,6 +71,13 @@ var addFloorSelectMenu = function(mapContainer) {
 	menu.setAttribute("class", "floor-select");
 	menu.appendChild(list);
 	mapContainer.appendChild(menu);
+}
+
+var addClickMap = function(mapContainer) {
+	var map = document.createElement("MAP");
+	map.setAttribute("id", "top-floor-clickmap");
+	map.setAttribute("name", "top-floor-clickmap");
+	mapContainer.appendChild(map);
 }
 
 var addBaseImages = function() {
@@ -152,7 +159,7 @@ var onSelectGroup = function(selection, floor) {
 	var slides = [], map, rooms, overlay, path,
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
-	    map = document.getElementById(floor);
+	    map = document.getElementById(floor),
 		rooms = config.maps[floor.replace("-", "_")][group];
 
 	if(selection.checked) {
@@ -163,7 +170,10 @@ var onSelectGroup = function(selection, floor) {
 			overlay.setAttribute("id", id);
 			overlay.setAttribute("class", "map-slide");
 			overlay.setAttribute("src", path);
+			overlay.setAttribute("usemap", floor + "-clickmap");
 			map.appendChild(overlay);
+
+			addAreaToClickMap(key, floor);
 		}
 	}
 	else {
@@ -172,6 +182,28 @@ var onSelectGroup = function(selection, floor) {
 			overlay = document.getElementById(id);
 			map.removeChild(overlay);
 		}	
+	}
+}
+
+var addAreaToClickMap = function(roomID, floor) {
+	let area,
+		clickMap = document.getElementById(floor + "-clickmap");
+		
+	area = document.createElement("AREA");
+	area.setAttribute("id", roomID + "-area");
+	area.setAttribute("shape", "poly");
+	area.setAttribute("onclick", "onSelectRoom(this.id)");
+	area.setAttribute("coords", "449,788,534,788,536,865,449,865");
+	clickMap.appendChild(area);
+}
+
+var onSelectRoom = function(areaID) {
+	var roomID = areaID.replace("-area", ""),
+		overlayID = roomID + "-overlay",
+		overlay = document.getElementById(overlayID);
+	
+	if(overlay) {
+		console.log(overlay);
 	}
 }
 
