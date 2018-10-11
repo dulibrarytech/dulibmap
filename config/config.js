@@ -64,13 +64,15 @@ var config = {
 	},
 
 	"room_clickmaps" : {
-
+		"top_ds": [
+			"620,45,820,45,820,244,710,244,710,150,620,150"
+		]
 	},
 
 	"room_action": {
-		"top_frr": {
+		"top_ds": {
 			"type": "external",
-			"value": "http://www.google.com"
+			"value": "https://library.du.edu/contact/department-directory.html"
 		}
 	},
 
@@ -86,7 +88,9 @@ var config = {
 		"top_sgs" 	: "#cecfae",
 		"top_sgs" 	: "#afcc93",
 		"top_wtr"	: "#e0f992",
-		"top_otl" 	: "#eed8fb"
+		"top_otl" 	: "#eed8fb",
+		"top_wpf" 	: "#e0f992",
+		"top_ds"	: "#f3c5c5"
 	},
 
 	"labels" : {

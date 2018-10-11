@@ -187,17 +187,19 @@ var onSelectGroup = function(selection, floor) {
 
 var addAreaToClickMap = function(roomID, floor) {
 	let area,
-		clickMap = document.getElementById(floor + "-clickmap");
-		
-	area = document.createElement("AREA");
-	area.setAttribute("id", roomID + "-area");
-	area.setAttribute("shape", "poly");
-	area.setAttribute("onclick", "onSelectRoom(this.id)");
+		clickMap = document.getElementById(floor + "-clickmap"),
+		areas = config.room_clickmaps[roomID];
 
-	if(config.room_clickmaps[roomID]) {
-		area.setAttribute("coords", config.room_clickmaps[roomID]);
+	for(let area in areas) {
+		if(areas[area]) {
+			area = document.createElement("AREA");
+			area.setAttribute("id", roomID + "-area");
+			area.setAttribute("shape", "poly");
+			area.setAttribute("onclick", "onSelectRoom(this.id)");
+			area.setAttribute("coords", config.room_clickmaps[roomID]);
+			clickMap.appendChild(area);
+		}
 	}
-	clickMap.appendChild(area);
 }
 
 var onSelectRoom = function(areaID) {
@@ -205,10 +207,13 @@ var onSelectRoom = function(areaID) {
 		overlayID = roomID + "-overlay",
 		overlay = document.getElementById(overlayID),
 		action;
-	
+
+	if(typeof config.room_action[roomID] == 'undefined') {
+		console.log("No action has been set for this room");
+	}
 	// Make sure the room slide is visible.  If not, do not execue the action
-	if(overlay) {
-		var action = config.room_action[roomID].type;
+	else if(overlay) {
+		action = config.room_action[roomID].type;
 		if(action == "internal") {
 			// Load stored html (for this room) in a modal dialog?
 		}
