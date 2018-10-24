@@ -4,7 +4,6 @@ var config = {
 	"legend_image": "Legend-H-wide.png",
 
 	"map_base": {
-
 		"top_floor": "top_base_tech_900.png",
 		"main_floor": "main_base_900.png",
 		"bottom_floor": "bottom_base_900.png"
@@ -13,7 +12,6 @@ var config = {
 	"default_map": "top_floor",
 
 	"map_labels": {
-		
 		"top_floor": "Top Floor",
 		"main_floor": "Main Floor",
 		"bottom_floor": "Bottom Floor"
@@ -22,15 +20,12 @@ var config = {
 	"maps": {
 
 		"top_floor" : {
-
 			"Study Rooms" : {
-
 				"top_sgs"			: "Small Group Study",
 				"top_lgs"			: "Large Group Study"
 			},
 
 			"Reading Rooms" : {
-
 				"top_frr"			: "Faculty Reading Room",
 				"top_euc"			: "Extended Use Carrels",
 				"top_gr"			: "Gottesfeld Room",
@@ -40,13 +35,11 @@ var config = {
 			},
 
 			"Meeting Rooms" : {
-
 				"top_loft"			: "The Loft",
 				"top_wtr"			: "Wohlauer Teleconference Room"
 			},
 
 			"Offices" : {
-
 				"top_ds"			: "Dean's Suite",
 				"top_cfwlc"			: "Center for World Languages and Cultures",
 				"top_wpf"			: "Writing Program Faculty",
@@ -59,25 +52,39 @@ var config = {
 		},
 
 		"bottom_floor" : {
-			
+			"Study Rooms" : {
+				"bottom_gfeuc"		: "Gilbertson Family Extended Use Carrels",
+				"bottom_fgs"		: "Family Group Study",
+				"bottom_sgs" 		: "Small Group Study",
+				"bottom_lgs"		: "Large Group Study"	
+			},
+
+			"Reading Rooms" : {
+				"bottom_frr"		: "Fogel Reading Room"
+			},
+
+			"(?) Rooms" : {
+				"bottom_sc"			: "Special Collections",
+				"bottom_vcs"		: "Video Creation Studio",
+				"bottom_ssr"		: "Schayer Seminar Room"
+			}
 		}
 	},
 
 	"room_clickmaps" : {
-		"top_ds": [
-			"620,45,820,45,820,244,710,244,710,150,620,150"
+		"top_sgs": [
+			"80,335,190,335,190,370,80,370"
 		]
 	},
 
 	"room_action": {
-		"top_ds": {
+		"top_sgs": {
 			"type": "external",
-			"value": "https://library.du.edu/contact/department-directory.html"
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		}
 	},
 
 	"slide_colors": {
-
 		"top_frr"   : "#93d9f9",
 		"top_cfwlc" : "#c1ffd8",
 		"top_euc"   : "#e0f992",

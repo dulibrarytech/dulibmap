@@ -105,34 +105,34 @@ var addBaseImages = function() {
 }
 
 // Add each floor here, hide all but main on default
-var addSlideSelectMenu = function() {
+var addSlideSelectMenu = function(floor) {
 
-	// Top floor
-	var menu = document.createElement("DIV");
-	menu.setAttribute("class", "select-menu");
-	document.getElementById("top-floor").appendChild(menu);
-	var select_form = document.createElement("FORM");
-	select_form.setAttribute("id", "top-floor-select");
-	select_form.setAttribute("class", "floor-select");
+	var menu, select_form, slide, img
+	for(var map in config.maps) {
+		menu = document.createElement("DIV"),
+		mapID = map.replace("_", "-");
+			console.log("ASSM floor id:", mapID);
+		menu.setAttribute("class", "select-menu");
+		document.getElementById(mapID).appendChild(menu);
+		select_form = document.createElement("FORM");
+		select_form.setAttribute("id", mapID + "-select");
+		select_form.setAttribute("class", "floor-select");
 
-	var slide, img;
-	select_form.innerHTML += ("<h3>Room Select</h3>");
+		//var slide, img;
+		select_form.innerHTML += ("<h3>Room Select</h3>");
 
-	for(var key in config.maps["top_floor"]) {
-		slide = document.createElement("INPUT");
-		slide.setAttribute("type", "checkbox");
-		name = key.replace(" ", "").toLowerCase();
-		slide.setAttribute("name", name);
-		slide.setAttribute("value", key);
-		slide.setAttribute("onclick", "onSelectGroup(this, 'top-floor')");
-		select_form.appendChild(slide);
-		select_form.innerHTML += (key + "<br />");
+		for(var key in config.maps[map]) {
+			slide = document.createElement("INPUT");
+			slide.setAttribute("type", "checkbox");
+			name = key.replace(" ", "").toLowerCase();
+			slide.setAttribute("name", name);
+			slide.setAttribute("value", key);
+			slide.setAttribute("onclick", "onSelectGroup(this, '" + mapID + "')");
+			select_form.appendChild(slide);
+			select_form.innerHTML += (key + "<br />");
+		}
+		menu.appendChild(select_form);
 	}
-	menu.appendChild(select_form);
-	
-	// Main floor
-
-	// Bottom floor
 }
 
 var onSelectFloor = function(floor) {
@@ -172,7 +172,6 @@ var onSelectGroup = function(selection, floor) {
 			overlay.setAttribute("src", path);
 			overlay.setAttribute("usemap", floor + "-clickmap");
 			map.appendChild(overlay);
-
 			addAreaToClickMap(key, floor);
 		}
 	}
