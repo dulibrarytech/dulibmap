@@ -48,7 +48,27 @@ var config = {
 		},
 
 		"main_floor" : {
+			"Technology Services" : {
+				"main_uts"			: "University Technology Services"
+			},
 
+			"Learning Centers" : {
+				"main_wc"			: "Writing Center",
+				"main_mc"			: "Math Center",
+				"main_lc"			: "Language Center",
+				"main_sec"			: "Science and Engineering Center",
+				"main_rc"			: "Research Center",
+				"main_dmc"			: "Digital Media Center"
+			},
+
+			"Meeting Rooms" : {
+				"main_cc"			: "Chan Classroom",
+				"main_hr"			: "Herold Room"
+			},
+
+			"Events Rooms" : {
+				"main_er"			: "Events Room"
+			}
 		},
 
 		"bottom_floor" : {
@@ -60,13 +80,13 @@ var config = {
 			},
 
 			"Reading Rooms" : {
-				"bottom_frr"		: "Fogel Reading Room"
+				"bottom_frr"		: "Fogel Reading Room",
+				"bottom_ssr"		: "Schayer Seminar Room"
 			},
 
 			"(?) Rooms" : {
 				"bottom_sc"			: "Special Collections",
-				"bottom_vcs"		: "Video Creation Studio",
-				"bottom_ssr"		: "Schayer Seminar Room"
+				"bottom_vcs"		: "Video Creation Studio"
 			}
 		}
 	},
