@@ -107,7 +107,7 @@ var addBaseImages = function() {
 // Add each floor here, hide all but main on default
 var addSlideSelectMenu = function(floor) {
 
-	var menu, select_form, slide, img
+	var menu, select_form, slide, img, label, checkbox;
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
 		mapID = map.replace("_", "-");
@@ -122,14 +122,21 @@ var addSlideSelectMenu = function(floor) {
 		select_form.innerHTML += ("<h3>Room Select</h3>");
 
 		for(var key in config.maps[map]) {
+			label = document.createElement("LABEL");
+			label.setAttribute("class", "container");
+			label.innerHTML = key;
 			slide = document.createElement("INPUT");
 			slide.setAttribute("type", "checkbox");
+			checkbox = document.createElement("SPAN");
+			checkbox.setAttribute("class", "checkmark");
 			name = key.replace(" ", "").toLowerCase();
 			slide.setAttribute("name", name);
 			slide.setAttribute("value", key);
 			slide.setAttribute("onclick", "onSelectGroup(this, '" + mapID + "')");
-			select_form.appendChild(slide);
-			select_form.innerHTML += (key + "<br />");
+			label.appendChild(slide);
+			label.appendChild(checkbox);
+			select_form.appendChild(label);
+			//select_form.innerHTML += (key + "<br />");
 		}
 		menu.appendChild(select_form);
 	}
