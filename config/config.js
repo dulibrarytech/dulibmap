@@ -84,7 +84,7 @@ var config = {
 				"bottom_ssr"		: "Schayer Seminar Room"
 			},
 
-			"(?) Rooms" : {
+			"Group 3" : {
 				"bottom_sc"			: "Special Collections",
 				"bottom_vcs"		: "Video Creation Studio"
 			}
@@ -94,6 +94,9 @@ var config = {
 	"room_clickmaps" : {
 		"top_sgs": [
 			"80,335,190,335,190,370,80,370"
+		],
+		"top_otl": [
+			"620,330,820,330,820,490,745,490,745,460,650,460,650,410,620,410"
 		]
 	},
 
@@ -101,6 +104,10 @@ var config = {
 		"top_sgs": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_otl": {
+			"type": "external",
+			"value": "http://otl.du.edu"
 		}
 	},
 
