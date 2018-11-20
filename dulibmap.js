@@ -90,17 +90,17 @@ var addBaseImages = function() {
 
 	top_base.setAttribute("id", "top-base");
 	top_base.setAttribute("class", "map-base");
-	top_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.top_floor);
+	top_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.top_floor);
 	top_floor.appendChild(top_base);
 
 	main_base.setAttribute("id", "main-base");
 	main_base.setAttribute("class", "map-base");
-	main_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.main_floor);
+	main_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.main_floor);
 	main_floor.appendChild(main_base);
 
 	bottom_base.setAttribute("id", "bottom-base");
 	bottom_base.setAttribute("class", "map-base");
-	bottom_base.setAttribute("src", config.base_url + "/assets/img/map/base/" + config.map_base.bottom_floor);
+	bottom_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.bottom_floor);
 	bottom_floor.appendChild(bottom_base);
 }
 
@@ -172,7 +172,7 @@ var onSelectGroup = function(selection, floor) {
 	if(selection.checked) {
 		for(var key in rooms) {
 			id = key + "-overlay";
-			path = config.base_url + "/assets/img/map/slide/" + key + ".gif";
+			path = "./assets/img/map/slide/" + key + ".gif";
 			overlay = document.createElement("IMG");
 			overlay.setAttribute("id", id);
 			overlay.setAttribute("class", "map-slide");
