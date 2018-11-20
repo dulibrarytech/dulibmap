@@ -111,7 +111,6 @@ var addSlideSelectMenu = function(floor) {
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
 		mapID = map.replace("_", "-");
-			console.log("ASSM floor id:", mapID);
 		menu.setAttribute("class", "select-menu");
 		document.getElementById(mapID).appendChild(menu);
 		select_form = document.createElement("FORM");

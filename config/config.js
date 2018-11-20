@@ -24,22 +24,18 @@ var config = {
 				"top_lgs"			: "Large Group Study"
 			},
 
-			"Reading Rooms" : {
-				"top_frr"			: "Faculty Reading Room",
+			"Classrooms" : {
+				"top_loft"			: "The Loft",
 				"top_euc"			: "Extended Use Carrels",
+				"top_frr"			: "Faculty Reading Room",
 				"top_gr"			: "Gottesfeld Room",
 				"top_qrr"			: "Quinette Reading Room",
 				"top_dfra"			: "Deline Family Reading Area"
-
 			},
 
-			"Meeting Rooms" : {
-				"top_loft"			: "The Loft",
-				"top_wtr"			: "Wohlauer Teleconference Room"
-			},
-
-			"Offices" : {
+			"Centers and Services" : {
 				"top_ds"			: "Dean's Suite",
+				"top_wtr"			: "Wohlauer Teleconference Room",
 				"top_cfwlc"			: "Center for World Languages and Cultures",
 				"top_wpf"			: "Writing Program Faculty",
 				"top_otl" 			: "Office of Teaching and Learning"
@@ -51,22 +47,19 @@ var config = {
 				"main_uts"			: "University Technology Services"
 			},
 
-			"Learning Centers" : {
+			"Centers and Services" : {
 				"main_wc"			: "Writing Center",
 				"main_mc"			: "Math Center",
 				"main_lc"			: "Language Center",
 				"main_sec"			: "Science and Engineering Center",
 				"main_rc"			: "Research Center",
-				"main_dmc"			: "Digital Media Center"
+				"main_dmc"			: "Digital Media Center",
+				"main_er"			: "Events Room"
 			},
 
-			"Meeting Rooms" : {
+			"Classrooms" : {
 				"main_cc"			: "Chan Classroom",
 				"main_hr"			: "Herold Room"
-			},
-
-			"Events Rooms" : {
-				"main_er"			: "Events Room"
 			}
 		},
 
@@ -78,12 +71,12 @@ var config = {
 				"bottom_lgs"		: "Large Group Study"	
 			},
 
-			"Reading Rooms" : {
+			"Classrooms" : {
 				"bottom_frr"		: "Fogel Reading Room",
 				"bottom_ssr"		: "Schayer Seminar Room"
 			},
 
-			"Group 3" : {
+			"Centers and Services" : {
 				"bottom_sc"			: "Special Collections",
 				"bottom_vcs"		: "Video Creation Studio"
 			}
