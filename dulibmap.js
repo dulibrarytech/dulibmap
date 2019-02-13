@@ -191,6 +191,7 @@ var onSelectGroup = function(selection, floor) {
 }
 
 var addAreaToClickMap = function(roomID, floor) {
+
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[roomID];
@@ -202,9 +203,12 @@ var addAreaToClickMap = function(roomID, floor) {
 			area.setAttribute("shape", "poly");
 			area.setAttribute("onclick", "onSelectRoom(this.id)");
 			area.setAttribute("coords", config.room_clickmaps[roomID]);
+			// area.setAttribute("title", "title");
 			clickMap.appendChild(area);
 		}
 	}
+
+	addHoverDisplays();
 }
 
 var onSelectRoom = function(areaID) {
@@ -225,6 +229,20 @@ var onSelectRoom = function(areaID) {
 		else if(action == "external") {
 			// Open the external link for this room in a new browser window
 			window.open(config.room_action[roomID].value);
+		}
+	}
+}
+
+var addHoverDisplays = function() {
+	var container = document.getElementById("map-container");
+	var areaElement;
+
+	for(var key in config.hover_displays) {
+		areaElement = document.getElementById(key + "-area");
+		if(areaElement) {
+			console.log("TEST", key);
+			console.log("TEST", config.hover_displays[key].text);
+			areaElement.setAttribute("title", config.hover_displays[key].text);
 		}
 	}
 }

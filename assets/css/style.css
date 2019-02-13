@@ -121,6 +121,7 @@ div.base-map {
 
 div#map-container {
     position: relative;
+    height: 1200px;
 /*    top: 310px;
     left: 0;*/
    /* width: 68%;*/
@@ -207,4 +208,13 @@ div#legend > img {
 	position: relative;
     top: 10px;
     left: -10px;
+}
+
+.hoverdisplay {
+    position: relative;
+    width: 150px;
+    padding: 3px;
+    background-color: #eef2c5;
+    font-size: 12px;
+    border-radius: 3px;
 }

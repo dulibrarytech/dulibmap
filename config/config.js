@@ -21,7 +21,11 @@ var config = {
 		"top_floor" : {
 			"Study Rooms" : {
 				"top_sgs"			: "Small Group Study",
-				"top_lgs"			: "Large Group Study"
+				"top_sgs_391"		: "Small Group Study 391",
+				"top_sgs_392"		: "Small Group Study 392",
+				"top_sgs_393"		: "Small Group Study 393",
+				"top_lgs"			: "Large Group Study",
+				"top_fsa"			: "Gilbert Frank / Recent Grad Study Area"
 			},
 
 			"Classrooms" : {
@@ -38,7 +42,8 @@ var config = {
 				"top_wtr"			: "Wohlauer Teleconference Room",
 				"top_cfwlc"			: "Center for World Languages and Cultures",
 				"top_wpf"			: "Writing Program Faculty",
-				"top_otl" 			: "Office of Teaching and Learning"
+				"top_otl" 			: "Office of Teaching and Learning",
+				"top_ults"			: "University Libraries Technical Services"
 			}
 		},
 
@@ -84,18 +89,35 @@ var config = {
 	},
 
 	"room_clickmaps" : {
-		"top_sgs": [
-			"80,335,190,335,190,370,80,370"
+		"top_sgs_391": [
+			"160,330,193,330,193,370,160,370"
+		],
+		"top_sgs_392": [
+			"120,330,155,330,155,370,120,370"
+		],
+		"top_sgs_393": [
+			"85,330,116,330,116,370,85,370"
 		],
 		"top_otl": [
 			"620,330,820,330,820,490,745,490,745,460,650,460,650,410,620,410"
+		],
+		"top_dfra": [
+			"80,40,270,40,270,240,65,240,65,60,80,60"
 		]
 	},
 
 	"room_action": {
-		"top_sgs": {
+		"top_sgs_391": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_392": {
+			"type": "external",
+			"value": "http://www.google.com"
+		},
+		"top_sgs_393": {
+			"type": "external",
+			"value": "http://www.yahoo.com"
 		},
 		"top_otl": {
 			"type": "external",
@@ -119,7 +141,22 @@ var config = {
 		"top_ds"	: "#f3c5c5"
 	},
 
-	"labels" : {
+	"hover_displays": {
+		"top_sgs_391": {
+			"text": "Washington DC Study Room"
+		},
+		"top_sgs_392": {
+			"text": "Twin Cities Study Room"
+		},
+		"top_sgs_393": {
+			"text": "Northern California Study Room"
+		},
+		"top_dfra": {
+			"text": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
+		}
+	},
+
+	"labels": {
 		"top_floor": "Upper Level"
 	}
 }
