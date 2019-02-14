@@ -119,6 +119,9 @@ var config = {
 		],
 		"top_dfra": [
 			"80,40,270,40,270,240,65,240,65,60,80,60"
+		],
+		"top_fsa": [
+			"40,375,195,375,180,465,60,465"
 		]
 	},
 
@@ -178,6 +181,12 @@ var config = {
 		},
 		"top_dfra": {
 			"text": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
+		},
+		"top_fsa": {
+			"text": "The study area funded by Margot Gilbert Frank and M Allan Frank, along with Recent Graduates of Colorado, provides seating and group study rooms near the DVD collection and viewing area."
+		},
+		"top_otl": {
+			"text": "The Office of Teaching & Learning provides professional development to improve teaching practices, develops and supports state-of-the-art technology and web-based applications that enhance student learning and promotes innovation and collaboration."
 		}
 	},
 
