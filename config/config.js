@@ -24,6 +24,9 @@ var config = {
 				"top_sgs_391"		: "Small Group Study 391",
 				"top_sgs_392"		: "Small Group Study 392",
 				"top_sgs_393"		: "Small Group Study 393",
+				"top_sgs_394"		: "Small Group Study 394",
+				"top_sgs_395"		: "Small Group Study 395",
+				"top_sgs_396"		: "Small Group Study 396",
 				"top_lgs"			: "Large Group Study",
 				"top_fsa"			: "Gilbert Frank / Recent Grad Study Area"
 			},
@@ -48,6 +51,10 @@ var config = {
 		},
 
 		"main_floor" : {
+			"Study Rooms" : {
+				"main_nsr"		: "Nikki's Study Room"	
+			},
+
 			"Technology Services" : {
 				"main_uts"			: "University Technology Services"
 			},
@@ -98,6 +105,15 @@ var config = {
 		"top_sgs_393": [
 			"85,330,116,330,116,370,85,370"
 		],
+		"top_sgs_394": [
+			"60,467,97,467,97,514,60,514"
+		],
+		"top_sgs_395": [
+			"105,467,135,467,135,514,105,514"
+		],
+		"top_sgs_396": [
+			"143,467,173,467,173,514,143,514"
+		],
 		"top_otl": [
 			"620,330,820,330,820,490,745,490,745,460,650,460,650,410,620,410"
 		],
@@ -113,11 +129,11 @@ var config = {
 		},
 		"top_sgs_392": {
 			"type": "external",
-			"value": "http://www.google.com"
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
 		"top_sgs_393": {
 			"type": "external",
-			"value": "http://www.yahoo.com"
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
 		"top_otl": {
 			"type": "external",
@@ -150,6 +166,15 @@ var config = {
 		},
 		"top_sgs_393": {
 			"text": "Northern California Study Room"
+		},
+		"top_sgs_394": {
+			"text": "Newman Study Room"
+		},
+		"top_sgs_395": {
+			"text": "Boston Study Room"
+		},
+		"top_sgs_396": {
+			"text": "New York Study Room"
 		},
 		"top_dfra": {
 			"text": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
