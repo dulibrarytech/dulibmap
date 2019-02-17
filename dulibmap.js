@@ -240,8 +240,6 @@ var addHoverDisplays = function() {
 	for(var key in config.hover_displays) {
 		areaElement = document.getElementById(key + "-area");
 		if(areaElement) {
-			console.log("TEST", key);
-			console.log("TEST", config.hover_displays[key].text);
 			areaElement.setAttribute("title", config.hover_displays[key].text);
 		}
 	}

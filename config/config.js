@@ -21,13 +21,18 @@ var config = {
 		"top_floor" : {
 			"Study Rooms" : {
 				"top_sgs"			: "Small Group Study",
+				"top_sgs_310"		: "Small Group Study 310",
+				"top_sgs_311"		: "Small Group Study 311",
 				"top_sgs_391"		: "Small Group Study 391",
 				"top_sgs_392"		: "Small Group Study 392",
 				"top_sgs_393"		: "Small Group Study 393",
 				"top_sgs_394"		: "Small Group Study 394",
 				"top_sgs_395"		: "Small Group Study 395",
 				"top_sgs_396"		: "Small Group Study 396",
+				"top_sgs_396"		: "Small Group Study 396",
 				"top_lgs"			: "Large Group Study",
+				"top_lgs_389"		: "Large Group Study 389",
+				"top_lgs_390"		: "Large Group Study 390",
 				"top_fsa"			: "Gilbert Frank / Recent Grad Study Area"
 			},
 
@@ -96,6 +101,12 @@ var config = {
 	},
 
 	"room_clickmaps" : {
+		"top_sgs_310": [
+			"277,630,317,630,317,653,277,653"
+		],
+		"top_sgs_311": [
+			"277,660,317,660,317,680,277,680"
+		],
 		"top_sgs_391": [
 			"160,330,193,330,193,370,160,370"
 		],
@@ -114,18 +125,59 @@ var config = {
 		"top_sgs_396": [
 			"143,467,173,467,173,514,143,514"
 		],
+		"top_lgs_389": [
+			"206,243,265,243,265,280,206,280"
+		],
+		"top_lgs_390": [
+			"206,290,265,290,265,325,206,325"
+		],
 		"top_otl": [
 			"620,330,820,330,820,490,745,490,745,460,650,460,650,410,620,410"
+		],
+		"top_cfwlc": [
+			"660,465,740,465,740,490,715,490,715,550,655,550,655,510,600,510"
 		],
 		"top_dfra": [
 			"80,40,270,40,270,240,65,240,65,60,80,60"
 		],
 		"top_fsa": [
 			"40,375,195,375,180,465,60,465"
+		],
+		"top_euc": [
+			"65,590,170,590,170,680,65,680"
+		],
+		"top_qrr": [
+			"70,695,270,695,270,860,155,850,70,800"
+		],
+		"top_frr": [
+			"450,790,540,790,540,870,450,870"
+		],
+		"top_gr": [
+			"450,270,540,270,540,780,450,780"
+		],
+		"top_wtr": [
+			"562,555,620,555,620,590,562,590"
+		],
+		"top_ds": [
+			"620,40,820,40,820,240,710,240,710,150,650,150"
+		],
+		"top_wpf": [
+			"355,40,535,40,535,270,355,270"
+		],
+		"top_loft": [
+			"355,415,425,400,455,425,450,510,370,510"
 		]
 	},
 
 	"room_action": {
+		"top_sgs_310": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_311": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
 		"top_sgs_391": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
@@ -138,9 +190,33 @@ var config = {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
+		"top_sgs_394": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_395": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_396": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_lgs_389": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_lgs_390": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
 		"top_otl": {
 			"type": "external",
 			"value": "http://otl.du.edu"
+		},
+		"top_cfwlc": {
+			"type": "external",
+			"value": "http://www.du.edu/cwlc"
 		}
 	},
 
@@ -161,6 +237,12 @@ var config = {
 	},
 
 	"hover_displays": {
+		"top_sgs_310": {
+			"text": "Shafroth Study Room"
+		},
+		"top_sgs_311": {
+			"text": ""
+		},
 		"top_sgs_391": {
 			"text": "Washington DC Study Room"
 		},
@@ -179,6 +261,12 @@ var config = {
 		"top_sgs_396": {
 			"text": "New York Study Room"
 		},
+		"top_lgs_389": {
+			"text": "Cheme Study Room"
+		},
+		"top_lgs_390": {
+			"text": "Ray Bradbury Study Room"
+		},
 		"top_dfra": {
 			"text": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
 		},
@@ -187,6 +275,33 @@ var config = {
 		},
 		"top_otl": {
 			"text": "The Office of Teaching & Learning provides professional development to improve teaching practices, develops and supports state-of-the-art technology and web-based applications that enhance student learning and promotes innovation and collaboration."
+		},
+		"top_cfwlc": {
+			"text": "The Center for World Languages and Cultures administers foreign language placement exams to undergraduate students registering for language courses."
+		},
+		"top_euc": {
+			"text": "The Extended Use Quiet Study Area offers an assigned carrel for one academic quarter to students writing a thesis or completing a major research project."
+		},
+		"top_qrr": {
+			"text": "The Quinette Family Reading Room offers 2,900 sq. ft. for reading and contemplation. It has beautiful views across Carnegie Green, a fireplace, display of the library\’s valuable Ski Collection, plentiful windows, soft chairs and custom-built tables by DU alum Daniel Strawn."
+		},
+		"top_frr": {
+			"text": "The Faculty Reading Room offers faculty a place to work, read, and collaborate."
+		},
+		"top_gr": {
+			"text": "The Gottesfeld Room honors the important role of Marion Gottesfeld, who founded the Women\'s Library Association in 1956. Built-in cabinetry displays the collection of Artist Books - hand-made works of art."
+		},
+		"top_wtr": {
+			"text": "The Wohlauer Teleconferencing Room is acoustically designed and outfitted with state-of-the-art equipment to provide reliable teleconferencing capabilities to students, staff, or faculty."
+		},
+		"top_ds": {
+			"text": "The Dean\'s Suite houses offices and meeting space for professional staff with administrative roles in the library. These offices overlook the Buchtel Tower and the Holocaust Awareness and Social Action site."
+		},
+		"top_wpf": {
+			"text": "The Writing Program offers renowned first-year writing classes, provides support for writing-intensive courses, leads workshops to help professors teach writing, and conducts research in writing, rhetoric and literacy."
+		},
+		"top_loft": {
+			"text": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
 		}
 	},
 
