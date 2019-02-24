@@ -33,7 +33,7 @@ var init = function() {
 
 	addBaseImages();
 	addSlideSelectMenu();
-	addClickMap(container);
+	addClickMap(container, "top-floor");
 }
 
 var addLegend = function(mapContainer) {
@@ -73,11 +73,19 @@ var addFloorSelectMenu = function(mapContainer) {
 	mapContainer.appendChild(menu);
 }
 
-var addClickMap = function(mapContainer) {
+var addClickMap = function(mapContainer, floor) {
 	var map = document.createElement("MAP");
-	map.setAttribute("id", "top-floor-clickmap");
-	map.setAttribute("name", "top-floor-clickmap");
+	map.setAttribute("id", floor + "-clickmap");
+	map.setAttribute("name", floor + "-clickmap");
+	map.setAttribute("class", "clickmap");
 	mapContainer.appendChild(map);
+}
+
+var removeClickMaps = function(mapContainer) {
+	var maps = document.getElementsByClassName("clickmap");
+	for(var i = 0; i < maps.length; i++) {
+		mapContainer.removeChild(maps[i]);
+	}
 }
 
 var addBaseImages = function() {
@@ -159,6 +167,10 @@ var onSelectFloor = function(floor) {
 	var floorID = floor.getAttribute("id").replace("-select", ""),
 		map = document.getElementById(floorID);
 		map.style.display = "block";
+
+	var container = document.getElementById("map-container");
+	removeClickMaps(container);
+	addClickMap(container, floorID);
 }
 
 var onSelectGroup = function(selection, floor) {
@@ -194,7 +206,7 @@ var addAreaToClickMap = function(roomID, floor) {
 
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
-		areas = config.room_clickmaps[roomID];
+		areas = config.room_clickmaps[floor][roomID];
 
 	for(let area in areas) {
 		if(areas[area]) {
@@ -202,7 +214,7 @@ var addAreaToClickMap = function(roomID, floor) {
 			area.setAttribute("id", roomID + "-area");
 			area.setAttribute("shape", "poly");
 			area.setAttribute("onclick", "onSelectRoom(this.id)");
-			area.setAttribute("coords", config.room_clickmaps[roomID]);
+			area.setAttribute("coords", config.room_clickmaps[floor][roomID]);
 			// area.setAttribute("title", "title");
 			clickMap.appendChild(area);
 		}
