@@ -89,7 +89,14 @@ var config = {
 				"bottom_gfeuc"		: "Gilbertson Family Extended Use Carrels",
 				"bottom_fgs"		: "Family Group Study",
 				"bottom_sgs" 		: "Small Group Study",
-				"bottom_lgs"		: "Large Group Study"	
+				"bottom_sgs_189" 	: "Small Group Study Room 189",
+				"bottom_sgs_190" 	: "Small Group Study Room 190",
+				"bottom_sgs_191" 	: "Small Group Study Room 191",
+				"bottom_sgs_108" 	: "Small Group Study Room 108",
+				"bottom_sgs_168" 	: "Small Group Study Room 168"
+				"bottom_lgs"		: "Large Group Study",
+				"bottom_lgs_182" 	: "Large Group Study Room 182",
+				"bottom_lgs_184" 	: "Large Group Study Room 184"
 			},
 
 			"Classrooms" : {
