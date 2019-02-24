@@ -52,6 +52,10 @@ var config = {
 				"top_wpf"			: "Writing Program Faculty",
 				"top_otl" 			: "Office of Teaching and Learning",
 				"top_ults"			: "University Libraries Technical Services"
+			},
+
+			"Accessible Services" : {
+				"top_accessible"		: "Accessible Services"
 			}
 		},
 
