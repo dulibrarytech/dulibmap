@@ -181,11 +181,52 @@ var config = {
 				"355,415,425,400,455,425,450,510,370,510"
 			]
 		},
-		"main_floor": {
+		"main-floor": {
 
 		},
-		"bottom_floor": {
-
+		"bottom-floor": {
+			"bottom_gfeuc": [
+				"347,46,550,46,550,172,347,172"
+			],
+			"bottom_frr": [
+				"155,500,250,473,250,580,155,580"
+			],
+			"bottom_ssr": [
+				"252,473,302,473,302,557,252,557"
+			],
+			"bottom_sc": [
+				"47,647,255,641,255,850,47,850"
+			],
+			"bottom_ms": [
+				"550,500,690,500,690,600,550,600"
+			],
+			"bottom_lgs_182": [
+				"47,146,121,146,121,198,47,198"
+			],
+			"bottom_lgs_184": [
+				"47,202,121,202,121,250,47,250"
+			],
+			"bottom_sgs_108": [
+				"339,470,390,470,390,740,339,740"
+			],
+			"bottom_sgs_168": [
+				"800,147,848,147,848,187,800,187"
+			],
+			"bottom_sgs_189": [
+				"166,253,212,253,212,307,166,307"
+			],
+			"bottom_sgs_190": [
+				"218,253,253,253,253,307,218,307"
+			],
+			"bottom_sgs_191": [
+				"198,310,253,310,253,346,198,346"
+			],
+			"bottom_fgs": [
+				"800,190,848,190,848,247,800,247"
+			],
+			"bottom_vcs": [
+				"645,254,717,254,717,345,645,345"
+			]
 		}
 	},
 
@@ -237,7 +278,43 @@ var config = {
 		"top_cfwlc": {
 			"type": "external",
 			"value": "http://www.du.edu/cwlc"
-		}
+		},
+		"bottom_sc": {
+			"type": "external",
+			"value": "https://library.du.edu/collections-archives/specialcollections/index.html"
+		},
+		"bottom_vcs": {
+			"type": "external",
+			"value": "https://www.du.edu/it/services/digital-media-services/video-creation-studio"
+		},
+		"bottom_sgs_189": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_190": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_191": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_168": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_lgs_182": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_lgs_184": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
 	},
 
 	"slide_colors": {
@@ -322,6 +399,49 @@ var config = {
 		},
 		"top_loft": {
 			"text": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
+		},
+
+		"bottom_gfeuc": {
+			"text": "An anonymous donor funded the Quiet Study Room where acoustic engineering limits noise from other areas of the Academic Commons and from Evans Avenue so that students may easily focus on their assignments."
+		},
+		"bottom_frr": {
+			"text": "DU has long had impressive Special Collections, and with the Ida and Max Fogel Family Reading Room, we now have an appropriate place where scholars and students may review and conduct research using these rare and valuable materials."
+		},
+		"bottom_ssr": {
+			"text": "The Charles M. and Faye G. Schayer Seminar Room serves as a classroom for professors who bring students to work with primary sources. Imagine holding an important historic document or the costume of a famous dancer! The Schayer Room may also be used by archivists, historians and librarians for meetings."
+		},
+		"bottom_sc": {
+			"text": "Special Collections are climate controlled, locked and supervised. With Special Collections are offices for the University Historian, the curators of the University Archives and the Ira M. and Peryle Hayutin Beck Memorial Archives of Rocky Mountain Jewish History, and an exhibit preparation room."
+		},
+		"bottom_ms": {
+			"text": "The Penrose Collection includes all of the books and materials belonging to the University Libraries. In honor of the family that funded El Pomar Foundation, and which, in turn, provided the funds not only to build DU’s former library but to make major acquisitions of important resources, we have named the collection for Spencer and Julie Penrose, the library’s forty-year namesake."
+		},
+		// "bottom_lgs_182": {
+		// 	"text": ""
+		// },
+		// "bottom_lgs_184": {
+		// 	"text": ""
+		// },
+		// "bottom_sgs_189": {
+		// 	"text": ""
+		// },
+		// "bottom_sgs_190": {
+		// 	"text": ""
+		// },
+		// "bottom_sgs_191": {
+		// 	"text": ""
+		// },
+		// "bottom_sgs_108": {
+		// 	"text": ""
+		// },
+		// "bottom_sgs_168": {
+		// 	"text": ""
+		// },
+		"bottom_fgs": {
+			"text": "In response to requests from graduate students, the Anderson Academic Commons has a Family Study Room where students may bring their children while they use the library, and the kids are comfortable with toys and kidsized furniture while Mom or Dad studies. "
+		},
+		"bottom_vcs": {
+			"text": "The Video Creation Studio is a professional recording studio that can be used by DU faculty and staff with very little video production experience."
 		}
 	},
 
