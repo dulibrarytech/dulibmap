@@ -1,39 +1,15 @@
 
 
 var init = function() {
-	// Add map container
 	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div>";
 	var container = document.getElementById("map-container");
-	var selected_list = [];
+	var selected_list = [], floor;
 
 	addLegend(container);
 	addFloorSelectMenu(container);
-
-	// addFloors()?
-	// Add upper level
-	var top_floor = document.createElement("DIV");
-	top_floor.setAttribute("id", "top-floor");
-	top_floor.setAttribute("class", "base-map");
-	top_floor.style.display = "block";
-	container.appendChild(top_floor);
-
-	// Add main level
-	var main_floor = document.createElement("DIV");
-	main_floor.setAttribute("id", "main-floor");
-	main_floor.setAttribute("class", "base-map");
-	main_floor.style.display = "none";
-	container.appendChild(main_floor);
-
-	// Add lower level
-	var bottom_floor = document.createElement("DIV");
-	bottom_floor.setAttribute("id", "bottom-floor");
-	bottom_floor.setAttribute("class", "base-map");
-	bottom_floor.style.display = "none";
-	container.appendChild(bottom_floor);
-
+	addFloors(container);
 	addBaseImages();
 	addSlideSelectMenu();
-	addClickMap(container, "top-floor");
 }
 
 var addLegend = function(mapContainer) {
@@ -56,7 +32,7 @@ var addFloorSelectMenu = function(mapContainer) {
 		id;
 
 	for(var key in config.maps) {
-		id = key.replace("_", "-") + "-select";
+		id = key + "-select";
 		floor = document.createElement("LI");
 		floor.setAttribute("id", id);
 		floor.setAttribute("class", "floor-option");
@@ -71,6 +47,22 @@ var addFloorSelectMenu = function(mapContainer) {
 	menu.setAttribute("class", "floor-select");
 	menu.appendChild(list);
 	mapContainer.appendChild(menu);
+}
+
+var addFloors = function(container) {
+	for(var key in config.maps) {
+		floor = document.createElement("DIV");
+		floor.setAttribute("id", key);
+		floor.setAttribute("class", "base-map");
+		if(key == config.default_map) {
+			floor.style.display = "block";
+			addClickMap(container, key);
+		}
+		else {
+			floor.style.display = "none";
+		}
+		container.appendChild(floor);
+	}
 }
 
 var addClickMap = function(mapContainer, floor) {
@@ -89,27 +81,16 @@ var removeClickMaps = function(mapContainer) {
 }
 
 var addBaseImages = function() {
-	var top_floor = document.getElementById("top-floor"),
-		top_base = document.createElement("IMG"),
-		main_floor = document.getElementById("main-floor"),
-		main_base = document.createElement("IMG"),
-		bottom_floor = document.getElementById("bottom-floor"),
-		bottom_base = document.createElement("IMG");
+	var floor, base;
+	for(key in config.map_base) {
+		floor = document.getElementById(key);
+		base = document.createElement("IMG");
 
-	top_base.setAttribute("id", "top-base");
-	top_base.setAttribute("class", "map-base");
-	top_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.top_floor);
-	top_floor.appendChild(top_base);
-
-	main_base.setAttribute("id", "main-base");
-	main_base.setAttribute("class", "map-base");
-	main_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.main_floor);
-	main_floor.appendChild(main_base);
-
-	bottom_base.setAttribute("id", "bottom-base");
-	bottom_base.setAttribute("class", "map-base");
-	bottom_base.setAttribute("src", "./assets/img/map/base/" + config.map_base.bottom_floor);
-	bottom_floor.appendChild(bottom_base);
+		base.setAttribute("id", key + "-base");
+		base.setAttribute("class", "map-base");
+		base.setAttribute("src", "./assets/img/map/base/" + config.map_base[key]);
+		floor.appendChild(base);
+	}
 }
 
 // Add each floor here, hide all but main on default
@@ -118,14 +99,12 @@ var addSlideSelectMenu = function(floor) {
 	var menu, select_form, slide, img, label, checkbox;
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
-		mapID = map.replace("_", "-");
+		//mapID = map.replace("_", "-");
 		menu.setAttribute("class", "select-menu");
-		document.getElementById(mapID).appendChild(menu);
+		document.getElementById(map).appendChild(menu);
 		select_form = document.createElement("FORM");
-		select_form.setAttribute("id", mapID + "-select");
+		select_form.setAttribute("id", map + "-select");
 		select_form.setAttribute("class", "floor-select");
-
-		//var slide, img;
 		select_form.innerHTML += ("<h3>Room Select</h3>");
 
 		for(var key in config.maps[map]) {
@@ -139,7 +118,7 @@ var addSlideSelectMenu = function(floor) {
 			name = key.replace(" ", "").toLowerCase();
 			slide.setAttribute("name", name);
 			slide.setAttribute("value", key);
-			slide.setAttribute("onclick", "onSelectGroup(this, '" + mapID + "')");
+			slide.setAttribute("onclick", "onSelectGroup(this, '" + map + "')");
 			label.appendChild(slide);
 			label.appendChild(checkbox);
 			select_form.appendChild(label);
@@ -178,7 +157,7 @@ var onSelectGroup = function(selection, floor) {
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
 	    map = document.getElementById(floor),
-		rooms = config.maps[floor.replace("-", "_")][group];
+		rooms = config.maps[floor][group];
 
 	if(selection.checked) {
 		for(var key in rooms) {

@@ -3,22 +3,22 @@ var config = {
 	"legend_image": "Legend-H-wide.png",
 
 	"map_base": {
-		"top_floor": "top_base_tech_900.png",
-		"main_floor": "main_base_900.png",
-		"bottom_floor": "bottom_base_900.png"
+		"top-floor": "top_base_tech_900.png",
+		"main-floor": "main_base_900.png",
+		"bottom-floor": "bottom_base_900.png"
 	},
 
-	"default_map": "top_floor",
+	"default_map": "top-floor",
 
 	"map_labels": {
-		"top_floor": "Top Floor",
-		"main_floor": "Main Floor",
-		"bottom_floor": "Bottom Floor"
+		"top-floor": "Top Floor",
+		"main-floor": "Main Floor",
+		"bottom-floor": "Bottom Floor"
 	},
 
 	"maps": {
 
-		"top_floor" : {
+		"top-floor" : {
 			"Study Rooms" : {
 				"top_sgs"			: "Small Group Study",
 				"top_sgs_310"		: "Small Group Study 310",
@@ -59,7 +59,7 @@ var config = {
 			}
 		},
 
-		"main_floor" : {
+		"main-floor" : {
 			"Study Rooms" : {
 				"main_nsr"		: "Nikki's Study Room"	
 			},
@@ -84,7 +84,7 @@ var config = {
 			}
 		},
 
-		"bottom_floor" : {
+		"bottom-floor" : {
 			"Study Rooms" : {
 				"bottom_gfeuc"		: "Gilbertson Family Extended Use Carrels",
 				"bottom_fgs"		: "Family Group Study",
