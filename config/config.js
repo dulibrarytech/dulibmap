@@ -20,9 +20,18 @@ var config = {
 
 		"top-floor" : {
 			"Study Rooms" : {
-				"top_sgs"			: "Small Group Study",
+				// "top_sgs"			: "Small Group Study",
 				"top_sgs_310"		: "Small Group Study 310",
 				"top_sgs_311"		: "Small Group Study 311",
+				"top_sgs_314"		: "Small Group Study 314",
+				"top_sgs_315"		: "Small Group Study 315",
+				"top_sgs_316"		: "Small Group Study 316",
+				"top_sgs_317"		: "Small Group Study 317",
+				"top_sgs_318"		: "Small Group Study 318",
+				"top_sgs_319"		: "Small Group Study 319",
+				"top_sgs_329"		: "Small Group Study 329",
+				"top_sgs_330"		: "Small Group Study 330",
+				"top_sgs_331"		: "Small Group Study 331",
 				"top_sgs_391"		: "Small Group Study 391",
 				"top_sgs_392"		: "Small Group Study 392",
 				"top_sgs_393"		: "Small Group Study 393",
@@ -30,7 +39,9 @@ var config = {
 				"top_sgs_395"		: "Small Group Study 395",
 				"top_sgs_396"		: "Small Group Study 396",
 				"top_sgs_396"		: "Small Group Study 396",
-				"top_lgs"			: "Large Group Study",
+				// "top_lgs"			: "Large Group Study",
+				"top_lgs_352"		: "Large Group Study 352",
+				"top_lgs_354"		: "Large Group Study 354",
 				"top_lgs_389"		: "Large Group Study 389",
 				"top_lgs_390"		: "Large Group Study 390",
 				"top_fsa"			: "Gilbert Frank / Recent Grad Study Area"
@@ -92,7 +103,12 @@ var config = {
 				"bottom_sgs_189" 	: "Small Group Study Room 189",
 				"bottom_sgs_190" 	: "Small Group Study Room 190",
 				"bottom_sgs_191" 	: "Small Group Study Room 191",
-				"bottom_sgs_108" 	: "Small Group Study Room 108",
+				"bottom_sgs_108A" 	: "Small Group Study Room 108A",
+				"bottom_sgs_108B" 	: "Small Group Study Room 108B",
+				"bottom_sgs_108C" 	: "Small Group Study Room 108C",
+				"bottom_sgs_108D" 	: "Small Group Study Room 108D",
+				"bottom_sgs_108E" 	: "Small Group Study Room 108E",
+				"bottom_sgs_108F" 	: "Small Group Study Room 108F",
 				"bottom_sgs_168" 	: "Small Group Study Room 168",
 				"bottom_lgs"		: "Large Group Study",
 				"bottom_lgs_182" 	: "Large Group Study Room 182",
@@ -138,11 +154,44 @@ var config = {
 			"top_sgs_396": [
 				"143,467,173,467,173,514,143,514"
 			],
+			"top_sgs_314": [
+				"447,655,647,651,483,677,449,685"
+			],
+			"top_sgs_315": [
+				"475,647,498,635,516,656,487,671"
+			],
+			"top_sgs_316": [
+				"503,631,526,615,545,631,525,651"
+			],
+			"top_sgs_317": [
+				"570,600,610,600,610,621,570,621"
+			],
+			"top_sgs_318": [
+				"570,630,610,630,610,652,570,652"
+			],
+			"top_sgs_319": [
+				"570,662,610,662,610,685,570,685"
+			],
+			"top_sgs_329": [
+				"560,514,585,514,585,547,560,547"
+			],
+			"top_sgs_330": [
+				"593,514,618,514,620,550,593,550"
+			],
+			"top_sgs_331": [
+				"625,514,650,514,650,550,625,550"
+			],
 			"top_lgs_389": [
 				"206,243,265,243,265,280,206,280"
 			],
 			"top_lgs_390": [
 				"206,290,265,290,265,325,206,325"
+			],
+			"top_lgs_352": [
+				"620,244,642,244,642,300,620,300"
+			],
+			"top_lgs_354": [
+				"650,244,675,244,675,300,650,300"
 			],
 			"top_otl": [
 				"620,330,820,330,820,490,745,490,745,460,650,460,650,410,620,410"
@@ -166,7 +215,7 @@ var config = {
 				"450,790,540,790,540,870,450,870"
 			],
 			"top_gr": [
-				"450,270,540,270,540,780,450,780"
+				"450,716,536,716,536,781,450,781"
 			],
 			"top_wtr": [
 				"562,555,620,555,620,590,562,590"
@@ -206,8 +255,23 @@ var config = {
 			"bottom_lgs_184": [
 				"47,202,121,202,121,250,47,250"
 			],
-			"bottom_sgs_108": [
-				"339,470,390,470,390,740,339,740"
+			"bottom_sgs_108A": [
+				"350,477,405,477,405,515,350,515"
+			],
+			"bottom_sgs_108B": [
+				"350,525,396,525,396,562,350,562"
+			],
+			"bottom_sgs_108C": [
+				"350,570,396,570,396,606,350,606"
+			],
+			"bottom_sgs_108D": [
+				"350,615,396,615,396,655,350,655"
+			],
+			"bottom_sgs_108E": [
+				"350,660,396,660,396,700,350,700"
+			],
+			"bottom_sgs_108F": [
+				"350,710,405,710,405,745,350,745"
 			],
 			"bottom_sgs_168": [
 				"800,147,848,147,848,187,800,187"
@@ -263,11 +327,55 @@ var config = {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
+		"top_sgs_314": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_315": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_316": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_317": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_318": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_319": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_329": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_330": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_sgs_331": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
 		"top_lgs_389": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
 		"top_lgs_390": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_lgs_352": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"top_lgs_354": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
@@ -279,6 +387,7 @@ var config = {
 			"type": "external",
 			"value": "http://www.du.edu/cwlc"
 		},
+
 		"bottom_sc": {
 			"type": "external",
 			"value": "https://library.du.edu/collections-archives/specialcollections/index.html"
@@ -299,7 +408,27 @@ var config = {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
-		"bottom_sgs_108": {
+		"bottom_sgs_108A": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108B": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108C": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108D": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108E": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
+		"bottom_sgs_108F": {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
@@ -338,7 +467,7 @@ var config = {
 			"text": "Shafroth Study Room"
 		},
 		"top_sgs_311": {
-			"text": ""
+			"text": "Madden Study Room"
 		},
 		"top_sgs_391": {
 			"text": "Washington DC Study Room"
@@ -358,11 +487,44 @@ var config = {
 		"top_sgs_396": {
 			"text": "New York Study Room"
 		},
+		"top_sgs_314": {
+			"text": "Small Group Study Room 314"
+		},
+		"top_sgs_315": {
+			"text": "Small Group Study Room 315"
+		},
+		"top_sgs_316": {
+			"text": "Small Group Study Room 316"
+		},
+		"top_sgs_317": {
+			"text": "Small Group Study Room 317"
+		},
+		"top_sgs_318": {
+			"text": "Small Group Study Room 318"
+		},
+		"top_sgs_319": {
+			"text": "Small Group Study Room 319"
+		},
+		"top_sgs_329": {
+			"text": "Small Group Study Room 329"
+		},
+		"top_sgs_330": {
+			"text": "Small Group Study Room 330"
+		},
+		"top_sgs_331": {
+			"text": "Small Group Study Room 331"
+		},
 		"top_lgs_389": {
 			"text": "Cheme Study Room"
 		},
 		"top_lgs_390": {
 			"text": "Ray Bradbury Study Room"
+		},
+		"top_lgs_352": {
+			"text": "Large Group Study Room 352"
+		},
+		"top_lgs_354": {
+			"text": "Large Group Study Room 354"
 		},
 		"top_dfra": {
 			"text": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
@@ -416,27 +578,42 @@ var config = {
 		"bottom_ms": {
 			"text": "The Penrose Collection includes all of the books and materials belonging to the University Libraries. In honor of the family that funded El Pomar Foundation, and which, in turn, provided the funds not only to build DU’s former library but to make major acquisitions of important resources, we have named the collection for Spencer and Julie Penrose, the library’s forty-year namesake."
 		},
-		// "bottom_lgs_182": {
-		// 	"text": ""
-		// },
-		// "bottom_lgs_184": {
-		// 	"text": ""
-		// },
-		// "bottom_sgs_189": {
-		// 	"text": ""
-		// },
-		// "bottom_sgs_190": {
-		// 	"text": ""
-		// },
-		// "bottom_sgs_191": {
-		// 	"text": ""
-		// },
-		// "bottom_sgs_108": {
-		// 	"text": ""
-		// },
-		// "bottom_sgs_168": {
-		// 	"text": ""
-		// },
+		"bottom_lgs_182": {
+			"text": "Large Group Study 182"
+		},
+		"bottom_lgs_184": {
+			"text": "Large Group Study 184"
+		},
+		"bottom_sgs_189": {
+			"text": "Small Group Study 189"
+		},
+		"bottom_sgs_190": {
+			"text": "Myhren Study Room"
+		},
+		"bottom_sgs_191": {
+			"text": "Small Group Study 191"
+		},
+		"bottom_sgs_108A": {
+			"text": "Small Group Study 108A"
+		},
+		"bottom_sgs_108B": {
+			"text": "Small Group Study 108B"
+		},
+		"bottom_sgs_108C": {
+			"text": "Small Group Study 108C"
+		},
+		"bottom_sgs_108D": {
+			"text": "Small Group Study 108D"
+		},
+		"bottom_sgs_108E": {
+			"text": "Small Group Study 108E"
+		},
+		"bottom_sgs_108F": {
+			"text": "Small Group Study 108F"
+		},
+		"bottom_sgs_168": {
+			"text": "Small Group Study 168"
+		},
 		"bottom_fgs": {
 			"text": "In response to requests from graduate students, the Anderson Academic Commons has a Family Study Room where students may bring their children while they use the library, and the kids are comfortable with toys and kidsized furniture while Mom or Dad studies. "
 		},
