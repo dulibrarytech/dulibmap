@@ -89,6 +89,7 @@ var addBaseImages = function() {
 		base.setAttribute("id", key + "-base");
 		base.setAttribute("class", "map-base");
 		base.setAttribute("src", "./assets/img/map/base/" + config.map_base[key]);
+		base.setAttribute("usemap", key + "-clickmap");
 		floor.appendChild(base);
 	}
 }
@@ -208,10 +209,23 @@ var addStaticAreas = function(floor) {
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[floor + "_static"];
 
-	console.log("TEST static areas found for " + floor + ":", areas);
+	for(let key in areas) {
+		if(areas[key]) {
+			//id = 
+			area = document.createElement("AREA");
+			area.setAttribute("id", key + "-area");
+			area.setAttribute("shape", "poly");
+			area.setAttribute("onclick", "onSelectRoom(this.id, true)");
+			area.setAttribute("coords", config.room_clickmaps[floor + "_static"][key]);
+			// area.setAttribute("title", "title");
+			clickMap.appendChild(area);
+		}
+	}
+
+	addHoverDisplays();
 }
 
-var onSelectRoom = function(areaID) {
+var onSelectRoom = function(areaID, static=false) {
 	var roomID = areaID.replace("-area", ""),
 		overlayID = roomID + "-overlay",
 		overlay = document.getElementById(overlayID),
@@ -221,7 +235,7 @@ var onSelectRoom = function(areaID) {
 		console.log("No action has been set for this room");
 	}
 	// Make sure the room slide is visible.  If not, do not execue the action
-	else if(overlay) {
+	else if(overlay || static) {
 		action = config.room_action[roomID].type;
 		if(action == "internal") {
 			// Load stored html (for this room) in a modal dialog?
@@ -236,7 +250,6 @@ var onSelectRoom = function(areaID) {
 var addHoverDisplays = function() {
 	var container = document.getElementById("map-container");
 	var areaElement;
-
 	for(var key in config.hover_displays) {
 		areaElement = document.getElementById(key + "-area");
 		if(areaElement) {

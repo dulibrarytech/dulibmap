@@ -691,13 +691,13 @@ var config = {
 			"text": "The Special Events Room can seat 200 people for academic events and presentations by students and faculty. When not in use for an event, the space is set with tables and chairs as an open study area. "
 		},
 		"main_cafe": {
-			"text": "The Front Porch Café, made possible by the generosity of Doug and Mary Scrivner, offers breakfast, lunch and dinner, seating 70 inside and 50 on the porch, featuring the Shopneck Hearth, rocking chairs, and a display of current periodicals and newspapers."
+			"text": "The Front Porch Cafe, made possible by the generosity of Doug and Mary Scrivner, offers breakfast, lunch and dinner, seating 70 inside and 50 on the porch, featuring the Shopneck Hearth, rocking chairs, and a display of current periodicals and newspapers."
 		},
 		// "main_lc": {
 		// 	"text": ""
 		// },
 		"main_resdesk": {
-			"text": "Click to ask a research questions"
+			"text": "Click to ask a research question"
 		},
 		"main_sec": {
 			"text": "The Science and Engineering Center is a collaborative space staffed by undergraduate and graduate learning assistants (LAs) trained to assist students with first and second year biology, chemistry, physics, and engineering lecture and laboratory courses."
@@ -759,6 +759,9 @@ var config = {
 		},
 		"bottom_vcs": {
 			"text": "The Video Creation Studio is a professional recording studio that can be used by DU faculty and staff with very little video production experience."
+		},
+		"bottom_stacks": {
+			"text": "The Penrose Collection includes all of the books and materials belonging to the University Libraries. In honor of the family that funded El Pomar Foundation, and which, in turn, provided the funds not only to build DU’s former library but to make major acquisitions of important resources, we have named the collection for Spencer and Julie Penrose, the library\’s forty-year namesake"
 		}
 	},
 
