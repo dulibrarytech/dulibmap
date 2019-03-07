@@ -16,9 +16,11 @@ var config = {
 		"bottom-floor": "Bottom Floor"
 	},
 
+	// Map overlays
 	"maps": {
-
+		// Floor
 		"top-floor" : {
+			// Room groups (Activated by checkbox)
 			"Study Rooms" : {
 				// "top_sgs"			: "Small Group Study",
 				"top_sgs_310"		: "Small Group Study 310",
@@ -127,6 +129,7 @@ var config = {
 		}
 	},
 
+	// Define clickable areas (html clickmaps)
 	"room_clickmaps" : {
 
 		"top-floor": {
@@ -230,9 +233,57 @@ var config = {
 				"355,415,425,400,455,425,450,510,370,510"
 			]
 		},
-		"main-floor": {
+		"top-floor_static" : {
 
 		},
+
+		"main-floor": {
+			"main_dmc": [
+				"505,536,551,484,588,509,539,555"
+			],
+			"main_rc": [
+				"586,419,646,419,592,505,553,479"
+			],
+			"main_uts": [
+				"633,228,713,228,717,362,672,362,672,325,608,325,616,260"
+			],
+			"main_hr": [
+				"639,44,752,42,752,110,638,110"
+			],
+			"main_mc": [
+				"471,146,471,85,502,85,502,44,558,44,560,146"
+			],
+			"main_lc": [
+				"471,156,558,156,558,260,471,260"
+			],
+			"main_wc": [
+				"429,137,467,137,463,257,378,239,378,170,430,170"
+			],
+			"main_cc": [
+				"181,42,296,44,298,110,181,110"
+			],
+			"main_er": [
+				"114,312,292,311,292,484,113,484"
+			],
+			"main_sec": [
+				"114,42,174,42,176,112,302,112,302,86,374,86,372,220,114,214"
+			]
+		},
+		"main-floor_static" : {
+			"main_lenddesk": [
+				"465,565,507,587,492,623,492,661,457,661,448,609"
+			],
+			"main_resdesk": [
+				"556,420,569,429,553,453,543,447"
+			],
+			"main_complab": [
+				"586,122,802,122,802,200,586,200"
+			],
+			"main_cafe": [
+				"128,681,189,681,189,746,128,746"
+			]
+		},
+
 		"bottom-floor": {
 			"bottom_gfeuc": [
 				"347,46,550,46,550,172,347,172"
@@ -290,6 +341,11 @@ var config = {
 			],
 			"bottom_vcs": [
 				"645,254,717,254,717,345,645,345"
+			]
+		},
+		"bottom-floor_static" : {
+			"bottom_stacks": [
+				"573,511,670,511,670,605,573,605"
 			]
 		}
 	},
@@ -384,6 +440,47 @@ var config = {
 			"value": "http://otl.du.edu"
 		},
 		"top_cfwlc": {
+			"type": "external",
+			"value": "http://www.du.edu/cwlc"
+		},
+
+		"main_lenddesk": {
+			"type": "external",
+			"value": "https://library.du.edu/services/borrowing-lending/"
+		},
+		"main_resdesk": {
+			"type": "external",
+			"value": "http://libraryhelp.du.edu/"
+		},
+		"main_complab": {
+			"type": "external",
+			"value": "https://library.du.edu/services/computers-tech-availability.html"
+		},
+		"main_dmc": {
+			"type": "external",
+			"value": "https://www.du.edu/it/services/digital-media-services"
+		},
+		"main_rc": {
+			"type": "external",
+			"value": "https://library.du.edu/research/research-center.html"
+		},
+		"main_uts": {
+			"type": "external",
+			"value": "https://www.du.edu/it/"
+		},
+		"main_mc": {
+			"type": "external",
+			"value": "https://www.du.edu/nsm/departments/mathematics/coursesandadvising/mathcenter.html"
+		},
+		"main_wc": {
+			"type": "external",
+			"value": "https://www.du.edu/writing/writingcenter/"
+		},
+		"main_sec": {
+			"type": "external",
+			"value": "http://portfolio.du.edu/sec"
+		},
+		"main_lc": {
 			"type": "external",
 			"value": "http://www.du.edu/cwlc"
 		},
@@ -561,6 +658,49 @@ var config = {
 		},
 		"top_loft": {
 			"text": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
+		},
+
+		"main_lenddesk": {
+			"text": "The Jordon and Essie Perlmutter and Family Lending Services Desk provides help locating and checking out books and materials."
+		},
+		"main_dmc": {
+			"text": "The Digital Media Center is a brand-new service to DU, serving as a digital media editing facility with equipment, software and staff support."
+		},
+		"main_rc": {
+			"text": "The Archibald M. and Helen M. Crossley Research Center provides expert research help to students, faculty, and staff at any stage of the research process."
+		},
+		"main_uts": {
+			"text": "The University Technology Services Help Center is staffed by specialized technicians who diagnose and repair hardware and software issues for students, faculty and staff. "
+		},
+		"main_complab": {
+			"text": "The Computer-Equipped Seating area has individual workspaces with more than 80 PCs and more than 30 Macs available for student/patron use."
+		},
+		"main_hr": {
+			"text": "The Virginia Herold Research Instruction Room serves thousands of students each year with classes and workshops in navigating the abundant resources of the University Library, including nearly 1,000 databases. "
+		},
+		"main_mc": {
+			"text": "The Math Center provides drop-in assistance for Algebra, Trigonometry, Business Calculus, and Calculus I-III classes, including homework review and help preparing for exams."
+		},
+		"main_wc": {
+			"text": "The Shopneck Family Writing Center offers one-on-one consultations, providing writers comprehensive and collaborative advice on writing."
+		},
+		"main_cc": {
+			"text": "The Chan Classroom funded by the Boettcher Foundation is used by the Writing Program faculty to teach writing skills across all academic disciplines."
+		},
+		"main_er": {
+			"text": "The Special Events Room can seat 200 people for academic events and presentations by students and faculty. When not in use for an event, the space is set with tables and chairs as an open study area. "
+		},
+		"main_cafe": {
+			"text": "The Front Porch Café, made possible by the generosity of Doug and Mary Scrivner, offers breakfast, lunch and dinner, seating 70 inside and 50 on the porch, featuring the Shopneck Hearth, rocking chairs, and a display of current periodicals and newspapers."
+		},
+		// "main_lc": {
+		// 	"text": ""
+		// },
+		"main_resdesk": {
+			"text": "Click to ask a research questions"
+		},
+		"main_sec": {
+			"text": "The Science and Engineering Center is a collaborative space staffed by undergraduate and graduate learning assistants (LAs) trained to assist students with first and second year biology, chemistry, physics, and engineering lecture and laboratory courses."
 		},
 
 		"bottom_gfeuc": {

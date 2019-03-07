@@ -150,6 +150,7 @@ var onSelectFloor = function(floor) {
 	var container = document.getElementById("map-container");
 	removeClickMaps(container);
 	addClickMap(container, floorID);
+	addStaticAreas(floorID);
 }
 
 var onSelectGroup = function(selection, floor) {
@@ -200,6 +201,14 @@ var addAreaToClickMap = function(roomID, floor) {
 	}
 
 	addHoverDisplays();
+}
+
+var addStaticAreas = function(floor) {
+	let area,
+		clickMap = document.getElementById(floor + "-clickmap"),
+		areas = config.room_clickmaps[floor + "_static"];
+
+	console.log("TEST static areas found for " + floor + ":", areas);
 }
 
 var onSelectRoom = function(areaID) {
