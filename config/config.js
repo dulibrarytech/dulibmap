@@ -1,5 +1,7 @@
 var config = {
 
+	"mapSlideFileType": "png",
+
 	"legend_image": "Legend-H-wide.png",
 
 	"map_base": {
@@ -68,7 +70,8 @@ var config = {
 			},
 
 			"Accessible Services" : {
-				"top_accessible"		: "Accessible Services"
+				"top_access_restroom1"		: "Accessible Gender Neutral Restroom",
+				"top_access_elevator"		: "Elevators"
 			}
 		},
 
@@ -231,6 +234,12 @@ var config = {
 			],
 			"top_loft": [
 				"355,415,425,400,455,425,450,510,370,510"
+			],
+			"top_access_restroom1": [
+				"705,239,726,224,749,241,727,289"
+			],
+			"top_access_elevator": [
+				"362,698,385,720,363,768,339,720"
 			]
 		},
 		"top-floor_static" : {
@@ -658,6 +667,12 @@ var config = {
 		},
 		"top_loft": {
 			"text": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
+		},
+		"top_access_restroom1": {
+			"text": "Gender neutral restroom, no door opener, accessibility features"
+		},
+		"top_access_elevator": {
+			"text": "Elevator"
 		},
 
 		"main_lenddesk": {
