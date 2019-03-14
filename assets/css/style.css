@@ -8,6 +8,14 @@ hr {
 	border-width: 1px;
 }
 
+area {
+    cursor: initial;
+}
+
+.click-area:hover {
+    cursor: pointer;
+}
+
 #map {
     /* OU content width is 525px */
 }

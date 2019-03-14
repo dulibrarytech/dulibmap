@@ -164,7 +164,7 @@ var onSelectGroup = function(selection, floor) {
 	if(selection.checked) {
 		for(var key in rooms) {
 			id = key + "-overlay";
-			path = "./assets/img/map/slide/" + key + ".gif";
+			path = "./assets/img/map/slide/" + key + "." + config.mapSlideFileType;
 			overlay = document.createElement("IMG");
 			overlay.setAttribute("id", id);
 			overlay.setAttribute("class", "map-slide");
@@ -196,7 +196,11 @@ var addAreaToClickMap = function(roomID, floor) {
 			area.setAttribute("shape", "poly");
 			area.setAttribute("onclick", "onSelectRoom(this.id)");
 			area.setAttribute("coords", config.room_clickmaps[floor][roomID]);
-			// area.setAttribute("title", "title");
+
+			if(typeof config.room_action[roomID] != 'undefined') {
+				area.setAttribute("class", "click-area");
+			}
+
 			clickMap.appendChild(area);
 		}
 	}
