@@ -70,8 +70,8 @@ var config = {
 			},
 
 			"Accessible Services" : {
-				"top_access_restroom1"		: "Accessible Gender Neutral Restroom",
-				"top_access_elevator"		: "Elevators"
+				"top_access_restroom1_pin"		: "Accessible Gender Neutral Restroom",
+				"top_access_elevator_pin"		: "Elevators"
 			}
 		},
 

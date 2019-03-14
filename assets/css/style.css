@@ -20,6 +20,10 @@ area {
     /* OU content width is 525px */
 }
 
+.map-pin {
+    z-index: 10;
+}
+
 .content-col-3 {
     float: left;
     width: 22.999999%;

@@ -170,6 +170,12 @@ var onSelectGroup = function(selection, floor) {
 			overlay.setAttribute("class", "map-slide");
 			overlay.setAttribute("src", path);
 			overlay.setAttribute("usemap", floor + "-clickmap");
+
+			// Add map pin class if specified in the filename.  These will have elevated z-index applied
+			if(key.search("_pin") > -1) {
+				overlay.classList.add("map-pin");
+			}
+
 			map.appendChild(overlay);
 			addAreaToClickMap(key, floor);
 		}
