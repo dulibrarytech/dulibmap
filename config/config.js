@@ -1,6 +1,6 @@
 var config = {
 
-	"mapSlideFileType": "png",
+	"mapSlideFileType": "gif",
 
 	"legend_image": "Legend-H-wide.png",
 
@@ -10,7 +10,7 @@ var config = {
 		"bottom-floor": "bottom_base_900.png"
 	},
 
-	"default_map": "top-floor",
+	"default_map": "main-floor",
 
 	"map_labels": {
 		"top-floor": "Top Floor",

@@ -57,6 +57,7 @@ var addFloors = function(container) {
 		if(key == config.default_map) {
 			floor.style.display = "block";
 			addClickMap(container, key);
+			addStaticAreas(key);
 		}
 		else {
 			floor.style.display = "none";
@@ -202,11 +203,9 @@ var addAreaToClickMap = function(roomID, floor) {
 			area.setAttribute("shape", "poly");
 			area.setAttribute("onclick", "onSelectRoom(this.id)");
 			area.setAttribute("coords", config.room_clickmaps[floor][roomID]);
-
 			if(typeof config.room_action[roomID] != 'undefined') {
 				area.setAttribute("class", "click-area");
 			}
-
 			clickMap.appendChild(area);
 		}
 	}
@@ -227,7 +226,9 @@ var addStaticAreas = function(floor) {
 			area.setAttribute("shape", "poly");
 			area.setAttribute("onclick", "onSelectRoom(this.id, true)");
 			area.setAttribute("coords", config.room_clickmaps[floor + "_static"][key]);
-			// area.setAttribute("title", "title");
+			if(typeof config.room_action[key] != 'undefined') {
+				area.setAttribute("class", "click-area");
+			}
 			clickMap.appendChild(area);
 		}
 	}
