@@ -67,6 +67,8 @@ var addFloors = function(container) {
 }
 
 var addClickMap = function(mapContainer, floor) {
+		console.log("TEST Adding click map for floor ", floor);
+		console.log("TEST Map container is", mapContainer);
 	var map = document.createElement("MAP");
 	map.setAttribute("id", floor + "-clickmap");
 	map.setAttribute("name", floor + "-clickmap");
@@ -105,8 +107,8 @@ var addSlideSelectMenu = function(floor) {
 		menu.setAttribute("class", "select-menu");
 		document.getElementById(map).appendChild(menu);
 		select_form = document.createElement("FORM");
-		select_form.setAttribute("id", map + "-select");
-		select_form.setAttribute("class", "floor-select");
+		select_form.setAttribute("id", map + "-group-select");
+		select_form.setAttribute("class", "floor-group-select");
 		select_form.innerHTML += ("<h3>Room Select</h3>");
 
 		for(var key in config.maps[map]) {
@@ -153,9 +155,11 @@ var onSelectFloor = function(floor) {
 	removeClickMaps(container);
 	addClickMap(container, floorID);
 	addStaticAreas(floorID);
+	updateFloorSelectedGroups(floorID);
 }
 
 var onSelectGroup = function(selection, floor) {
+		console.log("TEST select group ", selection, "for floor ", floor);
 	var slides = [], map, rooms, overlay, path,
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
@@ -190,8 +194,33 @@ var onSelectGroup = function(selection, floor) {
 	}
 }
 
-var addAreaToClickMap = function(roomID, floor) {
+var updateFloorSelectedGroups = function(floor) {
 
+	// Get the group for the current floor
+	var floorGroup = document.getElementById(floor + "-group-select");
+
+	// Iterate room groups in the list for this floor
+	for(let i = 0; i < floorGroup.children.length; i++) {
+
+	  // Get the children of each room group	
+	  if(floorGroup.children[i].tagName == "LABEL") {
+
+	  	// Iterate the children of each room group item
+	  	let lineItems = floorGroup.children[i].children;
+	  	for(let j = 0; j < lineItems.length; j++) {
+
+	  		// Check for selected attribute on the input element, select the slides in that group
+	  		if(lineItems[j].tagName == "INPUT") {
+	  			if(lineItems[j].checked) {
+	  				onSelectGroup(lineItems[j], floor);
+	  			}
+	  		}
+	  	}
+	  }
+	}
+}
+
+var addAreaToClickMap = function(roomID, floor) {
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[floor][roomID];
