@@ -97,6 +97,12 @@ var config = {
 			"Classrooms" : {
 				"main_cc"			: "Chan Classroom",
 				"main_hr"			: "Herold Room"
+			},
+
+			"Accessible Services" : {
+				"main_access_restroom1_pin"		: "Accessible Gender Neutral Restroom",
+				"main_access_elevator_pin"		: "Elevators",
+				"main_access_doors_pin"			: "Automatic Door Opener"
 			}
 		},
 
@@ -128,6 +134,11 @@ var config = {
 			"Centers and Services" : {
 				"bottom_sc"			: "Special Collections",
 				"bottom_vcs"		: "Video Creation Studio"
+			},
+
+			"Accessible Services" : {
+				"bottom_access_restroom1_pin"		: "Accessible Gender Neutral Restroom",
+				"bottom_access_elevator_pin"		: "Elevators"
 			}
 		}
 	},
@@ -235,10 +246,10 @@ var config = {
 			"top_loft": [
 				"355,415,425,400,455,425,450,510,370,510"
 			],
-			"top_access_restroom1": [
+			"top_access_restroom1_pin": [
 				"705,239,726,224,749,241,727,289"
 			],
-			"top_access_elevator": [
+			"top_access_elevator_pin": [
 				"362,698,385,720,363,768,339,720"
 			]
 		},
@@ -276,6 +287,15 @@ var config = {
 			],
 			"main_sec": [
 				"114,42,174,42,176,112,302,112,302,86,374,86,372,220,114,214"
+			],
+			"main_access_restroom1_pin": [
+				"766,208,788,235,766,269,743,232"
+			],
+			"main_access_elevator_pin": [
+				"390,667,412,692,390,728,368,693"
+			],
+			"main_access_doors_pin": [
+				"442,721,465,746,443,783,420,747"
 			]
 		},
 		"main-floor_static" : {
@@ -350,6 +370,12 @@ var config = {
 			],
 			"bottom_vcs": [
 				"645,254,717,254,717,345,645,345"
+			],
+			"bottom_access_restroom1_pin": [
+				"766,251,788,275,766,314,743,276"
+			],
+			"bottom_access_elevator_pin": [
+				"359,763,381,788,359,827,336,788"
 			]
 		},
 		"bottom-floor_static" : {
@@ -550,6 +576,10 @@ var config = {
 			"type": "external",
 			"value": "https://iris.cair.du.edu/room-reservation/library/"
 		},
+		"bottom_stacks": {
+			"type": "external",
+			"value": "https://library.du.edu/media/documents/aac-map.pdf"
+		}
 	},
 
 	"slide_colors": {
@@ -668,10 +698,10 @@ var config = {
 		"top_loft": {
 			"text": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
 		},
-		"top_access_restroom1": {
+		"top_access_restroom1_pin": {
 			"text": "Gender neutral restroom, no door opener, accessibility features"
 		},
-		"top_access_elevator": {
+		"top_access_elevator_pin": {
 			"text": "Elevator"
 		},
 
@@ -716,6 +746,15 @@ var config = {
 		},
 		"main_sec": {
 			"text": "The Science and Engineering Center is a collaborative space staffed by undergraduate and graduate learning assistants (LAs) trained to assist students with first and second year biology, chemistry, physics, and engineering lecture and laboratory courses."
+		},
+		"main_access_restroom1_pin": {
+			"text": "Gender neutral restroom, no door opener, accessibility features"
+		},
+		"main_access_elevator_pin": {
+			"text": "Elevator"
+		},
+		"main_access_doors_pin": {
+			"text": "Automatic doors"
 		},
 
 		"bottom_gfeuc": {
@@ -777,7 +816,13 @@ var config = {
 		},
 		"bottom_stacks": {
 			"text": "The Penrose Collection includes all of the books and materials belonging to the University Libraries. In honor of the family that funded El Pomar Foundation, and which, in turn, provided the funds not only to build DU’s former library but to make major acquisitions of important resources, we have named the collection for Spencer and Julie Penrose, the library\’s forty-year namesake"
-		}
+		},
+		"bottom_access_restroom1_pin": {
+			"text": "Gender neutral restroom, no door opener, accessibility features"
+		},
+		"bottom_access_elevator_pin": {
+			"text": "Elevator"
+		},
 	},
 
 	"labels": {
