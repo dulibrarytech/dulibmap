@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<style>
+<!-- 	<style>
 		@media only screen and (min-device-width : 1600px) {
 			#map {
 				width: 70%;
 			}
 		}
-	</style>
+	</style> -->
 
 	<head>
 		<title>Anderson Academic Commons Floor Map</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=2.3">
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id="du-header">
+		<div class="row">
+			<div id="du-header" class="col-md-12">
 
 			</div>
-
-			<div id="sidebar-nav">
-
+		</div>
+		<div class="row">
+			<div id="sidebar-nav" class="col-md-3">
+				<div id="map-select-menu"></div>
+				<div id="item-select-menu"></div>
 			</div>
 
-			<div id="map">
-				<div id="dulibmap"></div>
+			<div id="content" class="col-md-9">
+				<div id="map"></div>
+				<div id="map-legend"></div>
 			</div>
+		</div>
 		</div>
 	</body>
 	<footer>

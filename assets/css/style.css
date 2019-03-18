@@ -26,8 +26,7 @@ area {
 
 #sidebar-nav {
     width: 24%;
-    height: 100%;
-    float: left;
+/*    float: left;*/
     background-color: #e5e3e1;
 }
 
@@ -35,10 +34,10 @@ area {
     cursor: pointer;
 }
 
-#map {
+#content {
     /* OU content width is 525px */
     width: 74%;
-    float: right;
+/*    float: right;*/
     background-color: white;
     padding: 57px 0 57px 30px;
 }
@@ -47,7 +46,13 @@ area {
     z-index: 10;
 }
 
-.content-col-3 {
+.clickmap {
+    position: absolute;
+    top: 0;
+    left:;
+}
+
+/*.content-col-3 {
     float: left;
     width: 22.999999%;
     -ms-flex: 0 0 25%;
@@ -67,19 +72,18 @@ area {
 
 .content-col-9 {
     float: left;
-   /* width: 72.999999%;*/
     width: 68.999999%;
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
     padding: 0.5em;
-}
+}*/
 
 /* The container */
 .container {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 35px !important;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 18px;
@@ -150,16 +154,19 @@ form.floor-select h3 {
 div.base-map {
     display: block;
     position: relative;
-    bottom: 180px;
+    /*width: 100%;*/
     width: 100%;
+    height: 100%;
 }
 
 div#map-container {
-    position: relative;
-    height: 1200px;
+    /*position: relative;
+    height: 1200px;*/
 /*    top: 310px;
     left: 0;*/
    /* width: 68%;*/
+    height: 90%;
+    width: 90%;
 }
 
 div#selected-list {
@@ -170,16 +177,19 @@ div#selected-list {
 }
 
 div.select-menu {
-    position: relative;
+    /*position: relative;*/
 /*    left: 968px; 
     width: 360px;*/
-    left: -471px;
-    top: 12px;
-    width: 360px;
+   /* left: -471px;*/
+/*    top: 12px;
+    width: 360px;*/
+    margin: 0 auto;
+    width: 76%;
 }
 
 div.select-menu > form {
 	/*width: 855px;*/
+    width: 100%;
 }
 
 h3 {
@@ -194,21 +204,35 @@ div.select-menu > form input[type*="checkbox"] {
     margin: 20px 10px 0 0;
 }
 
-img.map-base,
+img.map-base {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 img.map-slide {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 900px;
+/*	width: 900px;*/
+    max-width: 100%;
+    max-height: 100%;
 }
 
 div.floor-select {
-    width: 400px;
-    position: relative;
+/*    width: 400px;
+    position: relative;*/
 /*    left: 927px;
     bottom: 276px;*/
-    left: -513px;
-    bottom: 273px;
+/*    left: -513px;
+    bottom: 273px;*/
+    margin: 0 auto;
+    width: 76%;
+}
+
+div.floor-select ul {
+    width: 100%;
+    padding-left: 0;
 }
 
 div.floor-select ul li {
@@ -231,21 +255,12 @@ div.floor-select ul li:hover {
 }
 
 div#legend {
-    width: 900px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-div#legend h3,
-div#legend img {
-	margin-left: 6px;
+   /* position: relative;*/
 }
 
 div#legend > img {
-	position: relative;
-    top: 10px;
-    left: -10px;
+	max-height: 100%;
+    max-width: 100%;
 }
 
 .hoverdisplay {

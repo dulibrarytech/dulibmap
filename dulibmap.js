@@ -1,7 +1,7 @@
 
 
 var init = function() {
-	var main = document.getElementById("dulibmap").innerHTML = "<div id='map-container'></div>";
+	var main = document.getElementById("map").innerHTML = "<div id='map-container'></div>";
 	var container = document.getElementById("map-container");
 	var selected_list = [], floor;
 
@@ -9,20 +9,18 @@ var init = function() {
 	addFloorSelectMenu(container);
 	addFloors(container);
 	addBaseImages();
-	addSlideSelectMenu();
+	addGroupSelectMenus(config.default_map);
 }
 
 var addLegend = function(mapContainer) {
 	var legend = document.createElement("DIV"),
-		legendHeader = document.createElement("H3"),
 		legendImage = document.createElement("IMG");
 
 	legend.setAttribute("id", "legend");
-	legendHeader.innerHTML = "Legend";
 	legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)
-	legend.appendChild(legendHeader);
 	legend.appendChild(legendImage);
-	mapContainer.appendChild(legend);
+
+	document.getElementById("map-legend").appendChild(legend);
 }
 
 var addFloorSelectMenu = function(mapContainer) {
@@ -46,7 +44,7 @@ var addFloorSelectMenu = function(mapContainer) {
 
 	menu.setAttribute("class", "floor-select");
 	menu.appendChild(list);
-	mapContainer.appendChild(menu);
+	document.getElementById("map-select-menu").appendChild(menu);
 }
 
 var addFloors = function(container) {
@@ -96,15 +94,17 @@ var addBaseImages = function() {
 }
 
 // Add each floor here, hide all but main on default
-var addSlideSelectMenu = function(floor) {
-
+var addGroupSelectMenus = function(floor="") {
 	var menu, select_form, slide, img, label, checkbox;
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
 		menu.setAttribute("class", "select-menu");
+		menu.setAttribute("id", map + "-group-select");
+		if(map != floor) {
+			menu.style.display = "none";
+		}
 		document.getElementById(map).appendChild(menu);
 		select_form = document.createElement("FORM");
-		select_form.setAttribute("id", map + "-group-select");
 		select_form.setAttribute("class", "floor-group-select");
 		select_form.innerHTML += ("<h3>Show Rooms</h3>");
 
@@ -125,6 +125,7 @@ var addSlideSelectMenu = function(floor) {
 			select_form.appendChild(label);
 		}
 		menu.appendChild(select_form);
+		document.getElementById("item-select-menu").appendChild(menu);
 	}
 }
 
@@ -134,13 +135,22 @@ var onSelectFloor = function(floor) {
 	for(var i=0; i<floors.length; i++) {
 		floors[i].classList.remove("active");
 	}
-	floor.classList.add("active");
+	floor.classList.add("active"),
+	floorID = floor.id.replace("-select", "");
 
 	// Hide all maps
 	var maps = document.getElementsByClassName("base-map");
 	for(i=0; i<maps.length; i++) {
 		maps[i].style.display = "none";
 	}
+
+	// Hide all group selects, show the menu for this floor
+	var groups = document.getElementsByClassName("select-menu");
+	for(i=0; i<groups.length; i++) {
+		groups[i].style.display = "none";
+	}
+	document.getElementById(floorID + "-group-select").style.display = "block";
+		console.log(document.getElementById(floorID + "-group-select"));
 
 	// Set the selected map as visible
 	var floorID = floor.getAttribute("id").replace("-select", ""),
@@ -185,8 +195,10 @@ var onSelectGroup = function(selection, floor) {
 		for(var key in rooms) {
 			overlay = document.getElementById(key + "-overlay");
 			area = document.getElementById(key + "-area");
-			map.removeChild(overlay);
-			clickmap.removeChild(area);
+			if(area) {
+				map.removeChild(overlay);
+				clickmap.removeChild(area);
+			}
 		}	
 	}
 }
@@ -221,7 +233,6 @@ var addAreaToClickMap = function(roomID, floor) {
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[floor][roomID];
-
 	for(let area in areas) {
 		if(areas[area]) {
 			area = document.createElement("AREA");
@@ -246,7 +257,6 @@ var addStaticAreas = function(floor) {
 
 	for(let key in areas) {
 		if(areas[key]) {
-			//id = 
 			area = document.createElement("AREA");
 			area.setAttribute("id", key + "-area");
 			area.setAttribute("shape", "poly");
