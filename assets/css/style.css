@@ -1,6 +1,8 @@
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 18px;
+    margin: 0;
+    background-color: #e5e3e1;
 }
 
 hr {
@@ -12,12 +14,33 @@ area {
     cursor: initial;
 }
 
+#wrapper {
+
+}
+
+#du-header {
+    height: 50px;
+    width: 100%;
+    background-color: #8b2332;
+}
+
+#sidebar-nav {
+    width: 24%;
+    height: 100%;
+    float: left;
+    background-color: #e5e3e1;
+}
+
 .click-area:hover {
     cursor: pointer;
 }
 
 #map {
     /* OU content width is 525px */
+    width: 74%;
+    float: right;
+    background-color: white;
+    padding: 57px 0 57px 30px;
 }
 
 .map-pin {
@@ -82,7 +105,7 @@ area {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background-color: white;
 }
 
 /* On mouse-over, add a grey background color */
@@ -148,10 +171,10 @@ div#selected-list {
 
 div.select-menu {
     position: relative;
-    /* top: 0px; */
-    /* bottom: 240px; */
-    /*float: right;*/
-    left: 968px; 
+/*    left: 968px; 
+    width: 360px;*/
+    left: -471px;
+    top: 12px;
     width: 360px;
 }
 
@@ -164,6 +187,7 @@ h3 {
 	padding: 4px 11px;
 	text-transform: uppercase;
 	color: white;
+    font-size: 1.17em !important;
 }
 
 div.select-menu > form input[type*="checkbox"] {
@@ -181,14 +205,16 @@ img.map-slide {
 div.floor-select {
     width: 400px;
     position: relative;
-    left: 927px;
-    bottom: 276px;
+/*    left: 927px;
+    bottom: 276px;*/
+    left: -513px;
+    bottom: 273px;
 }
 
 div.floor-select ul li {
 	list-style: none;
     padding: 16px 22px;
-    background: #e5e3e1;
+    background: white;
     margin-bottom: 10px;
     font-weight: bold;
     color: #181818;

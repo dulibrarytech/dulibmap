@@ -67,8 +67,6 @@ var addFloors = function(container) {
 }
 
 var addClickMap = function(mapContainer, floor) {
-		console.log("TEST Adding click map for floor ", floor);
-		console.log("TEST Map container is", mapContainer);
 	var map = document.createElement("MAP");
 	map.setAttribute("id", floor + "-clickmap");
 	map.setAttribute("name", floor + "-clickmap");
@@ -103,13 +101,12 @@ var addSlideSelectMenu = function(floor) {
 	var menu, select_form, slide, img, label, checkbox;
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
-		//mapID = map.replace("_", "-");
 		menu.setAttribute("class", "select-menu");
 		document.getElementById(map).appendChild(menu);
 		select_form = document.createElement("FORM");
 		select_form.setAttribute("id", map + "-group-select");
 		select_form.setAttribute("class", "floor-group-select");
-		select_form.innerHTML += ("<h3>Room Select</h3>");
+		select_form.innerHTML += ("<h3>Show Rooms</h3>");
 
 		for(var key in config.maps[map]) {
 			label = document.createElement("LABEL");
@@ -126,7 +123,6 @@ var addSlideSelectMenu = function(floor) {
 			label.appendChild(slide);
 			label.appendChild(checkbox);
 			select_form.appendChild(label);
-			//select_form.innerHTML += (key + "<br />");
 		}
 		menu.appendChild(select_form);
 	}
@@ -159,8 +155,7 @@ var onSelectFloor = function(floor) {
 }
 
 var onSelectGroup = function(selection, floor) {
-		console.log("TEST select group ", selection, "for floor ", floor);
-	var slides = [], map, rooms, overlay, path,
+	var slides = [], map, rooms, overlay, path, area,
 	    group = selection.getAttribute("value"),
 	    groupName = selection.getAttribute("name"),
 	    map = document.getElementById(floor),
@@ -186,10 +181,12 @@ var onSelectGroup = function(selection, floor) {
 		}
 	}
 	else {
+		var clickmap = document.getElementById(floor + "-clickmap");
 		for(var key in rooms) {
-			id = key + "-overlay";
-			overlay = document.getElementById(id);
+			overlay = document.getElementById(key + "-overlay");
+			area = document.getElementById(key + "-area");
 			map.removeChild(overlay);
+			clickmap.removeChild(area);
 		}	
 	}
 }
