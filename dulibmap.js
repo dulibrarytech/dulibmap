@@ -14,7 +14,15 @@ var init = function() {
 
 var addLegend = function(mapContainer) {
 	var legend = document.createElement("DIV"),
-		legendImage = document.createElement("IMG");
+		legendImage = document.createElement("IMG"),
+		legendHeader;
+
+	// If the legend has been set in the configuration
+	if(1) {
+		legendHeader = document.createElement("H3");
+		legendHeader.innerHTML = "Legend";
+		legend.appendChild(legendHeader);
+	}
 
 	legend.setAttribute("id", "legend");
 	legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)

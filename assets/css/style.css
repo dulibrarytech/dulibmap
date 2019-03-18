@@ -2,7 +2,7 @@ body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 18px;
     margin: 0;
-    background-color: #e5e3e1;
+    background-color: #e5e3e1 !important;
 }
 
 hr {
@@ -14,32 +14,38 @@ area {
     cursor: initial;
 }
 
-#wrapper {
-
-}
-
-#du-header {
+div#du-header {
     height: 50px;
     width: 100%;
     background-color: #8b2332;
 }
 
-#sidebar-nav {
+div#sidebar-nav {
     width: 24%;
-/*    float: left;*/
-    background-color: #e5e3e1;
+    background-color: white;
 }
 
 .click-area:hover {
     cursor: pointer;
 }
 
-#content {
-    /* OU content width is 525px */
+div#content {
     width: 74%;
-/*    float: right;*/
-    background-color: white;
-    padding: 57px 0 57px 30px;
+    background-color: #e5e3e1;
+    padding: 100px 0 100px 50px;
+}
+
+div#sidebar-nav {
+    padding-top: 100px;
+}
+
+div#item-select-menu {
+    position:relative;
+    top: 75px;
+}
+
+form.floor-group-select > h3 {
+    margin-bottom: 30px !important;
 }
 
 .map-pin {
@@ -52,48 +58,19 @@ area {
     left:;
 }
 
-/*.content-col-3 {
-    float: left;
-    width: 22.999999%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding: 0.5em;
-}
-
-.content-col-6 {
-    float: left;
-    width: 49.999999%;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 52%;
-    max-width: 52%;
-    padding: 0.5em;
-}
-
-.content-col-9 {
-    float: left;
-    width: 68.999999%;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding: 0.5em;
-}*/
-
-/* The container */
 .container {
     display: block;
     position: relative;
     padding-left: 35px !important;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1em;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .container input {
     position: absolute;
     opacity: 0;
@@ -109,7 +86,10 @@ area {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: #e5e3e1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
 }
 
 /* On mouse-over, add a grey background color */
@@ -154,19 +134,22 @@ form.floor-select h3 {
 div.base-map {
     display: block;
     position: relative;
-    /*width: 100%;*/
     width: 100%;
     height: 100%;
 }
 
+div#map {
+    margin-bottom: 70px;
+}
+
 div#map-container {
-    /*position: relative;
-    height: 1200px;*/
-/*    top: 310px;
-    left: 0;*/
-   /* width: 68%;*/
     height: 90%;
     width: 90%;
+}
+
+div#map-legend {
+    width: 91%;
+    margin- top: 80px;
 }
 
 div#selected-list {
@@ -177,18 +160,11 @@ div#selected-list {
 }
 
 div.select-menu {
-    /*position: relative;*/
-/*    left: 968px; 
-    width: 360px;*/
-   /* left: -471px;*/
-/*    top: 12px;
-    width: 360px;*/
     margin: 0 auto;
     width: 76%;
 }
 
 div.select-menu > form {
-	/*width: 855px;*/
     width: 100%;
 }
 
@@ -208,24 +184,19 @@ img.map-base {
     position: relative;
     top: 0;
     left: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 img.map-slide {
 	position: absolute;
 	top: 0;
 	left: 0;
-/*	width: 900px;*/
     max-width: 100%;
     max-height: 100%;
 }
 
 div.floor-select {
-/*    width: 400px;
-    position: relative;*/
-/*    left: 927px;
-    bottom: 276px;*/
-/*    left: -513px;
-    bottom: 273px;*/
     margin: 0 auto;
     width: 76%;
 }
@@ -238,11 +209,10 @@ div.floor-select ul {
 div.floor-select ul li {
 	list-style: none;
     padding: 16px 22px;
-    background: white;
+    background: #e5e3e1;
     margin-bottom: 10px;
     font-weight: bold;
     color: #181818;
-/*    font-size: 15px;*/
 }
 
 div.floor-select ul li.active {
@@ -255,7 +225,8 @@ div.floor-select ul li:hover {
 }
 
 div#legend {
-   /* position: relative;*/
+    width: 77%;
+    max-width: 900px;
 }
 
 div#legend > img {
@@ -270,4 +241,28 @@ div#legend > img {
     background-color: #eef2c5;
     font-size: 12px;
     border-radius: 3px;
+}
+
+@media (min-width:320px) {
+    body {
+        font-size: 0.5rem;
+    }
+}
+@media (min-width:600px) {
+     
+}
+@media (min-width:768px) {
+    body {
+        font-size: 0.55rem;
+    }
+}
+@media (min-width:900px) {
+     body {
+        font-size: 0.68rem;
+    }
+}
+@media (min-width:1281px) {
+    body {
+        font-size: 1rem;
+    }
 }
