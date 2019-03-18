@@ -10,14 +10,36 @@ hr {
 	border-width: 1px;
 }
 
+h2 {
+/*    font-size: 2em;
+    color: #0bb3e4;*/
+}
+
 area {
     cursor: initial;
+}
+
+.row {
+    margin: 0;
 }
 
 div#du-header {
     height: 50px;
     width: 100%;
     background-color: #8b2332;
+}
+
+div.header-logo {
+  height: 40px;
+  width: 140px;
+  position: relative;
+  top: 5px;
+  left: -9px;
+}
+
+div.header-logo img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 div#sidebar-nav {
@@ -46,6 +68,10 @@ div#item-select-menu {
 
 form.floor-group-select > h3 {
     margin-bottom: 30px !important;
+}
+
+form.floor-group-select > label {
+    margin-left: 10px;
 }
 
 .map-pin {
@@ -139,7 +165,7 @@ div.base-map {
 }
 
 div#map {
-    margin-bottom: 70px;
+    margin: 50px 0 70px 0;
 }
 
 div#map-container {
