@@ -194,6 +194,7 @@ var onSelectGroup = function(selection, floor) {
 				overlay.classList.add("map-pin");
 			}
 
+				console.log("TEST adding overlay", overlay);
 			map.appendChild(overlay);
 			addAreaToClickMap(key, floor);
 		}
@@ -204,6 +205,7 @@ var onSelectGroup = function(selection, floor) {
 			overlay = document.getElementById(key + "-overlay");
 			area = document.getElementById(key + "-area");
 			if(area) {
+					console.log("TEST removing overlay", overlay);
 				map.removeChild(overlay);
 				clickmap.removeChild(area);
 			}
@@ -238,9 +240,12 @@ var updateFloorSelectedGroups = function(floor) {
 }
 
 var addAreaToClickMap = function(roomID, floor) {
+		console.log("TEST adding area to clickmap", roomID, floor);
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[floor][roomID];
+			console.log("TEST clickmap", clickMap);
+			console.log("TEST areas");
 	for(let area in areas) {
 		if(areas[area]) {
 			area = document.createElement("AREA");
@@ -251,6 +256,7 @@ var addAreaToClickMap = function(roomID, floor) {
 			if(typeof config.room_action[roomID] != 'undefined') {
 				area.setAttribute("class", "click-area");
 			}
+				console.log("Adding area", area);
 			clickMap.appendChild(area);
 		}
 	}
@@ -309,6 +315,7 @@ var addHoverDisplays = function() {
 		areaElement = document.getElementById(key + "-area");
 		if(areaElement) {
 			areaElement.setAttribute("title", config.hover_displays[key].text);
+				console.log("TEST added title to element", areaElement);
 		}
 	}
 }

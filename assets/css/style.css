@@ -81,7 +81,7 @@ form.floor-group-select > label {
 .clickmap {
     position: absolute;
     top: 0;
-    left:;
+    left: 0;
 }
 
 .container {
@@ -166,19 +166,16 @@ div.base-map {
 
 div#map {
     margin: 0;
-    height: 750px;
+   
 }
 
 div#map-container {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 div#map-legend {
-    width: 91%;
-    position: relative;
-    left: 30px;
-}
+    margin-top: 80px;
 }
 
 div#selected-list {
@@ -225,6 +222,10 @@ img.map-slide {
     max-height: 100%;
 }
 
+.responsive-img {
+
+}
+
 div.floor-select {
     margin: 0 auto;
     width: 76%;
@@ -254,8 +255,8 @@ div.floor-select ul li:hover {
 }
 
 div#legend {
-    width: 47%;
-    max-width: 650px;
+    width: 74%;
+    max-width: 800px;
 }
 
 div#legend > img {
