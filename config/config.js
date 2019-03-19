@@ -296,6 +296,9 @@ var config = {
 			],
 			"main_access_doors_pin": [
 				"442,721,465,746,443,783,420,747"
+			],
+			"main_nsr": [
+				"470,720,510,720,510,777,470,777"
 			]
 		},
 		"main-floor_static" : {
@@ -519,6 +522,10 @@ var config = {
 			"type": "external",
 			"value": "http://www.du.edu/cwlc"
 		},
+		"main_nsr": {
+			"type": "external",
+			"value": "https://iris.cair.du.edu/room-reservation/library/"
+		},
 
 		"bottom_sc": {
 			"type": "external",
@@ -738,9 +745,9 @@ var config = {
 		"main_cafe": {
 			"text": "The Front Porch Cafe, made possible by the generosity of Doug and Mary Scrivner, offers breakfast, lunch and dinner, seating 70 inside and 50 on the porch, featuring the Shopneck Hearth, rocking chairs, and a display of current periodicals and newspapers."
 		},
-		// "main_lc": {
-		// 	"text": ""
-		// },
+		"main_lc": {
+			"text": "Language Center"
+		},
 		"main_resdesk": {
 			"text": "Click to ask a research question"
 		},
@@ -755,6 +762,9 @@ var config = {
 		},
 		"main_access_doors_pin": {
 			"text": "Automatic doors"
+		},
+		"main_nsr": {
+			"text": "Small Group Study Room 212 - Nikki's Study Room"
 		},
 
 		"bottom_gfeuc": {
