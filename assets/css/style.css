@@ -54,7 +54,7 @@ div#sidebar-nav {
 div#content {
     width: 74%;
     background-color: #e5e3e1;
-    padding: 100px 0 100px 50px;
+    padding: 71px 0 100px 110px;
 }
 
 div#sidebar-nav {
@@ -165,7 +165,8 @@ div.base-map {
 }
 
 div#map {
-    margin: 50px 0 70px 0;
+    margin: 0;
+    height: 750px;
 }
 
 div#map-container {
@@ -175,7 +176,9 @@ div#map-container {
 
 div#map-legend {
     width: 91%;
-    margin- top: 80px;
+    position: relative;
+    left: 30px;
+}
 }
 
 div#selected-list {
@@ -234,7 +237,7 @@ div.floor-select ul {
 
 div.floor-select ul li {
 	list-style: none;
-    padding: 16px 22px;
+    padding: 10px 17px;
     background: #e5e3e1;
     margin-bottom: 10px;
     font-weight: bold;
@@ -251,8 +254,8 @@ div.floor-select ul li:hover {
 }
 
 div#legend {
-    width: 77%;
-    max-width: 900px;
+    width: 47%;
+    max-width: 650px;
 }
 
 div#legend > img {
