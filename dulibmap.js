@@ -158,7 +158,6 @@ var onSelectFloor = function(floor) {
 		groups[i].style.display = "none";
 	}
 	document.getElementById(floorID + "-group-select").style.display = "block";
-		console.log(document.getElementById(floorID + "-group-select"));
 
 	// Set the selected map as visible
 	var floorID = floor.getAttribute("id").replace("-select", ""),
@@ -194,7 +193,6 @@ var onSelectGroup = function(selection, floor) {
 				overlay.classList.add("map-pin");
 			}
 
-				console.log("TEST adding overlay", overlay);
 			map.appendChild(overlay);
 			addAreaToClickMap(key, floor);
 		}
@@ -205,7 +203,6 @@ var onSelectGroup = function(selection, floor) {
 			overlay = document.getElementById(key + "-overlay");
 			area = document.getElementById(key + "-area");
 			if(area) {
-					console.log("TEST removing overlay", overlay);
 				map.removeChild(overlay);
 				clickmap.removeChild(area);
 			}
@@ -216,7 +213,7 @@ var onSelectGroup = function(selection, floor) {
 var updateFloorSelectedGroups = function(floor) {
 
 	// Get the group for the current floor
-	var floorGroup = document.getElementById(floor + "-group-select");
+	var floorGroup = document.getElementById(floor + "-group-select").children[0];	// The form
 
 	// Iterate room groups in the list for this floor
 	for(let i = 0; i < floorGroup.children.length; i++) {
@@ -240,12 +237,9 @@ var updateFloorSelectedGroups = function(floor) {
 }
 
 var addAreaToClickMap = function(roomID, floor) {
-		console.log("TEST adding area to clickmap", roomID, floor);
 	let area,
 		clickMap = document.getElementById(floor + "-clickmap"),
 		areas = config.room_clickmaps[floor][roomID];
-			console.log("TEST clickmap", clickMap);
-			console.log("TEST areas");
 	for(let area in areas) {
 		if(areas[area]) {
 			area = document.createElement("AREA");
@@ -315,7 +309,6 @@ var addHoverDisplays = function() {
 		areaElement = document.getElementById(key + "-area");
 		if(areaElement) {
 			areaElement.setAttribute("title", config.hover_displays[key].text);
-				console.log("TEST added title to element", areaElement);
 		}
 	}
 }
