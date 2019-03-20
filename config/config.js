@@ -2,7 +2,7 @@ var config = {
 
 	"mapSlideFileType": "gif",
 
-	"legend_image": "Legend-H-wide.png",
+	"legend_image": "Legend-V.png",
 
 	"map_base": {
 		"top-floor": "top_base_tech_900.png",

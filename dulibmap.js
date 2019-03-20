@@ -212,6 +212,8 @@ var onSelectGroup = function(selection, floor) {
 
 var updateFloorSelectedGroups = function(floor) {
 
+	// TODO remove all existing map slides?
+
 	// Get the group for the current floor
 	var floorGroup = document.getElementById(floor + "-group-select").children[0];	// The form
 
