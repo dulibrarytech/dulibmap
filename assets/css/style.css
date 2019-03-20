@@ -3,6 +3,9 @@ body {
 	font-size: 18px;
     margin: 0;
     background-color: #e5e3e1 !important;
+
+    /* Prevent image from resizing */
+    min-width: 1300px;
 }
 
 hr {
@@ -171,8 +174,6 @@ div#map {
 div#map-container {
     height: 100%;
     width: 100%;
-/*    height: 900px;
-    width: 900px;*/
 }
 
 div#selected-list {
@@ -258,7 +259,6 @@ div#map-legend {
 
 div#legend {
     width: 74%;
-   /* max-width: 800px;*/
     margin: 0 auto;
 }
 
@@ -278,7 +278,7 @@ div#legend > img {
 
 @media (min-width:320px) {
     body {
-        font-size: 0.5rem;
+        font-size: 16px;
     }
 }
 @media (min-width:600px) {
@@ -286,16 +286,16 @@ div#legend > img {
 }
 @media (min-width:768px) {
     body {
-        font-size: 0.55rem;
+        font-size: 17px;
     }
 }
 @media (min-width:900px) {
      body {
-        font-size: 0.68rem;
+        font-size: 18px;
     }
 }
 @media (min-width:1281px) {
     body {
-        font-size: 1rem;
+        font-size: 18px;
     }
 }
