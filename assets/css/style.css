@@ -58,7 +58,7 @@ div#content {
 div#sidebar-nav {
     width: 24%;
     background-color: white;
-    padding-top: 100px;
+    padding: 100px 50px;
     height: 1300px;
 }
 
@@ -183,9 +183,10 @@ div#selected-list {
     width: 50%;
 }
 
-div.select-menu {
+div.sidebar-menu {
     margin: 0 auto;
-    width: 76%;
+    margin-top: 30px;
+    width: 97%;
 }
 
 div.select-menu > form {
@@ -225,8 +226,7 @@ img.map-slide {
 }
 
 div.floor-select {
-    margin: 0 auto;
-    width: 76%;
+    width: 88%;
 }
 
 div.floor-select ul {
@@ -258,8 +258,7 @@ div#map-legend {
 }
 
 div#legend {
-    width: 74%;
-    margin: 0 auto;
+
 }
 
 div#legend > img {

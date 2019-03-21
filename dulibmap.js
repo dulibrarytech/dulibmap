@@ -13,44 +13,57 @@ var init = function() {
 }
 
 var addLegend = function(mapContainer) {
-	var legend = document.createElement("DIV"),
+	if(config.legend_image != "") {
+		var legend = document.createElement("DIV"),
 		legendImage = document.createElement("IMG"),
-		legendHeader;
+		header;
 
-	// If the legend has been set in the configuration
-	if(1) {
-		legendHeader = document.createElement("H3");
-		legendHeader.innerHTML = "Legend";
-		legend.appendChild(legendHeader);
+		if(config.legend_header != "") {
+			header = document.createElement("H3");
+			header.innerHTML = config.legend_header;
+			document.getElementById("map-legend").appendChild(header);
+		}
+
+		legend.setAttribute("id", "legend");
+		legend.setAttribute("class", "sidebar-menu");
+		legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)
+		legend.appendChild(legendImage);
+
+		document.getElementById("map-legend").appendChild(legend);
 	}
-
-	legend.setAttribute("id", "legend");
-	legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)
-	legend.appendChild(legendImage);
-
-	document.getElementById("map-legend").appendChild(legend);
 }
 
 var addFloorSelectMenu = function(mapContainer) {
 	var menu = document.createElement("DIV"),
-		list = document.createElement("UL"),
-		floor,
-		id;
+		list = document.createElement("SELECT"),
+		header, floor, id;
 
+	if(config.map_select_header != "") {
+		header = document.createElement("H3");
+		header.innerHTML = config.map_select_header;
+		document.getElementById("map-select-menu").appendChild(header);
+	}
+
+	list.setAttribute("onchange", "onSelectFloor(this)");
+	list.setAttribute("class", "form-control");
 	for(var key in config.maps) {
 		id = key + "-select";
-		floor = document.createElement("LI");
+		floor = document.createElement("OPTION");
 		floor.setAttribute("id", id);
 		floor.setAttribute("class", "floor-option");
-		floor.setAttribute("onclick", "onSelectFloor(this)");
+		//floor.setAttribute("onclick", "onSelectFloor(this)");
 		floor.innerHTML = config.map_labels[key];
 		if(config.default_map == key) {
-			floor.classList.add("active");
+			//floor.classList.add("active");
+			floor.selected = true;
 		}
 		list.appendChild(floor);
 	}
 
+	menu.setAttribute("id", "floor-menu");
 	menu.setAttribute("class", "floor-select");
+	menu.classList.add("form-group");
+	menu.classList.add("sidebar-menu");
 	menu.appendChild(list);
 	document.getElementById("map-select-menu").appendChild(menu);
 }
@@ -103,10 +116,16 @@ var addBaseImages = function() {
 
 // Add each floor here, hide all but main on default
 var addGroupSelectMenus = function(floor="") {
-	var menu, select_form, slide, img, label, checkbox;
+	var menu, select_form, slide, img, label, checkbox, header;
+	if(config.group_select_header != "") {
+		header = document.createElement("H3");
+		header.innerHTML = config.group_select_header;
+		document.getElementById("item-select-menu").appendChild(header);
+	}
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
 		menu.setAttribute("class", "select-menu");
+		menu.classList.add("sidebar-menu");
 		menu.setAttribute("id", map + "-group-select");
 		if(map != floor) {
 			menu.style.display = "none";
@@ -114,7 +133,6 @@ var addGroupSelectMenus = function(floor="") {
 		document.getElementById(map).appendChild(menu);
 		select_form = document.createElement("FORM");
 		select_form.setAttribute("class", "floor-group-select");
-		select_form.innerHTML += ("<h3>Show Rooms</h3>");
 
 		for(var key in config.maps[map]) {
 			label = document.createElement("LABEL");
@@ -137,7 +155,8 @@ var addGroupSelectMenus = function(floor="") {
 	}
 }
 
-var onSelectFloor = function(floor) {
+var onSelectFloor = function(floorList) {
+	floor = floorList[floorList.selectedIndex];
 	// Update the menuitem as selected
 	var floors = document.getElementsByClassName("floor-option");
 	for(var i=0; i<floors.length; i++) {

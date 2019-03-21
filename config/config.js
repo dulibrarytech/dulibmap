@@ -18,6 +18,10 @@ var config = {
 		"bottom-floor": "Bottom Floor"
 	},
 
+	"map_select_header": "Maps",
+	"group_select_header": "Rooms",
+	"legend_header": "Legend",
+
 	// Map overlays
 	"maps": {
 		// Floor
@@ -79,7 +83,7 @@ var config = {
 			"Technology Services" : {
 				"main_uts"			: "University Technology Services"
 			},
-			
+
 			"Study Rooms" : {
 				"main_nsr"		: "Nikki's Study Room"	
 			},
