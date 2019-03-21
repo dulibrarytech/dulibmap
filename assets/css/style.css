@@ -1,6 +1,6 @@
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
     margin: 0;
     background-color: #e5e3e1 !important;
 
@@ -265,6 +265,7 @@ div#legend {
 div#legend > img {
 	max-height: 100%;
     max-width: 100%;
+    margin-top: 15px;
 }
 
 .hoverdisplay {
@@ -278,7 +279,7 @@ div#legend > img {
 
 @media (min-width:320px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 @media (min-width:600px) {
@@ -286,16 +287,12 @@ div#legend > img {
 }
 @media (min-width:768px) {
     body {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 @media (min-width:900px) {
-     body {
-        font-size: 18px;
-    }
+
 }
 @media (min-width:1281px) {
-    body {
-        font-size: 18px;
-    }
+
 }

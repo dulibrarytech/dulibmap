@@ -76,12 +76,17 @@ var config = {
 		},
 
 		"main-floor" : {
+			"Technology Services" : {
+				"main_uts"			: "University Technology Services"
+			},
+			
 			"Study Rooms" : {
 				"main_nsr"		: "Nikki's Study Room"	
 			},
 
-			"Technology Services" : {
-				"main_uts"			: "University Technology Services"
+			"Classrooms" : {
+				"main_cc"			: "Chan Classroom",
+				"main_hr"			: "Herold Room"
 			},
 
 			"Centers and Services" : {
@@ -92,11 +97,6 @@ var config = {
 				"main_rc"			: "Research Center",
 				"main_dmc"			: "Digital Media Center",
 				"main_er"			: "Events Room"
-			},
-
-			"Classrooms" : {
-				"main_cc"			: "Chan Classroom",
-				"main_hr"			: "Herold Room"
 			},
 
 			"Accessible Services" : {
