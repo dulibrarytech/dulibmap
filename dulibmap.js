@@ -1,5 +1,3 @@
-
-
 var init = function() {
 	var main = document.getElementById("map").innerHTML = "<div id='map-container'></div>";
 	var container = document.getElementById("map-container");
@@ -10,6 +8,22 @@ var init = function() {
 	addFloors(container);
 	addBaseImages();
 	addGroupSelectMenus(config.default_map);
+}
+
+var addSvgContainer = function(mapContainer, floor) {
+	var overlays = document.getElementById(floor.id).appendChild(document.createElement("DIV"));
+	overlays.setAttribute("id", floor.id + "-overlays");
+	overlays.setAttribute("class", "map-overlays");
+
+	var width = config.map_width;
+    var height = config.map_height;
+    var id = "#" + mapContainer.id;
+    var svg = d3.select("#" + floor.id + "-overlays")
+       .append("svg")
+       .attr("width", width)
+       .attr("height", height)
+       .attr("id", floor.id + "-overlay-svg")
+       .attr("class", "overlay-svg");
 }
 
 var addLegend = function(mapContainer) {
@@ -75,29 +89,101 @@ var addFloors = function(container) {
 		floor.setAttribute("class", "base-map");
 		if(key == config.default_map) {
 			floor.style.display = "block";
-			addClickMap(container, key);
-			addStaticAreas(key);
 		}
 		else {
 			floor.style.display = "none";
 		}
 		container.appendChild(floor);
+		addSvgContainer(container, floor);
+		addRoomOverlays(container, floor);
+		//addIconOverlays(container, floor);
 	}
 }
 
-var addClickMap = function(mapContainer, floor) {
-	var map = document.createElement("MAP");
-	map.setAttribute("id", floor + "-clickmap");
-	map.setAttribute("name", floor + "-clickmap");
-	map.setAttribute("class", "clickmap");
-	mapContainer.appendChild(map);
-}
+var addRoomOverlays = function(container, floor) {
 
-var removeClickMaps = function(mapContainer) {
-	var maps = document.getElementsByClassName("clickmap");
-	for(var i = 0; i < maps.length; i++) {
-		mapContainer.removeChild(maps[i]);
-	}
+    d3.json("./config/data.json", function(data) {
+    	try {
+
+    		// Add rooms and areas
+    		var overlay = d3.select("#" + floor.id + "-overlay-svg").selectAll("g");
+    		var tmp = overlay.data(data.overlays[floor.id])
+	        .enter();
+
+	        var tmp2 = tmp.append("g");
+	        tmp2.attr("id", function(d) {
+	          return d.name;
+	        })
+	        .classed("overlay", true)
+	        .classed("clickable", function(d) {
+	        	return d.link ? true : false;
+	        })
+	        .attr("display", function(d) {
+	        	return d.visibility == "hidden" ? "none" : "block";
+	        })
+	        .attr("onclick", function(d) {
+	        	return d.link ? "javascipt:window.open('" + d.link + "')" : "";
+	        });
+
+	        var tmp3 = tmp2.append("path")
+	        .attr("fill", function(d) {
+	          return d.color;
+	        })
+	        .attr("d", function(d) {
+	          return d.svgPath;
+	        })
+	        .append("title")
+	        .html(function(d) {
+	        	return d.hover;
+	        });
+
+	        // Add room and area labels
+	        tmp2.append("text")
+	        .attr("x", function(d) {
+	        	return d.labelX || 0;
+	        })
+	        .attr("y", function(d) {
+	        	return d.labelY || 0;
+	        })
+	        .attr("font-family", config.room_labels.fontFamily)
+	        .attr("font-size", function(d) {
+	        	return d.labelFontSize || config.room_labels.fontSize;
+	        })
+	        .attr("font-color", config.room_labels.fontColor)
+	        .html(function(d) {
+	        	var html = "", tspan = "";
+	        	for(var i=0; i<d.label.length; i++) {
+	        		var X = d.labelX || 0;
+	        		tspan = '<tspan x="' + X + '" dy="' + config.room_labels.line_spacing + '">' + d.label[i] + '</tspan>';
+	        		html += tspan; 
+	        	}
+	        	return html;
+	        })
+	        .append("title")
+	        .html(function(d) {
+	        	return d.hover;
+	        });
+
+	        // Icons with multiple paths
+	        overlay.data(data.icon_overlays["top-floor"])
+	        .enter()
+	        .append("g")
+		    .attr("id", function(d) {
+	       		return d.name;
+	        })
+	        .each(function(d, i) {
+	       		d3.select(this).selectAll('path')
+	       		.data(d.paths)
+	       		.enter().append('path')
+	       		.attr("d", function(d, j) {
+	       			return d.svgPath;
+	       		})
+	        });
+    	}
+    	catch(e) {
+    		console.log("Error retrieving floor data: ", floor.id, "Error:", e);
+    	}
+    });
 }
 
 var addBaseImages = function() {
@@ -184,9 +270,6 @@ var onSelectFloor = function(floorList) {
 		map.style.display = "block";
 
 	var container = document.getElementById("map-container");
-	removeClickMaps(container);
-	addClickMap(container, floorID);
-	addStaticAreas(floorID);
 	updateFloorSelectedGroups(floorID);
 }
 
@@ -197,35 +280,13 @@ var onSelectGroup = function(selection, floor) {
 	    map = document.getElementById(floor),
 		rooms = config.maps[floor][group];
 
-	if(selection.checked) {
-		for(var key in rooms) {
-			id = key + "-overlay";
-			path = "./assets/img/map/slide/" + key + "." + config.mapSlideFileType;
-			overlay = document.createElement("IMG");
-			overlay.setAttribute("id", id);
-			overlay.setAttribute("class", "map-slide");
-			overlay.setAttribute("src", path);
-			overlay.setAttribute("usemap", floor + "-clickmap");
-
-			// Add map pin class if specified in the filename.  These will have elevated z-index applied
-			if(key.search("_pin") > -1) {
-				overlay.classList.add("map-pin");
-			}
-
-			map.appendChild(overlay);
-			addAreaToClickMap(key, floor);
+	for(var key in rooms) {
+		if(document.getElementById(key) && selection.checked) {
+			document.getElementById(key).style.display = "block";
 		}
-	}
-	else {
-		var clickmap = document.getElementById(floor + "-clickmap");
-		for(var key in rooms) {
-			overlay = document.getElementById(key + "-overlay");
-			area = document.getElementById(key + "-area");
-			if(area) {
-				map.removeChild(overlay);
-				clickmap.removeChild(area);
-			}
-		}	
+		else if(document.getElementById(key) && selection.checked == false) {
+			document.getElementById(key).style.display = "none";
+		}
 	}
 }
 
@@ -257,79 +318,45 @@ var updateFloorSelectedGroups = function(floor) {
 	}
 }
 
-var addAreaToClickMap = function(roomID, floor) {
-	let area,
-		clickMap = document.getElementById(floor + "-clickmap"),
-		areas = config.room_clickmaps[floor][roomID];
-	for(let area in areas) {
-		if(areas[area]) {
-			area = document.createElement("AREA");
-			area.setAttribute("id", roomID + "-area");
-			area.setAttribute("shape", "poly");
-			area.setAttribute("onclick", "onSelectRoom(this.id)");
-			area.setAttribute("coords", config.room_clickmaps[floor][roomID]);
-			if(typeof config.room_action[roomID] != 'undefined') {
-				area.setAttribute("class", "click-area");
-			}
-				console.log("Adding area", area);
-			clickMap.appendChild(area);
-		}
-	}
+// var onSelectRoom = function(floorID, roomID, static=false) {
+// 	if(typeof config.room_action[roomID] == 'undefined') {
+// 		console.log("No action has been set for this room");
+// 	}
+// 	// Make sure the room slide is visible.  If not, do not execue the action
+// 	else if(static) {
+// 		action = config.room_action[roomID].type;
+// 		if(action == "internal") {
+// 			// Load stored html (for this room) in a modal dialog?
+// 		}
+// 		else if(action == "external") {
+// 			// Open the external link for this room in a new browser window
+// 			window.open(config.room_action[roomID].value);
+// 		}
+// 	}
+// }
 
-	addHoverDisplays();
-}
-
-var addStaticAreas = function(floor) {
-	let area,
-		clickMap = document.getElementById(floor + "-clickmap"),
-		areas = config.room_clickmaps[floor + "_static"];
-
-	for(let key in areas) {
-		if(areas[key]) {
-			area = document.createElement("AREA");
-			area.setAttribute("id", key + "-area");
-			area.setAttribute("shape", "poly");
-			area.setAttribute("onclick", "onSelectRoom(this.id, true)");
-			area.setAttribute("coords", config.room_clickmaps[floor + "_static"][key]);
-			if(typeof config.room_action[key] != 'undefined') {
-				area.setAttribute("class", "click-area");
-			}
-			clickMap.appendChild(area);
-		}
-	}
-
-	addHoverDisplays();
-}
-
-var onSelectRoom = function(areaID, static=false) {
-	var roomID = areaID.replace("-area", ""),
-		overlayID = roomID + "-overlay",
-		overlay = document.getElementById(overlayID),
-		action;
-
-	if(typeof config.room_action[roomID] == 'undefined') {
-		console.log("No action has been set for this room");
-	}
-	// Make sure the room slide is visible.  If not, do not execue the action
-	else if(overlay || static) {
-		action = config.room_action[roomID].type;
-		if(action == "internal") {
-			// Load stored html (for this room) in a modal dialog?
-		}
-		else if(action == "external") {
-			// Open the external link for this room in a new browser window
-			window.open(config.room_action[roomID].value);
-		}
-	}
-}
+// var onSelectRoom = function(floorID, roomID, static=false) {
+// 	if(typeof config.room_action[roomID] == 'undefined') {
+// 		console.log("No action has been set for this room");
+// 	}
+// 	// Make sure the room slide is visible.  If not, do not execue the action
+// 	else if(static) {
+// 		action = config.room_action[roomID].type;
+// 		if(action == "internal") {
+// 			// Load stored html (for this room) in a modal dialog?
+// 		}
+// 		else if(action == "external") {
+// 			// Open the external link for this room in a new browser window
+// 			window.open(config.room_action[roomID].value);
+// 		}
+// 	}
+// }
 
 var addHoverDisplays = function() {
-	var container = document.getElementById("map-container");
-	var areaElement;
 	for(var key in config.hover_displays) {
-		areaElement = document.getElementById(key + "-area");
-		if(areaElement) {
-			areaElement.setAttribute("title", config.hover_displays[key].text);
+		room = document.getElementById(key);
+		if(room) {
+			room.setAttribute("title", config.hover_displays[key].text);
 		}
 	}
 }

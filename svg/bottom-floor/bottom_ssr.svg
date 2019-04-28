@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="750" height="750" version="1.1" viewBox="0 0 750 750" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <image width="750" height="750" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="/home/jeff/Dev/Widget-And-Small-App-Projects/dulibmap/assets/img/map/slide/tmp/bottom/bottom_ssr.png"/>
+ <path d="m218 467c-0.4-0.65-1.6-0.96-2.6-0.69-1.8 0.48-1.9-0.7-1.9-35v-35h40v69l-8.2 0.06c-4.5 0.033-10 0.52-13 1.1-9.1 1.9-13 2.1-14 0.87z" fill="#ecd7f9"/>
+</svg>
