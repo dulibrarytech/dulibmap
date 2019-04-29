@@ -30,7 +30,54 @@ var config = {
 
 	"map_select_header": "Maps",
 	"group_select_header": "Rooms",
+
 	"legend_header": "Legend",
+	"legend_data": [
+		{
+			"image": "assets/img/legend/tech-alcove.png",
+			"label": "Tech Alcove"
+		},
+		{
+			"image": "assets/img/legend/black-and-white-printer.png",
+			"label": "Black and White Printer"
+		},
+		{
+			"image": "assets/img/legend/color-printer.png",
+			"label": "Color Printer"
+		},
+		{
+			"image": "assets/img/legend/scanner.png",
+			"label": "Scanner"
+		},
+		{
+			"image": "assets/img/legend/copier.png",
+			"label": "Copier"
+		},
+		{
+			"image": "assets/img/legend/stairs.png",
+			"label": "Stairs"
+		},
+		{
+			"image": "assets/img/legend/elevator.png",
+			"label": "Elevator"
+		},
+		{
+			"image": "assets/img/legend/nursing.png",
+			"label": "Nursing Lounge"
+		},
+		{
+			"image": "assets/img/legend/gender-neutral-restroom.png",
+			"label": "Gender Neutral Restroom"
+		},
+		{
+			"image": "assets/img/legend/shower.png",
+			"label": "Shower"
+		},
+		{
+			"image": "assets/img/legend/lgs.png",
+			"label": "Large Group Study"
+		}
+	],
 
 	// Map overlays
 	"maps": {

@@ -29,8 +29,7 @@ var addSvgContainer = function(mapContainer, floor) {
 var addLegend = function(mapContainer) {
 	if(config.legend_image != "") {
 		var legend = document.createElement("DIV"),
-		legendImage = document.createElement("IMG"),
-		header;
+			header, span, image, label, row;
 
 		if(config.legend_header != "") {
 			header = document.createElement("H3");
@@ -38,10 +37,22 @@ var addLegend = function(mapContainer) {
 			document.getElementById("map-legend").appendChild(header);
 		}
 
-		legend.setAttribute("id", "legend");
-		legend.setAttribute("class", "sidebar-menu");
-		legendImage.setAttribute("src", "./assets/img/map/icons/" + config.legend_image)
-		legend.appendChild(legendImage);
+		legend.setAttribute("class", "legend");
+		legend.classList.add("sidebar-menu");
+
+		for(var index in config.legend_data) {
+				console.log("TEST data", config.legend_data[index]);
+			row = document.createElement("DIV");
+			img = document.createElement("IMG");
+			label = document.createElement("SPAN");
+
+			label.innerHTML = config.legend_data[index].label;
+			img.setAttribute("src", config.legend_data[index].image);
+			row.appendChild(img);
+			row.appendChild(label);
+
+			legend.appendChild(row);
+		}
 
 		document.getElementById("map-legend").appendChild(legend);
 	}
@@ -95,12 +106,12 @@ var addFloors = function(container) {
 		}
 		container.appendChild(floor);
 		addSvgContainer(container, floor);
-		addRoomOverlays(container, floor);
+		addOverlays(container, floor);
 		//addIconOverlays(container, floor);
 	}
 }
 
-var addRoomOverlays = function(container, floor) {
+var addOverlays = function(container, floor) {
 
     d3.json("./config/data.json", function(data) {
     	try {
@@ -217,13 +228,10 @@ var addRoomOverlays = function(container, floor) {
 	        	return d.hover;
 	        }) 
 
-	        // Alternate icons:
-	        // Import the svg xml and append svg to map (in a g?)
-	        // Create g, add attributes
-	        // Appemd svg to G?
+	        // Add label maps
     	}
     	catch(e) {
-    		console.log("Error retrieving floor data: ", floor.id, "Error:", e);
+    		console.log("Error building floor overlays: ", floor.id, "Error:", e);
     	}
     });
 }
