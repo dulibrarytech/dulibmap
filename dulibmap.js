@@ -115,6 +115,9 @@ var addRoomOverlays = function(container, floor) {
 	          return d.name;
 	        })
 	        .classed("overlay", true)
+	        .classed("hover-info", function(d) {
+	        	return d.hover ? true : false;
+	        })
 	        .classed("clickable", function(d) {
 	        	return d.link ? true : false;
 	        })
