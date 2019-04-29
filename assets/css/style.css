@@ -314,6 +314,10 @@ div.map-overlays {
     cursor: pointer;
 }
 
+.hover-info:hover {
+    cursor: help;
+}
+
 @media (min-width:320px) {
     body {
         font-size: 14px;

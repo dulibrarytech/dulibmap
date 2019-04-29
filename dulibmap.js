@@ -105,7 +105,7 @@ var addRoomOverlays = function(container, floor) {
     d3.json("./config/data.json", function(data) {
     	try {
 
-    		// Add rooms and areas
+    		// Add rooms and areas: simple svg path
     		var overlay = d3.select("#" + floor.id + "-overlay-svg").selectAll("g");
     		var tmp = overlay.data(data.overlays[floor.id])
 	        .enter();
@@ -164,21 +164,60 @@ var addRoomOverlays = function(container, floor) {
 	        	return d.hover;
 	        });
 
-	        // Icons with multiple paths
-	        overlay.data(data.icon_overlays["top-floor"])
+	        // Icons and other complex svg elements
+	        overlay.data(data.icon_overlays[floor.id])
 	        .enter()
 	        .append("g")
 		    .attr("id", function(d) {
 	       		return d.name;
 	        })
+	        .attr("transform", function(d) {
+	        	return "translate(" + d.X + "," + d.Y + ")";
+	        })
+	        .attr("display", function(d) {
+	        	return d.visibility == "hidden" ? "none" : "block";
+	        })
+	        .classed("clickable", function(d) {
+	        	return d.link ? true : false;
+	        })
+	        .classed("hover-info", function(d) {
+	        	return d.hover ? true : false;
+	        })
 	        .each(function(d, i) {
-	       		d3.select(this).selectAll('path')
-	       		.data(d.paths)
-	       		.enter().append('path')
-	       		.attr("d", function(d, j) {
-	       			return d.svgPath;
-	       		})
-	        });
+	        	
+	        	if(d.path) {
+	        		d3.select(this).selectAll('path')
+		       		.data(d.path)
+		       		.enter().append('path')
+		       		.attr("d", function(d, j) {
+		       			return d.d;
+		       		})
+		       		.attr("fill", function(d) {
+		       			return d.fill;
+		       		})
+	        	}
+
+	        	if(d.rect) {
+
+	        	}
+
+	        	if(d.polygon) {
+
+	        	}
+
+	        	if(d.ellipse) {
+
+	        	}
+	        })
+	        .append("title")
+	        .html(function(d) {
+	        	return d.hover;
+	        }) 
+
+	        // Alternate icons:
+	        // Import the svg xml and append svg to map (in a g?)
+	        // Create g, add attributes
+	        // Appemd svg to G?
     	}
     	catch(e) {
     		console.log("Error retrieving floor data: ", floor.id, "Error:", e);
@@ -291,8 +330,6 @@ var onSelectGroup = function(selection, floor) {
 }
 
 var updateFloorSelectedGroups = function(floor) {
-
-	// TODO remove all existing map slides?
 
 	// Get the group for the current floor
 	var floorGroup = document.getElementById(floor + "-group-select").children[0];	// The form
