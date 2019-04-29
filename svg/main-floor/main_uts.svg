@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="750" height="750" version="1.1" viewBox="0 0 750 750" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <image width="750" height="750" image-rendering="optimizeSpeed" preserveAspectRatio="none" xlink:href="/home/jeff/Dev/Widget-And-Small-App-Projects/dulibmap/assets/img/map/slide/tmp/main/main_uts.png"/>
+ <path d="m560 286c0-8.2-0.38-15-0.85-15s-11-0.57-24-0.63l-23-0.1v-3.4c0-2.4 0.45-3.4 1.6-3.4 1.2 0 1.5-0.89 1.2-3.8-0.3-3.6-0.5-3.8-4.2-4.1l-3.9-0.32 0.44-9.2c0.44-9.2 2.4-17 7.5-31 3.2-8.5 4.5-11 6-13 0.69-0.73 1.2-1.8 1.2-2.3 0-0.56 1.2-2.8 2.8-4.9l2.8-3.9 66-0.043v110h-35z" fill="#cefdd7"/>
+</svg>

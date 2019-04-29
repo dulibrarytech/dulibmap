@@ -1,0 +1,1082 @@
+{
+  "overlays": {
+  	"top-floor": [
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_dfra",
+	      "label": ["Deline Family", "Reading Area", "376"],
+	      "labelX": "95",
+	      "labelY": "90",
+	      "svgPath": "m54 127v-78l16-0.58 0.6-12h156l0.66 35c0.36 19 0.66 56 0.66 82l2e-3 47-4.5-0.51c-3-0.34-4.5-0.12-4.5 0.62 0 0.69-1.9 1.1-5 1.1-2.8 0-5-0.45-5-1 0-0.63-7.2-1-20-1-13 0-20 0.35-20 1.1 0 0.74-16 0.84-52 0.35l-52-0.71-0.56 2.2c-0.47 1.8-1.3 2.2-5.2 2.2h-4.6z",
+	      "color": "#ecd6f9",
+	      "hover": "The Deline Family Reading Area provides views of the downtown Denver skyline and front-range mountains beyond, with exhibit displays and various seating options."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_ults",
+	      "label": ["University Libraries", "Technology Services", "320"],
+	      "labelX": "534",
+	      "labelY": "620",
+	      "svgPath": "m514 709c-8e-3 -4-0.37-7.8-0.8-8.5-0.59-0.93-8.4-1.3-31-1.5-26-0.23-30-0.47-30-1.8-0.014-0.82-0.27-2-0.56-2.5-1-2-0.95-35 0.11-37 1-1.9 2.3-2 34-2h33v-39h-46v-10c0-8.2 0.27-10 1.5-10s1.5-1.8 1.5-10v-10h20c19 0 20-0.084 21-2 0.52-2 1.4-2 85-2h85l0.52 84 14 0.59-0.53 58-186 0.51-0.015-7.3z",
+	      "color": "#dff791",
+	      "hover": "University Libraries Technology Services"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_wpf",
+	      "label": ["Writing Program", "Faculty", "380"],
+	      "labelX": "319",
+	      "labelY": "78",
+	      "svgPath": "m440 237c0-0.42-3.1-4-6.8-8l-6.8-7.3-23 0.57-0.62 7.5h-64l-0.62-7.5-20-0.57v9.1h-24v-94c0-62-0.34-94-1-94-0.55 0-1-1.6-1-3.5v-3.5h155v118h29v3.8c0 4.5-4.3 24-6.4 29-0.8 1.9-2.2 6.1-3.2 9.2-0.94 3.2-2.3 6.2-3.1 6.9s-1.4 1.8-1.4 2.5c0 0.77-1.1 3.2-2.5 5.4s-2.5 4.6-2.5 5.5-0.34 1.5-0.77 1.5c-0.7 0-6.2 7.5-8.9 12-0.62 1.1-2.1 2.6-3.2 3.4s-2.1 2.1-2.1 2.9c0 0.79-0.68 1.4-1.5 1.4s-1.5-0.34-1.5-0.76z",
+	      "color": "#dff791",
+	      "hover": "The Writing Program offers renowned first-year writing classes, provides support for writing-intensive courses, leads workshops to help professors teach writing, and conducts research in writing, rhetoric and literacy."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_330",
+	      "label": ["330"],
+	      "labelX": "493",
+	      "labelY": "436",
+	      "labelFontSize": "10px",
+	      "svgPath": "m493 443c0-8.2 0.27-16 0.61-17 0.68-1.8 8.4-2.3 8.4-0.58 0 0.57 3.1 1 7.2 1l7.2 7.3e-4 -0.3 30-23 0.56z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 330"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_331",
+	      "label": ["331"],
+	      "labelX": "521",
+	      "labelY": "436",
+	      "labelFontSize": "10px",
+	      "svgPath": "m520 443c0-8.2 0.27-16 0.61-16 0.67-1.8 7.4-2.3 7.4-0.58 0 0.58 3.2 1 7.5 1h7.5v31h-23z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 330"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_310",
+	      "label": ["310"],
+	      "labelX": "234",
+	      "labelY": "519",
+	      "svgPath": "m231 539c-0.35-2.8-0.33-7.4 0.045-10l0.68-5.1h35v2.9c0 1.6 0.45 3.2 1 3.6 1.3 0.78 1.3 7.5 0.063 7.5-0.52 0-1.1 1.4-1.2 3.1l-0.31 3.1-34 0.39-0.64-5.1z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 310"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_311",
+	      "label": ["311"],
+	      "labelX": "234",
+	      "labelY": "547",
+	      "svgPath": "m231 564c-0.37-2.5-0.37-7 2e-3 -10l0.68-5.5h35v2.9c0 1.6 0.45 3.2 1 3.6s1 2.2 1 4.1-0.45 3.4-1 3.4-1 1.4-1 3v3h-35z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 311"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_314",
+	      "label": ["314"],
+	      "labelX": "376",
+	      "labelY": "545",
+	      "labelFontSize": "10px",
+	      "svgPath": "m373 572c2e-3 -0.43-0.18-6.5-0.4-14-0.38-12-0.3-13 1.5-13 1 0 1.9-0.45 1.9-1s0.34-0.92 0.75-0.83c1.7 0.37 8.9-1.5 11-2.8 1.8-1.1 2.6-1.2 3.8-0.27 0.79 0.65 1.4 1.7 1.4 2.2s2.1 5.4 4.7 11c2.6 5.3 4.8 11 4.9 12 0.2 2.1-0.16 2.2-6.2 2.2-3.5 0-6.7 0.45-7 1s-1.6 1-2.9 1-2.7 0.41-3.2 0.91c-1.2 1.2-10 2.4-10 1.4z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 314"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_315",
+	      "label": ["315"],
+	      "labelX": "403",
+	      "labelY": "533",
+	      "labelFontSize": "10px",
+	      "svgPath": "m401 552c-2.8-5.9-5.5-11-5.9-12-0.64-1.1 0.69-2.2 5.8-4.7 3.6-1.8 8.1-4.3 10-5.8 3.2-2.4 3.6-2.5 5.2-0.94 1 0.91 1.8 2 1.8 2.5 0 0.94 3 4.5 10 12 5.3 5.8 6.2 9.4 2.3 9.4-1.3 0-2.7 0.5-3.1 1.1-0.48 0.78-0.92 0.73-1.5-0.18-0.61-0.98-2.8-0.27-9.1 3-4.6 2.3-8.8 4.7-9.5 5.2-0.83 0.69-2.6-2.1-6.3-9.8z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 315"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_316",
+	      "label": ["316"],
+	      "labelX": "427",
+	      "labelY": "520",
+	      "labelFontSize": "10px",
+	      "svgPath": "m434 543c-0.82-0.97-3.5-4-6-6.6s-4.5-5-4.5-5.2-1.1-1.6-2.5-3l-2.5-2.7 2.2-1.5c1.2-0.85 3-2.2 3.9-3.1 0.93-0.86 3-2.6 4.6-3.8 1.6-1.2 4.2-3.3 5.8-4.6l2.9-2.4 4.2 4.1c2.3 2.3 5.8 5.2 7.7 6.6s4.4 3.8 5.6 5.5l2.1 3-2 2.1c-1.3 1.4-2.8 2-4.4 1.7-1.7-0.32-2.7 0.16-3.5 1.6-1.6 3-5.7 6.9-9.1 8.6-2.7 1.4-3.1 1.4-4.4-0.25z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 316"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_317",
+	      "label": ["317"],
+	      "labelX": "476",
+	      "labelY": "496",
+	      "svgPath": "m475 518c4e-5 -1.5-0.45-3-1-3.3s-1-2.4-1-4.6 0.45-3.9 1-3.9 1-1.4 1-3v-3h35l-0.57 20-35 0.4z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 317"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_318",
+	      "label": ["318"],
+	      "labelX": "476",
+	      "labelY": "522",
+	      "svgPath": "m475 543c0-1.3-0.45-2.7-1-3.1s-1-2.4-1-4.6 0.45-3.9 1-3.9 1-1.4 1-3v-3h35v20h-35z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 318"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_319",
+	      "label": ["319"],
+	      "labelX": "476",
+	      "labelY": "547",
+	      "svgPath": "m475 569c0-1.1-0.45-2.2-1-2.6s-1-2.4-1-4.6 0.45-3.9 1-3.9 1-1.6 1-3.5v-3.5h35v20h-18c-17 0-18-0.094-18-1.9z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 319"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_329",
+	      "label": ["329"],
+	      "labelX": "466",
+	      "labelY": "436",
+	      "labelFontSize": "10px",
+	      "svgPath": "m466 443c0-8.2 0.27-16 0.61-17 0.67-1.8 7.4-2.3 7.4-0.58 0 0.57 3.1 1 7.2 1l7.2 7.3e-4 -0.15 15-0.15 15-22 0.57z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 329"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_391",
+	      "label": ["391"],
+	      "labelX": "133",
+	      "labelY": "277",
+	      "labelFontSize": "13px",
+	      "svgPath": "m146 310c0.17-0.86-1.8-1.4-6.6-1.8l-6.8-0.5-0.38-32 29 2e-4 -0.55 31-2.5 0.63c-1.4 0.35-2.4 1.2-2.2 1.8 0.16 0.76-1.5 1.2-4.8 1.2-3.5 0-4.9-0.38-4.8-1.2z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 391"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_392",
+	      "label": ["392"],
+	      "labelX": "103",
+	      "labelY": "277",
+	      "labelFontSize": "13px",
+	      "svgPath": "m114 310c0.18-0.88-1.8-1.3-6.5-1.5l-6.8-0.3v-32h27v31l-2.6 0.97c-1.4 0.54-2.3 1.4-1.9 2 0.38 0.62-1.3 1-4.4 1-3.5 0-5-0.38-4.8-1.2z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 392"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_393",
+	      "label": ["393"],
+	      "labelX": "72",
+	      "labelY": "277",
+	      "labelFontSize": "13px",
+	      "svgPath": "m84 310c0.18-0.88-2.1-1.4-7.8-1.8l-8-0.5v-31l27-0.56 0.62 12c0.81 16 0.54 19-1.7 20-1 0.41-1.5 1.2-1.2 1.8 0.39 0.63-1.3 1-4.4 1-3.5 0-5-0.38-4.8-1.2z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 393"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_394",
+	      "label": ["394"],
+	      "labelX": "55",
+	      "labelY": "398",
+	      "labelFontSize": "13px",
+	      "svgPath": "m50 408v-20l5.9 0.34c3.3 0.19 6.3 4e-3 6.7-0.41 1-1 8.2-0.95 8.8 0.087 0.28 0.46 3 0.63 6.1 0.38l5.5-0.46v39h-33z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 394"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_395",
+	      "label": ["395"],
+	      "labelX": "90",
+	      "labelY": "398",
+	      "labelFontSize": "13px",
+	      "svgPath": "m88 428c-0.012-0.14-0.12-9-0.25-20l-0.23-19 4.3 0.48c2.3 0.26 4.5 0.085 4.8-0.4 0.73-1.2 8.2-1.1 8.9 0.055 0.32 0.51 2.1 0.68 4.1 0.37l3.5-0.56v39h-12c-6.9 0-13-0.11-13-0.25z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 395"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_sgs_396",
+	      "label": ["396"],
+	      "labelX": "120",
+	      "labelY": "398",
+	      "labelFontSize": "13px",
+	      "svgPath": "m119 409v-19h4.4c2.4 0 4.7-0.45 5.1-1s2.6-1 5.1-1 4.4 0.45 4.4 1 1.8 1 4 1h4v38h-27z",
+	      "color": "#cccdac",
+	      "hover": "Small Group Study Room 396"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_lgs_352",
+	      "label": ["352", "LGS"],
+	      "labelX": "515",
+	      "labelY": "205",
+	      "labelFontSize": "11px",
+	      "svgPath": "m522 252c0.62-1.6-3.7-3.2-5.6-2.1-0.73 0.45-1.1-6.6-1.1-23v-24l20-8e-5 -0.22 23c-0.19 20-0.43 23-1.7 23-2.1-0.4-5.7 1.7-5 2.8 0.33 0.54-1.2 0.95-3.4 0.95-3.1 0-3.9-0.33-3.5-1.5z",
+	      "color": "#aeca91",
+	      "hover": "Large Group Study Room 352"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_lgs_354",
+	      "label": ["354", "LGS"],
+	      "labelX": "542",
+	      "labelY": "205",
+	      "labelFontSize": "11px",
+	      "svgPath": "m548 251c-0.44-1.7-1.2-2-3.9-1.8l-3.3 0.33-0.54-46h23v23c0 23-0.038 23-2.1 23-2.8 0-6.1 1.9-5.4 3.1 0.33 0.54-1.1 0.95-3.4 0.95-3.2 0-4.1-0.42-4.5-2.1z",
+	      "color": "#aeca91",
+	      "hover": "Large Group Study Room 354"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_lgs_389",
+	      "label": ["389", "LGS"],
+	      "labelX": "187",
+	      "labelY": "198",
+	      "labelFontSize": "12px",
+	      "svgPath": "m172 219v-16l23-0.44c12-0.24 24-0.25 26-0.016l2.9 0.43v32h-51z",
+	      "color": "#aeca91",
+	      "hover": "Large Group Study Room 389"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_lgs_390",
+	      "label": ["390", "LGS"],
+	      "labelX": "187",
+	      "labelY": "238",
+	      "labelFontSize": "12px",
+	      "svgPath": "m209 273c0.19-0.96-4.1-1.3-18-1.5l-19-0.27v-31l50 0.58 0.28 15c0.27 15 0.27 15-2 16-1.3 0.19-2.2 0.9-2 1.6 0.17 0.84-1.3 1.2-4.8 1.2-3.5 0-4.9-0.38-4.8-1.2z",
+	      "color": "#aeca91",
+	      "hover": "Large Group Study Room 390"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_cfwlc",
+	      "label": ["Center for World", "Languages and", "Cultures", "332-336"],
+	      "labelX": "542",
+	      "labelY": "456",
+	      "labelFontSize": "14px",
+	      "svgPath": "m546 440c0.17-15 5e-3 -17-1.4-17-1.3-0.25-1.6-1.5-1.6-5.6v-5.3l8.4 0.17-0.55-27 25-0.12v24h-8.5c-6.6 0-8.5 0.31-8.5 1.4 0 0.77 0.71 1.7 1.6 2 1.9 0.74 17 0.81 19 0.097 1-0.4 1.3-3.4 0.98-14l-0.35-14 36 0.58 0.56 24h-14c-13 0-14 0.099-14 2 0 1.5 0.67 2 2.5 2 2.3 0 2.5 0.34 2.5 5v5l-6.7 0.3c-5.5 0.24-6.8 0.62-7.1 2-0.29 1.5 0.54 1.8 6.7 1.8h7.1v30h-22l-0.3-15c-0.17-8.3 0.018-15 0.41-16 0.39-0.24 0.45-1.1 0.14-1.9-0.8-2.1-18-2.1-19-0.066-0.85 2.2 0.22 2.6 7 2.6h6.3v30l-21 0.63 0.19-17z",
+	      "color": "#c0fdd7",
+	      "hover": "The Center for World Languages and Cultures administers foreign language placement exams to undergraduate students registering for language courses."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_ds",
+	      "label": ["Dean's Suite", "370"],
+	      "labelX": "560",
+	      "labelY": "65",
+	      "svgPath": "m594 177c0-27-0.38-49-0.84-49s-18-0.58-38-0.64l-38-0.12-0.27-45-0.27-45 156 5.6e-4v12h14v156h-4.4c-3.5 0-4.5-0.38-4.9-2-0.51-1.9-1.4-2-31-2h-30v26h-22z",
+	      "color": "#f1c4c4",
+	      "hover": "The Dean's Suite houses offices and meeting space for professional staff with administrative roles in the library. These offices overlook the Buchtel Tower and the Holocaust Awareness and Social Action site."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_euc",
+	      "label": ["Extended Use", "Quiet Study", "Area", "301"],
+	      "labelX": "60",
+	      "labelY": "498",
+	      "labelFontSize": "13px",
+	      "svgPath": "m56 532v-38l5.2 0.63c2.9 0.35 23 0.63 45 0.64 39 8e-3 40 0.061 40 1.9 0 1.1 0.45 2.2 1 2.6s1 2.1 1 4-0.45 3.7-1 4c-0.63 0.39-1 12-1 32v31h-90z",
+	      "color": "#92d8f8",
+	      "hover": "The Extended Use Quiet Study Area offers an assigned carrel for one academic quarter to students writing a thesis or completing a major research project."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_frr",
+	      "label": ["Faculty", "Reading", "Room", "312"],
+	      "labelX": "376",
+	      "labelY": "654",
+	      "labelFontSize": "13px",
+	      "svgPath": "m448 729c-0.55-0.19-6.4-1-13-1.8-6.6-0.83-15-1.9-18-2.5-6.8-1.1-24-3-36-4l-7.5-0.61-0.27-24c-0.23-20-0.49-24-1.8-24-2 0-2-6.6 0.018-7.4 1-0.39 1.5-2 1.5-5.1v-4.5h75v24c0 15 0.36 24 1 24 1.2 0 1.4 26 0.25 26-0.41 0.23-1.2 0.27-1.8 0.085z",
+	      "color": "#92d8f7",
+	      "hover": "The Faculty Reading Room offers faculty a place to work, read, and collaborate."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_wtr",
+	      "label": ["Wohlauer", "Teleconference", "Room      325"],
+	      "labelX": "390",
+	      "labelY": "445",
+	      "labelFontSize": "11px",
+	      "labelPointer": "",
+	      "svgPath": "m469 482c0-6.9-0.42-12-1-13-0.55-0.34-1-2.2-1-4.1v-3.4h50v32h-48z",
+	      "color": "#92d8f7",
+	      "hover": "The Wohlauer Teleconferencing Room is acoustically designed and outfitted with state-of-the-art equipment to provide reliable teleconferencing capabilities to students, staff, or faculty."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_fsa",
+	      "label": ["Gilbert Frank", "Study Area", "398"],
+	      "labelX": "56",
+	      "labelY": "314",
+	      "svgPath": "m62 388c0-0.57-3-1-7-1h-7l-0.073-4.8c-0.04-2.6-0.44-7-0.9-9.8-3-18-5.3-30-6-31-0.45-0.86-1.8-6.3-3-12s-2.6-11-3-12c-0.43-0.55-1.3-3.4-1.9-6.4-0.63-3-1.6-5.9-2.1-6.6-0.51-0.62-1.6-3.8-2.5-7-1.6-6.1-6.9-21-8.6-24-0.93-1.6 0.4-1.8 22-1.8 13 0 23 0.11 23 0.25s0.45 9.2 0.75 20l0.55 20 8.3 0.29c6.7 0.24 8.4-5e-5 8.9-1.2 0.77-2 7.2-2 11-0.047 4 2.1 18 2.1 19 6e-3 0.68-1.8 8.9-2.1 9.9-0.41 0.37 0.6 1.5 0.87 2.6 0.59 1-0.27 1.9-0.086 1.9 0.41 0 1.6 16 1.1 17-0.59 1.6-1.6 11-2.1 11-0.58 0 1.5 6.1 2.5 7 1.1 1.4-2.2-0.15 8.2-2.6 18-1.3 5.3-2.4 11-2.4 12-0.011 1.6-1.1 7.1-2.5 12s-2.5 11-2.5 12c-0.011 1.5-0.98 6.6-2.1 11l-2.1 8.5h-5.4c-3 0-5.4 0.45-5.4 1s-2.2 1-5 1-5-0.45-5-1c0-0.61-4.3-1-11-1s-11 0.39-11 1c0 0.55-2.2 1-5 1-2.8 0-5-0.45-5-1 0-0.61-4.7-1-12-1s-12 0.39-12 1c0 0.55-2.2 1-5 1s-5-0.45-5-1z",
+	      "color": "#dff791",
+	      "hover": "The study area funded by Margot Gilbert Frank and M Allan Frank, along with Recent Graduates of Colorado, provides seating and group study rooms near the DVD collection and viewing area."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_gr",
+	      "label": ["Gottesfeld", "Room", "313"],
+	      "labelX": "375",
+	      "labelY": "596",
+	      "labelFontSize": "14px",
+	      "svgPath": "m373 642c0-8.9-0.29-11-1.5-12-1.9-0.73-2.1-8.5-0.25-8.1 0.94 0.19 1.3-2.9 1.5-12l0.28-13h75v56h-75z",
+	      "color": "#e7c8f9",
+	      "hover": "The Gottesfeld Room honors the important role of Marion Gottesfeld, who founded the Women's Library Association in 1956. Built-in cabinetry displays the collection of Artist Books - hand-made works of art"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_loft",
+	      "label": ["The Loft", "340"],
+	      "labelX": "308",
+	      "labelY": "354",
+	      "svgPath": "m359 427c0-0.64-9.6-1-27-1h-27l-1.2-5.1c-0.64-2.8-1.2-7.6-1.2-11 0-5.5-2.2-21-4.1-30-0.52-2.3-0.94-6.8-0.94-10 0-4.5-0.44-6.3-1.9-7.6-2.8-2.5-3.6-6.7-1.6-7.9 1.2-0.69 1.5-1.7 1.1-4.1-0.55-2.9-0.31-3.3 2.7-4.4 1.8-0.64 8.6-2.1 15-3.2s13-2.5 14-2.9c2.9-1.5 22-4.4 29-4.3 11 0.13 19 4.3 22 11 4 9.8 4.8 16 2.9 24-0.53 2.3-1.9 12-3 22s-2.4 19-2.9 21-1.2 5.1-1.6 7.8c-0.6 4.4-0.83 4.8-3.6 4.8-1.6 0-2.9 0.45-2.9 1s-1.8 1-4 1-4-0.45-4-1z",
+	      "color": "#fbdd88",
+	      "hover": "The Loft hangs dramatically in the atrium, above the new book collection. It serves as a research seminar room with advanced technology that enables students and faculty to share information from their own devices."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_otl",
+	      "label": ["Office of Teaching", "and Learning", "350"],
+	      "labelX": "554",
+	      "labelY": "300",
+	      "svgPath": "m621 410c-0.86-0.98-1.2-5.4-1.2-14 0-11-0.25-13-1.6-14-0.87-0.33-17-0.61-36-0.61h-34v28h-4c-4.8 0-4.4 3.6-4.4-35l-0.064-28-23-0.27c-13-0.15-23-0.49-23-0.77 0-0.28 1.1-2.3 2.5-4.5s2.5-4.4 2.5-5 0.89-2.7 2-4.8c3.1-5.8 8-18 8-20 0-0.91 0.89-3.8 2-6.3 2-4.7 4.7-16 5.7-24l0.55-4.2h81c71 0 81-0.18 81-1.5 0-1.1 1.1-1.5 4-1.5h4v138l-32-0.038c-26-0.031-32-0.29-33-1.5z",
+	      "color": "#ecd7f9",
+	      "hover": "The Office of Teaching & Learning provides professional development to improve teaching practices, develops and supports state-of-the-art technology and web-based applications that enhance student learning and promotes innovation and collaboration."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "top_qrr",
+	      "label": ["Quinette Family", "Reading Room", "302"],
+	      "labelX": "93",
+	      "labelY": "605",
+	      "svgPath": "m204 715c-1.6-0.16-12-0.8-24-1.4-20-1.1-24-1.6-37-4.5-3.3-0.76-10-2.1-15-3.1s-9.4-2.1-10-2.6-2.5-0.86-4.3-0.86-4.8-0.74-6.6-1.6c-5.8-3-6.6-3.4-8.1-3.4-0.83 0-4.3-1.1-7.8-2.4-9-3.5-9-3.4-12-5.5-1.6-1.1-3.6-1.9-4.3-2-2.5-0.14-20-11-24-16-3.5-3.5-5.3-4.5-8.5-4.7l-4-0.31v-9l17-1 1-83 46-0.24c33-0.17 47-0.58 49-1.4 1.4-0.71 3.1-0.82 4.5-0.3 1.3 0.46 16 1.1 33 1.4l31 0.54 0.74 18c0.41 10 1.2 20 1.8 21 1.3 3 1.3 13-2e-3 14-0.66 0.66-0.92 14-0.75 38l0.26 37 2.5 0.59c2.3 0.55 2.5 1 2.5 6.5v6l-10 0.11c-5.5 0.058-11-0.024-13-0.18z",
+	      "color": "#f2c4c4",
+	      "hover": "The Quinette Family Reading Room offers 2,900 sq. ft. for reading and contemplation. It has beautiful views across Carnegie Green, a fireplace, display of the library’s valuable Ski Collection, plentiful windows, soft chairs and custom-built tables by DU alum Daniel Strawn."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "top_dvds_label",
+	      "label": ["DVDs"],
+	      "labelX": "180",
+	      "labelY": "320",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": "DVDs"
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "top_viewing_area_label",
+	      "label": ["Viewing", "Area"],
+	      "labelX": "165",
+	      "labelY": "377",
+	      "labelFontSize": "12px",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": "DVD Viewing Area"
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "top_main_stairs_label",
+	      "label": ["Main", "Stairs"],
+	      "labelX": "135",
+	      "labelY": "446",
+	      "labelFontSize": "12px",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": ""
+	    }
+	  ],
+
+  	"main-floor": [
+  		{
+	      "visibility": "hidden",	
+	      "name": "main_uts",
+	      "label": ["IT @ DU", "Technology", "Services"],
+	      "labelX": "522",
+	      "labelY": "209",
+	      "labelFontSize": "13px",
+	      "svgPath": "m560 286c0-8.2-0.38-15-0.85-15s-11-0.57-24-0.63l-23-0.1v-3.4c0-2.4 0.45-3.4 1.6-3.4 1.2 0 1.5-0.89 1.2-3.8-0.3-3.6-0.5-3.8-4.2-4.1l-3.9-0.32 0.44-9.2c0.44-9.2 2.4-17 7.5-31 3.2-8.5 4.5-11 6-13 0.69-0.73 1.2-1.8 1.2-2.3 0-0.56 1.2-2.8 2.8-4.9l2.8-3.9 66-0.043v110h-35z",
+	      "color": "#cefdd7",
+	      "hover": "The University Technology Services Help Center is staffed by specialized technicians who diagnose and repair hardware and software issues for students, faculty and staff.",
+	      "link": "http://www.google.com"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_rc",
+	      "label": ["Crossley", "Research", "Center", "240"],
+	      "labelX": "535",
+	      "labelY": "364",
+	      "labelFontSize": "13px",
+	      "svgPath": "m484 416c-1.3-1.4-2.9-2.5-3.6-2.5-0.66-0.01-1.6-0.61-2-1.3-0.44-0.72-3.8-3.5-7.5-6.1-3.7-2.6-7-5.2-7.3-5.7s0.59-2.1 2-3.7 2.6-3.3 2.6-3.9c0-0.63 0.7-1.7 1.5-2.4 0.85-0.71 2.7-3.7 4.2-6.6 1.4-2.9 3-5.3 3.5-5.3 0.46 0 0.84-0.68 0.84-1.5s1.1-3.3 2.5-5.5 2.5-4.6 2.5-5.4 0.5-1.8 1.1-2.1c0.66-0.41 0.88-2.1 0.54-4.2-0.64-3.9 0.67-7.2 2.9-7.2 0.81 0 1.5-0.45 1.5-1 0-0.64 8.5-1 24-1 13 0 24 0.39 24 0.88 0 0.48-0.68 1.4-1.5 2.1s-1.5 1.8-1.5 2.5c0 1.7-3.3 7.4-4.2 7.5-0.41 3e-3 -0.75 0.71-0.75 1.6s-1.1 3.2-2.5 5.2c-1.4 2-2.5 4.2-2.5 4.9s-0.62 1.8-1.4 2.6c-0.76 0.76-2.3 3.2-3.4 5.4-1.1 2.2-2.8 4.6-3.6 5.3s-1.6 2.4-1.6 3.7c0 1.3-0.57 2.4-1.3 2.4-0.69 0-2.6 2.1-4.2 4.7-1.6 2.6-3.7 5.7-4.5 6.9s-3.1 4.5-5 7.3c-3.3 4.8-3.8 5.1-7.6 5.1-3.1 0-4.7-0.61-6.5-2.5z",
+	      "color": "#fcdd88",
+	      "hover": "The Archibald M. and Helen M. Crossley Research Center provides expert research help to students, faculty, and staff at any stage of the research process."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_cc",
+	      "label": ["Chan", "Classroom", "285"],
+	      "labelX": "166",
+	      "labelY": "37",
+	      "svgPath": "m238 94c0-1.3-5.5-1.5-44-1.5h-44l0.53-56 96-0.52v28c0 26-0.097 28-2 30-2.4 2.4-8 2.7-8 0.5z",
+	      "color": "#e6c8f9",
+	      "hover": "The Chan Classroom funded by the Boettcher Foundation is used by the Writing Program faculty to teach writing skills across all academic disciplines."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_er",
+	      "label": ["Greg Kvistad", "Special Events", "Room", "290"],
+	      "labelX": "126",
+	      "labelY": "295",
+	      "svgPath": "m227 406c0-1.3-7.9-1.5-66-1.5h-66v-68c0-59-0.19-68-1.5-68-0.91-0.35-1.5-1.9-1.5-3.9l-5.4e-4 -3.3 31 0.28c27 0.24 31 0.094 31-1.2 0-2.1 6.6-2.1 7.4-0.028 0.5 1.3 6.1 1.5 42 1.5l41 1e-5 -0.032 71c-0.026 58-0.29 72-1.4 73-1.8 2.4-16 2.6-16 0.25z",
+	      "color": "#fcdd88",
+	      "hover": "The Special Events Room can seat 200 people for academic events and presentations by students and faculty. When not in use for an event, the space is set with tables and chairs as an open study area."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_dmc",
+	      "label": ["Digital", "Media", "Center", "230"],
+	      "labelX": "483",
+	      "labelY": "432",
+	      "labelFontSize": "13px",
+	      "svgPath": "m448 461c0-0.46-2-1.9-4.5-3.2-2.5-1.3-5-2.9-5.6-3.7-0.61-0.73-1.8-1.3-2.6-1.3s-2.9-1.1-4.6-2.4c-1.7-1.3-4.1-2.7-5.3-3.1-2.3-0.72-3.2-4.6-1.1-4.6 1.1 0 8.9-7.3 8.9-8.3 0-0.29 2.1-2.7 4.8-5.4 6.4-6.5 13-15 13-16-0.51-1.8 2.8-5.3 4.9-5.3 1.3 0 2.3-0.61 2.3-1.4 0-0.76 0.6-1.9 1.3-2.5 1-0.85 1.9-0.52 3.7 1.4 1.3 1.4 2.9 2.5 3.7 2.5 0.73 0 1.3 0.34 1.3 0.77 0 0.7 7.5 6.1 12 8.8 1.1 0.61 2.9 2.1 4.2 3.2 1.3 1.2 3 2.1 4 2.1 1.5 0 1.5 0.3 0.44 2.1-3.7 6.1-30 33-33 33-0.45 0-1.6 0.9-2.6 2-1.8 2-5.5 2.8-5.5 1.2z",
+	      "color": "#92d8f7",
+	      "hover": "The Digital Media Center is a brand-new service to DU, serving as a digital media editing facility with equipment, software and staff support."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_hr",
+	      "label": ["Herold Research", "Instruction Room", "275"],
+	      "labelX": "535",
+	      "labelY": "40",
+	      "labelFontSize": "12px",
+	      "svgPath": "m534 94c-0.33-1.2-0.61-15-0.62-30l-0.014-27h94v56l-44 0.26c-34 0.2-44 0.53-44 1.5 0.15 0.77-0.86 1.2-2.6 1.2-2.1 0-3-0.58-3.5-2.2z",
+	      "color": "#fcdd88",
+	      "hover": "The Virginia Herold Research Instruction Room serves thousands of students each year with classes and workshops in navigating the abundant resources of the University Library, including nearly 1,000 databases."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_mc",
+	      "label": ["Math", "Center", "277"],
+	      "labelX": "398",
+	      "labelY": "72",
+	      "labelFontSize": "13px",
+	      "svgPath": "m393 99v-27l26-0.56 0.55-34h46v89h-73z",
+	      "color": "#dff891",
+	      "hover": "The Math Center provides drop-in assistance for Algebra, Trigonometry, Business Calculus, and Calculus I-III classes, including homework review and help preparing for exams."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_lc",
+	      "label": ["Language", "Center", "277A"],
+	      "labelX": "398",
+	      "labelY": "145",
+	      "labelFontSize": "13px",
+	      "svgPath": "m393 210c0-6.4-0.29-8-1.5-8-1.1 0-1.5-1.1-1.5-3.9 0-2.5 0.52-4.1 1.5-4.5 1.3-0.5 1.5-5.2 1.5-34v-34h73v16c0 9.5 0.4 16 1 17 0.63 0.39 1 12 1 30v29h-75z",
+	      "color": "#e7c8f9",
+	      "hover": "Language Center"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_nsr",
+	      "label": ["Nikki's", "Study", "Room", "212"],
+	      "labelX": "394",
+	      "labelY": "597",
+	      "labelFontSize": "11px",
+	      "svgPath": "m392 630c0-15-0.25-18-1.5-18-0.91-0.35-1.5-1.9-1.5-3.9s0.59-3.5 1.5-3.9c0.82-0.32 1.5-1.7 1.5-3.1v-2.5h34v49h-34z",
+	      "color": "#def791",
+	      "hover": "Small Group Study Room 212 - Nikki's Study Room"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_sec",
+	      "label": ["Science and", "Engineering", "Center", "285"],
+	      "labelX": "150",
+	      "labelY": "107",
+	      "svgPath": "m152 188c0-0.64-10-1-28-1h-28v-150l52 0.53 1 60 44 0.26c39 0.23 44 0.071 45-1.2 0.62-1.6 7.4-2.2 7.4-0.63 0 1.4 4.2 2.1 6.2 1 1.6-0.87 1.8-2.4 1.8-13v-12h22c14 0 22-0.36 22-1 0-0.58 3.3-1 8-1h8l0.53 119-32-1.8e-4c-21-1.1e-4 -32-0.35-32-1 0-0.65-15-1-42-1s-42 0.35-42 1c0 0.55-2.5 1-5.5 1s-5.5-0.45-5.5-1z",
+	      "color": "#dff791",
+	      "hover": "The Science and Engineering Center is a collaborative space staffed by undergraduate and graduate learning assistants (LAs) trained to assist students with first and second year biology, chemistry, physics, and engineering lecture and laboratory courses."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "main_wc",
+	      "label": ["Shopneck", "Family", "Writing", "Center", "280"],
+	      "labelX": "326",
+	      "labelY": "141",
+	      "labelFontSize": "11px",
+	      "svgPath": "m364 213c-16-1.8-43-9.4-47-13-0.94-0.9-1.2-8.1-1.2-29v-28h42v-9.5c0-5.7-0.4-9.5-1-9.5-1.7 0-1.2-7.7 0.58-8.4 0.87-0.33 8.1-0.61 16-0.61h14v39c0 34 0.2 39 1.5 40 0.98 0.38 1.5 1.9 1.5 4.5 0 2.8-0.42 3.9-1.5 3.9-1.2 0-1.5 1.4-1.5 6.5v6.5l-6.2-0.14c-3.4-0.078-11-0.69-17-1.4z",
+	      "color": "#f1c4c4",
+	      "hover": "The Shopneck Family Writing Center offers one-on-one consultations, providing writers comprehensive and collaborative advice on writing."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_lenddesk",
+	      "label": ["Perlmutter", "Lending", "Desk"],
+	      "labelX": "426",
+	      "labelY": "497",
+	      "svgPath": "m388 550-5.7-0.38-1.8-5.2c-2-6-2.3-7.1-2.8-11-0.19-1.6-0.89-6.8-1.6-12-0.67-4.7-0.93-11-0.59-15 0.67-6.8 3.2-18 4.8-21 0.65-1.2 0.64-2.2-0.034-2.9-1.4-1.4 0.69-5.8 2.8-5.8 0.91 0 2.7-1.4 3.9-3 2.2-3 2.2-3 4.3-1 1.2 1.1 4 2.9 6.2 4.1 6.8 3.5 10 5.6 15 8.4 2.2 1.4 4.4 2.6 4.9 2.6 1.7 0 2.3 2.1 1.3 4.3-3.6 7.5-5.4 12-5.7 15-0.2 1.6-0.64 3.3-0.99 3.9-2.2 3.6-3.8 14-3.9 25l-0.13 13-5 0.014c-2.8 8e-3 -5.9 0.16-7 0.33s-4.6 0.15-7.7-0.062z",
+	      "color": "#e68484",
+	      "hover": "The Jordon and Essie Perlmutter and Family Lending Services Desk provides help locating and checking out books and materials."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_resdesk",
+	      "label": ["Research", "Desk"],
+	      "labelX": "427",
+	      "labelY": "325",
+	      "svgPath": "m457 374c-2-1.6-2-2-0.76-4.3 0.77-1.4 3-5.8 5-9.8 3.7-7.4 4.9-8.2 8.7-6.2 1.6 0.84 1.9 1.7 1.4 3.7-0.37 1.5-1.2 3.3-1.8 4.1-0.64 0.76-2.6 4.1-4.3 7.5-3.4 6.7-5 7.6-8.2 4.9z",
+	      "color": "#e68484",
+	      "hover": "Click to ask a research question"
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_complab",
+	      "label": ["Open Computer Lab"],
+	      "labelX": "514",
+	      "labelY": "132",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": "Computers are available in Main Library for members of the University community, but some have particular uses.  Visitors may access computers under certain conditions."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_new_books_label",
+	      "label": ["New", "Books"],
+	      "labelX": "341",
+	      "labelY": "336",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": ""
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_cafe",
+	      "label": ["Front", "Porch", "Cafe"],
+	      "labelX": "113",
+	      "labelY": "575",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": "The Front Porch Cafe, located in the Anderson Academic Commons, offers not only coffee, smoothies, tea, and desserts, but also a wide array of healthy breakfast and lunch selections."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "main_main_stairs_label",
+	      "label": ["Main", "Stairs"],
+	      "labelX": "149",
+	      "labelY": "431",
+	      "labelFontSize": "12px",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": ""
+	    }
+  	],
+
+  	"bottom-floor": [
+  		{
+	      "visibility": "hidden",	
+	      "name": "bottom_fgs",
+	      "label": ["Family", "Group", "Study", "152"],
+	      "labelX": "671",
+	      "labelY": "159",
+	      "labelFontSize": "10px",
+	      "svgPath": "m667 184 0.27-24 40-0.54v48h-40z",
+	      "color": "#dff891",
+	      "hover": "In response to requests from graduate students, the Anderson Academic Commons has a Family Study Room where students may bring their children while they use the library, and the kids are comfortable with toys and kidsized furniture while Mom or Dad studies."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_frr",
+	      "label": ["Fogel", "Family", "Reading", "Room", "101"],
+	      "labelX": "151",
+	      "labelY": "410",
+	      "labelFontSize": "11px",
+	      "svgPath": "m131 496c0.32-0.51 0.12-1.2-0.44-1.6-0.65-0.4-1-11-1-30 0-19-0.37-30-1-30-0.55-0.34-1-2.6-1-5s0.45-4.7 1-5 1-1.8 1-3.2c0-1.4 0.79-3.2 1.8-4 2.2-1.7 18-9.3 19-9.3 0.53 0 2.7-0.87 4.8-1.9 2.1-1.1 7.4-2.7 12-3.7s8.8-2.1 9.7-2.6c2.2-1.1 30-4 31-3.3 0.54 0.33 0.92 15 0.92 35v34h-3c-2.3 0-3 0.44-3 2 0 1.7 0.67 2 4 2h4v14l-62 0.53-0.3 4.8c-0.28 4.3-0.54 4.8-2.8 4.8-1.4 0-2.7 0.68-3.1 1.5-0.41 1.1-2.1 1.5-6 1.5-3.1 0-5.2-0.4-4.9-0.93z",
+	      "color": "#fcdd88",
+	      "hover": "DU has long had impressive Special Collections, and with the Ida and Max Fogel Family Reading Room, we now have an appropriate place where scholars and students may review and conduct research using these rare and valuable materials."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_gfeuc",
+	      "label": ["Gilbertson Family", "Quiet Study Room", "180"],
+	      "labelX": "321",
+	      "labelY": "66",
+	      "svgPath": "m345 148c-8.5-0.38-18-1.2-21-1.8-3-0.59-10-1.8-16-2.6s-12-2-15-2.6c-2.8-0.59-5.6-1.1-6.2-1.2-1.9-0.19-1.7-7.8 0.24-7.8 1.3 0 1.5-6.1 1.8-47 0.14-26 0.6-47 1-46 0.41 1.7e-4 39 3.1e-4 85 3.1e-4h84v46c0 40 0.2 46 1.5 47 0.97 0.37 1.5 1.9 1.5 4.3v3.8l-6.2 1.2c-3.4 0.68-11 1.9-16 2.7-5.2 0.81-12 1.9-15 2.5-13 2.3-50 3.1-80 1.8z",
+	      "color": "#92d8f7",
+	      "hover": "An anonymous donor funded the Quiet Study Room where acoustic engineering limits noise from other areas of the Academic Commons and from Evans Avenue so that students may easily focus on their assignments."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_lgs_182",
+	      "label": ["182", "LGS"],
+	      "labelX": "56",
+	      "labelY": "125",
+	      "labelFontSize": "13px",
+	      "svgPath": "m42 163c-0.96-0.96-0.82-37 0.15-38 0.62-0.98 7.3-1.2 30-1l29 0.27v39l-29 0.26c-16 0.15-29-0.042-30-0.42z",
+	      "color": "#aeca92",
+	      "hover": "Large Group Study Room 182"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_lgs_184",
+	      "label": ["184", "LGS"],
+	      "labelX": "56",
+	      "labelY": "171",
+	      "labelFontSize": "13px",
+	      "svgPath": "m41 189 0.27-19h59l0.54 38h-60z",
+	      "color": "#aeca92",
+	      "hover": "Large Group Study Room 184"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sc",
+	      "label": ["Special", "Collections"],
+	      "labelX": "91",
+	      "labelY": "584",
+	      "svgPath": "m40 598v-110h86v15c0 13 0.23 15 1.6 16 0.87 0.33 19 0.61 41 0.61h39l0.58 18 54 0.53v82l-15 0.05c-8.1 0.028-19 0.14-24 0.25l-9.5 0.2v27l30 0.55v59h-204v-110z",
+	      "color": "#f1c4c4",
+	      "hover": "Special Collections are climate controlled, locked and supervised. With Special Collections are offices for the University Historian, the curators of the University Archives and the Ira M. and Peryle Hayutin Beck Memorial Archives of Rocky Mountain Jewish History, and an exhibit preparation room."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108A",
+	      "label": ["108A"],
+	      "labelX": "289",
+	      "labelY": "400",
+	      "svgPath": "m285 410v-17h48v34h-48z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108A"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108B",
+	      "label": ["108B"],
+	      "labelX": "289",
+	      "labelY": "438",
+	      "svgPath": "m285 449v-16l41-0.58-9.9e-4 16-1e-3 16h-41z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108B"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108C",
+	      "label": ["108C"],
+	      "labelX": "289",
+	      "labelY": "475",
+	      "svgPath": "m285 486v-16h41v33h-41z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108C"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108D",
+	      "label": ["108D"],
+	      "labelX": "289",
+	      "labelY": "514",
+	      "svgPath": "m285 525v-17h41l-0.25 34h-41z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108D"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108E",
+	      "label": ["108E"],
+	      "labelX": "289",
+	      "labelY": "552",
+	      "svgPath": "m285 563v-16h41v32h-41z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108E"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_108F",
+	      "label": ["108F"],
+	      "labelX": "289",
+	      "labelY": "591",
+	      "svgPath": "m285 601v-17h48v34h-48z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 108F"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_168",
+	      "label": ["168"],
+	      "labelX": "673",
+	      "labelY": "129",
+	      "svgPath": "m667 140v-16h40v32h-40z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 168"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_189",
+	      "label": ["189"],
+	      "labelX": "145",
+	      "labelY": "224",
+	      "labelFontSize": "13px",
+	      "svgPath": "m140 234v-22h38v43h-38z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 189"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_190",
+	      "label": ["190"],
+	      "labelX": "183",
+	      "labelY": "224",
+	      "labelFontSize": "13px",
+	      "svgPath": "m183 234v-22h26v43h-26z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 190"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_sgs_191",
+	      "label": ["191"],
+	      "labelX": "173",
+	      "labelY": "263",
+	      "labelFontSize": "13px",
+	      "svgPath": "m166 274v-14h43v27h-43z",
+	      "color": "#cccfab",
+	      "hover": "Small Group Study Room 191"
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_ssr",
+	      "label": ["Schayer", "Seminar", "Room"],
+	      "labelX": "216",
+	      "labelY": "404",
+	      "labelFontSize": "11px",
+	      "svgPath": "m218 467c-0.4-0.65-1.6-0.96-2.6-0.69-1.8 0.48-1.9-0.7-1.9-35v-35h40v69l-8.2 0.06c-4.5 0.033-10 0.52-13 1.1-9.1 1.9-13 2.1-14 0.87z",
+	      "color": "#ecd7f9",
+	      "hover": "The Charles M. and Faye G. Schayer Seminar Room serves as a classroom for professors who bring students to work with primary sources. Imagine holding an important historic document or the costume of a famous dancer! The Schayer Room may also be used by archivists, historians and librarians for meetings."
+	    },
+	    {
+	      "visibility": "hidden",	
+	      "name": "bottom_vcs",
+	      "label": ["Video", "Creation", "Studio", "152"],
+	      "labelX": "544",
+	      "labelY": "215",
+	      "svgPath": "m539 250v-39h4.5c2.5 0 4.5 0.45 4.5 1 0 0.64 9.3 1 26 1h26v74h-26c-16 0-26 0.36-26 1 0 0.55-2.2 1-5 1h-5z",
+	      "color": "#c0fed7",
+	      "hover": "The Video Creation Studio is a professional recording studio that can be used by DU faculty and staff with very little video production experience."
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "bottom_stacks_label",
+	      "label": ["Penrose", "Collection", "Main", "Stacks"],
+	      "labelX": "475",
+	      "labelY": "423",
+	      "labelFontSize": "15px",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": "The Penrose Collection includes all of the books and materials belonging to the University Libraries. In honor of the family that funded El Pomar Foundation, and which, in turn, provided the funds not only to build DU’s former library but to make major acquisitions of important resources, we have named the collection for Spencer and Julie Penrose, the library’s forty-year namesake"
+	    },
+	    {
+	      "visibility": "visible",	
+	      "name": "bottom_main_stairs_label",
+	      "label": ["Main", "Stairs"],
+	      "labelX": "53",
+	      "labelY": "424",
+	      "labelFontSize": "12px",
+	      "svgPath": "",
+	      "color": "",
+	      "hover": ""
+	    }
+  	]
+  },
+
+  "icon_overlays": {
+  	"top-floor": [
+  		{
+  			"visibility": "hidden",
+  			"name": "top_access_restroom1_pin",
+  			"X": "577",
+  			"Y": "170",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 56.141495,30.720036 c -0.07097,-0.385884 -0.698489,-3.785838 -0.845452,-4.3559 -0.364657,-1.415668 -1.819464,-1.415668 -2.601113,-1.415668 h -2.309579 c -0.781647,0 -2.236694,0 -2.601112,1.415668 -0.146963,0.569855 -0.77448,3.970016 -0.845452,4.3559 -0.07551,0.410635 0.248761,0.79652 0.724776,0.8619 0.476969,0.066 0.923114,-0.214702 0.998626,-0.625336 0.164646,-0.894486 0.574945,-3.092236 0.757513,-3.961766 v 10.532122 c 0,0.415997 0.390705,0.753002 0.872454,0.753002 0.48175,0 0.872454,-0.337211 0.872454,-0.753002 v -5.27328 h 0.750584 v 5.273075 c 0,0.415996 0.390704,0.753001 0.872454,0.753001 0.48175,0 0.872454,-0.337211 0.872454,-0.753001 V 26.994834 c 0.182568,0.869736 0.592867,3.06728 0.757513,3.96156 0.06834,0.370829 0.438975,0.634823 0.860745,0.634823 0.0454,0 0.09176,-0.0031 0.13812,-0.0095 0.476254,-0.06517 0.800766,-0.451058 0.725015,-0.861692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 40.791701,24.935887 c 0.788578,0 2.246253,0 2.604698,1.423093 0.119481,0.577486 0.764682,3.980534 0.83637,4.351775 0.07169,0.412491 -0.238963,0.804357 -0.716889,0.866231 -0.477926,0.06187 -0.931956,-0.206246 -1.003645,-0.618736 -0.167274,-0.886855 -0.573511,-3.09368 -0.764682,-3.95991 -0.02389,-0.06187 -0.07169,-0.103123 -0.143377,-0.103123 -0.07169,0 -0.143378,0.06187 -0.143378,0.123748 l 1.194815,6.496727 h -0.90806 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884163,0.763108 -0.501823,0 -0.884164,-0.350617 -0.884164,-0.763108 v -4.001158 h -0.740785 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884164,0.763108 -0.501822,0 -0.884163,-0.350617 -0.884163,-0.763108 v -4.001158 h -0.90806 l 1.194815,-6.496727 c 0,-0.06187 -0.07169,-0.123748 -0.143378,-0.123748 -0.07169,0 -0.119481,0.04125 -0.143377,0.103123 -0.19117,0.86623 -0.597408,3.073055 -0.764682,3.95991 -0.07169,0.41249 -0.525719,0.68061 -1.003645,0.618736 -0.477926,-0.06187 -0.788578,-0.45374 -0.716889,-0.866231 0.07169,-0.371241 0.716889,-3.774289 0.83637,-4.351775 0.358445,-1.423093 1.81612,-1.423093 2.604698,-1.423093 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 37.758852,37.970082 c -0.09723,-0.117155 -0.180942,-1.077815 -0.205703,-2.360611 l -0.04175,-2.163064 -0.41217,-0.04743 c -0.226694,-0.02608 -0.408012,-0.127253 -0.402929,-0.22482 0.0051,-0.09757 0.265946,-1.526316 0.579696,-3.174997 0.493052,-2.590866 0.56248,-3.524519 0.237957,-3.199996 -0.04256,0.04256 -0.271629,1.038266 -0.509043,2.21268 -0.237414,1.174415 -0.490362,2.189791 -0.562107,2.256393 -0.309812,0.287601 -0.774442,0.302441 -1.104382,0.03527 l -0.341256,-0.276332 0.41778,-2.237629 c 0.706456,-3.783784 0.653294,-3.736431 4.194775,-3.736431 3.541481,0 3.488319,-0.04735 4.194775,3.736431 l 0.41778,2.237629 -0.33697,0.272862 c -0.841867,0.681702 -1.154936,0.267277 -1.649264,-2.183209 -0.385181,-1.909426 -0.612644,-2.554814 -0.789732,-2.240741 -0.03891,0.06901 0.185381,1.47439 0.498423,3.123071 0.313041,1.648681 0.573325,3.07743 0.578408,3.174997 0.0051,0.09757 -0.176235,0.198736 -0.402928,0.22482 l -0.41217,0.04743 -0.04175,2.163064 c -0.02476,1.282796 -0.108472,2.243456 -0.205702,2.360611 -0.263979,0.318075 -0.979796,0.239999 -1.242849,-0.135561 -0.183763,-0.262359 -0.233319,-0.771696 -0.233319,-2.398081 v -2.064973 h -0.3747 -0.3747 v 2.064973 c 0,1.626385 -0.04956,2.135722 -0.233319,2.398081 -0.263052,0.37556 -0.97887,0.453636 -1.242848,0.135561 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 38.629787,24.341192 c -0.502312,-0.253301 -0.710497,-0.466396 -0.836493,-0.856222 -0.323206,-0.999982 0.15531,-1.781104 1.301474,-2.124503 0.483886,-0.144976 0.693668,-0.13038 1.265644,0.08806 0.794307,0.303349 1.152784,0.765037 1.152784,1.484688 0,0.734099 -0.267719,1.132031 -0.978819,1.454897 -0.810736,0.368104 -1.095482,0.361089 -1.90459,-0.04692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.850726,24.446693 c -1.048512,-0.361416 -1.491541,-1.227029 -1.075033,-2.100455 0.709965,-1.488811 3.337046,-1.268147 3.632187,0.305089 0.245049,1.306221 -1.14496,2.28214 -2.557154,1.795366 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 49.707508,37.919992 c -0.162567,-0.19571 -0.221417,-1.366453 -0.280643,-5.583034 l -0.07494,-5.335395 -0.405797,2.084455 c -0.223189,1.14645 -0.45925,2.133699 -0.524581,2.193886 -0.304133,0.280189 -0.76833,0.286284 -1.103974,0.0145 l -0.35251,-0.285445 0.424939,-2.303456 c 0.233717,-1.266901 0.51898,-2.487791 0.633918,-2.713089 0.35835,-0.702427 0.992047,-0.920247 2.871256,-0.986937 2.326679,-0.08257 3.240869,0.04908 3.798015,0.546954 0.40316,0.360268 0.490869,0.615729 0.883479,2.573237 0.559527,2.789733 0.564364,3.109489 0.04999,3.305054 -0.300204,0.114137 -0.479953,0.09444 -0.749401,-0.0821 -0.194958,-0.127742 -0.35473,-0.247564 -0.355049,-0.266272 -0.0036,-0.210259 -0.779281,-3.936378 -0.830034,-3.98713 -0.03777,-0.03777 -0.06867,2.33209 -0.06867,5.26635 0,5.790406 -0.0022,5.806069 -0.82434,5.806069 -0.762151,0 -0.824341,-0.243915 -0.824341,-3.233127 v -2.762076 h -0.44964 -0.449641 v 2.817745 c 0,1.99174 -0.05272,2.87047 -0.179856,2.997602 -0.260075,0.260076 -0.948466,0.220805 -1.188182,-0.06778 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "M 45.230223,29.699405 V 21.23118 h 0.3747 0.3747 v 8.468225 8.468225 h -0.3747 -0.3747 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.356722,43.764747 c -4.963361,-0.783206 -9.29949,-4.710105 -10.745661,-9.73152 -0.294258,-1.021727 -0.341479,-1.529489 -0.340317,-3.659362 0.0013,-2.419194 0.01241,-2.505195 0.509738,-3.951239 1.524706,-4.433323 5.125219,-7.811573 9.527079,-8.938962 1.465163,-0.375253 4.686238,-0.419582 6.240638,-0.08589 5.325327,1.143234 9.752079,6.087054 10.349491,11.558363 0.43358,3.970894 -0.806268,7.763483 -3.463846,10.595598 -1.301202,1.38666 -2.524964,2.297503 -4.077226,3.034668 -1.963002,0.932226 -2.951347,1.153541 -5.376995,1.204044 -1.195294,0.02489 -2.375599,0.01333 -2.622901,-0.0257 z m -4.41161,-5.602389 c 0.266796,-0.142785 0.289907,-0.33396 0.289907,-2.398082 v -2.242929 h 0.3747 0.3747 v 2.242929 c 0,2.064122 0.02311,2.255297 0.289907,2.398082 0.422989,0.226376 1.002995,0.18976 1.273129,-0.08037 0.192349,-0.19235 0.235526,-0.631961 0.235526,-2.398081 v -2.162556 h 0.44964 c 0.247302,0 0.44964,-0.05703 0.44964,-0.126737 0,-0.0697 -0.167974,-1.03081 -0.373275,-2.13579 -0.3932,-2.116298 -0.492956,-3.296961 -0.138088,-1.634355 0.114366,0.535821 0.243556,1.125121 0.28709,1.309555 0.127121,0.538557 0.683909,0.821937 1.236478,0.62931 0.25441,-0.08869 0.504872,-0.271506 0.556583,-0.406264 0.05171,-0.134758 -0.120422,-1.349508 -0.38252,-2.699444 -0.370668,-1.909125 -0.554918,-2.547575 -0.829313,-2.873676 -0.408668,-0.485673 -1.280915,-0.748456 -2.559116,-0.770986 -0.693167,-0.01222 -0.778832,-0.03744 -0.420741,-0.123854 1.081592,-0.26102 1.573741,-0.803382 1.573741,-1.734305 0,-0.334269 -0.105263,-0.758047 -0.233918,-0.941728 -0.745978,-1.065032 -2.832948,-1.065032 -3.578926,0 -0.30085,0.429524 -0.30085,1.453931 0,1.883455 0.275414,0.393208 0.958458,0.773042 1.44479,0.803432 0.18957,0.01185 -0.198241,0.06913 -0.861803,0.127307 -1.343613,0.117791 -1.931558,0.344254 -2.337406,0.900315 -0.307434,0.421223 -1.233803,4.981671 -1.098518,5.407919 0.173097,0.545379 1.341408,0.628541 1.656973,0.117946 0.06478,-0.104822 0.233437,-0.733424 0.374786,-1.396894 0.39414,-1.850037 0.331503,-0.858965 -0.08863,1.402267 -0.205301,1.10498 -0.373275,2.066086 -0.373275,2.13579 0,0.06971 0.202338,0.126737 0.44964,0.126737 h 0.449641 v 2.162556 c 0,1.76612 0.04318,2.205731 0.235526,2.398081 0.270133,0.270134 0.850139,0.30675 1.273128,0.08037 z m 7.148149,-8.425483 -0.0387,-8.580635 h -0.44964 -0.44964 l -0.0387,8.580635 -0.0387,8.580636 h 0.527035 0.527035 z m 4.858074,8.332585 c 0.24656,-0.223134 0.274092,-0.524226 0.274092,-2.997601 0,-2.649632 0.01089,-2.749552 0.29976,-2.749552 0.288762,0 0.29976,0.09992 0.29976,2.72351 0,3.05286 0.06615,3.271694 0.988951,3.271694 0.938661,0 0.957671,-0.105144 0.974809,-5.391564 l 0.01532,-4.725343 0.321911,1.573411 c 0.29168,1.425653 0.360617,1.591803 0.734081,1.769269 0.339504,0.161329 0.484837,0.161192 0.82434,-7.79e-4 0.563777,-0.268964 0.576543,-0.624502 0.110221,-3.069749 -0.672377,-3.525737 -0.723819,-3.569514 -4.194453,-3.569514 -3.519753,0 -3.615507,0.07709 -4.28152,3.447067 -0.506429,2.562486 -0.523502,2.816586 -0.206897,3.079345 0.314273,0.260823 1.07904,0.244561 1.352359,-0.02876 0.122083,-0.122083 0.347826,-0.858369 0.501653,-1.636191 l 0.279685,-1.414222 0.05326,4.770926 c 0.05042,4.516424 0.06878,4.782267 0.344196,4.983514 0.389432,0.284557 0.97231,0.26876 1.308473,-0.03546 z m 2.037384,-13.904102 c 0.492844,-0.451658 0.559849,-0.596542 0.559849,-1.210557 0,-0.614016 -0.06701,-0.758899 -0.559849,-1.210558 -0.507985,-0.465533 -0.643568,-0.513063 -1.463532,-0.513063 -0.819964,0 -0.955547,0.04753 -1.463533,0.513063 -0.492843,0.451659 -0.559849,0.596542 -0.559849,1.210558 0,0.614015 0.06701,0.758899 0.559849,1.210557 0.507986,0.465533 0.643569,0.513064 1.463533,0.513064 0.819964,0 0.955547,-0.04753 1.463532,-0.513064 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+			"hover": "Gender neutral restroom, no door opener, accessibility features"
+  		},
+  		{
+  			"visibility": "hidden",
+  			"name": "top_access_elevator_pin",
+  			"X": "260",
+  			"Y": "550",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 36.046694,38.446698 c -0.113789,-0.125736 -0.124025,-0.802619 -0.124025,-8.201686 v -8.06464 l 0.166555,-0.11666 c 0.148554,-0.104051 1.163188,-0.116659 9.388301,-0.116659 8.225112,0 9.239747,0.01261 9.388301,0.116659 l 0.166555,0.11666 v 8.124109 c 0,7.955371 -0.003,8.12572 -0.144954,8.201686 -0.09768,0.05228 -3.173151,0.07758 -9.430831,0.07758 -8.900834,0 -9.29102,-0.0057 -9.409902,-0.137046 z m 9.018661,-8.14383 v -7.606414 h -4.159173 -4.159173 v 7.606414 7.606415 h 4.159173 4.159173 z m 9.217626,0 v -7.606414 h -4.196643 -4.196643 v 7.606414 7.606415 h 4.196643 4.196643 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 39.277997,33.96759 c -1.60163,-1.436725 -1.584214,-1.415837 -1.364064,-1.635987 0.259435,-0.259435 0.484487,-0.151541 1.395665,0.669107 0.48052,0.432779 0.893005,0.786871 0.916634,0.786871 0.02363,0 0.04296,-1.819131 0.04296,-4.042514 v -4.042513 l 0.166554,-0.116659 c 0.205713,-0.144087 0.28937,-0.145906 0.474848,-0.01032 0.14008,0.102396 0.146856,0.256931 0.182938,4.172121 l 0.03747,4.065785 0.893674,-0.799819 c 0.668939,-0.598685 0.944601,-0.799818 1.09619,-0.799818 0.237401,0 0.392353,0.156683 0.357765,0.361764 -0.03677,0.218048 -2.600491,2.485957 -2.810204,2.485957 -0.114399,0 -0.574049,-0.361646 -1.39043,-1.093971 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.001839,34.937688 c -0.08329,-0.100322 -0.109976,-0.88986 -0.140321,-4.152461 l -0.03747,-4.028586 -0.861811,0.779716 c -0.473996,0.428844 -0.939046,0.800773 -1.033445,0.82651 -0.198324,0.05407 -0.465356,-0.14556 -0.465356,-0.347896 0,-0.109961 2.362221,-2.316124 2.670527,-2.494101 0.0579,-0.03343 0.1747,-0.03874 0.259548,-0.01181 0.142954,0.04537 2.461588,2.079592 2.671694,2.343972 0.140822,0.177199 0.114162,0.297168 -0.09674,0.43536 -0.26217,0.17178 -0.364697,0.112504 -1.361419,-0.787102 -0.461949,-0.41694 -0.858195,-0.758072 -0.880545,-0.758072 -0.02235,0 -0.04064,1.836718 -0.04064,4.081596 0,3.958657 -0.0044,4.083932 -0.144953,4.159173 -0.21137,0.113121 -0.421701,0.09506 -0.539066,-0.0463 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.678964,43.825131 c -0.822348,-0.08176 -1.487673,-0.236234 -2.473022,-0.574171 -4.400103,-1.509064 -7.815343,-5.374993 -8.81184,-9.974687 -0.219045,-1.011084 -0.285855,-3.893691 -0.116041,-5.00674 0.206786,-1.355377 0.862797,-3.137362 1.643004,-4.463048 1.415417,-2.404998 3.347059,-4.192076 5.861016,-5.422378 1.831774,-0.89645 3.08938,-1.208667 5.177065,-1.285277 3.157299,-0.115859 5.567059,0.547002 8.067866,2.219258 2.793506,1.867979 4.838155,4.775527 5.669451,8.062119 0.299116,1.182576 0.397801,3.265052 0.228309,4.817851 -0.341085,3.124855 -2.065297,6.368864 -4.489391,8.446537 -1.7397,1.491085 -3.705602,2.480794 -5.966147,3.003582 -0.805822,0.18636 -1.051311,0.208444 -2.504599,0.225312 -0.886166,0.01029 -1.914718,-0.01148 -2.285671,-0.04836 z m 11.271486,-5.297592 0.159493,-0.131145 -0.02005,-8.166255 -0.02005,-8.166255 -0.18735,-0.09478 c -0.24794,-0.125433 -18.381366,-0.14226 -18.709873,-0.01736 -0.115191,0.0438 -0.234901,0.119673 -0.266021,0.168615 -0.03112,0.04894 -0.0571,3.737592 -0.05773,8.196998 l -0.0011,8.108011 0.166554,0.11666 c 0.148575,0.104064 1.171097,0.116659 9.471614,0.116659 8.751242,0 9.314552,-0.0078 9.464553,-0.131145 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 36.821949,30.265398 v -7.568944 h 4.084233 4.084233 v 7.568944 7.568945 h -4.084233 -4.084233 z m 5.395522,3.666038 c 1.12271,-1.002858 1.349083,-1.239264 1.349083,-1.408873 0,-0.269374 -0.126409,-0.383663 -0.424344,-0.383663 -0.203107,0 -0.387658,0.126448 -1.090378,0.747093 l -0.84589,0.747093 -0.03747,-3.976174 -0.03747,-3.976174 -0.182612,-0.147833 c -0.184983,-0.149752 -0.477431,-0.140512 -0.641728,0.02028 -0.04717,0.04616 -0.08883,1.561142 -0.11241,4.08781 l -0.03747,4.014472 -0.844597,-0.758282 C 38.596225,32.25439 38.429269,32.1389 38.215995,32.1389 c -0.256326,0 -0.355749,0.07373 -0.448807,0.332821 -0.05919,0.164789 0.256352,0.488424 1.812666,1.859175 0.640835,0.564427 0.970627,0.805605 1.101599,0.805605 0.135608,0 0.557366,-0.330885 1.536018,-1.205065 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 45.964635,30.265398 v -7.568944 h 4.121703 4.121703 v 7.568944 7.568945 h -4.121703 -4.121703 z m 4.671475,4.734791 c 0.110739,-0.122366 0.125346,-0.544613 0.14276,-4.126764 l 0.0194,-3.990451 0.787522,0.704677 c 0.964215,0.862782 1.064012,0.92199 1.352577,0.802462 0.246762,-0.102212 0.337687,-0.303854 0.228778,-0.507352 -0.09908,-0.185126 -2.528148,-2.360563 -2.71345,-2.430122 -0.240203,-0.09017 -0.446819,0.04153 -1.381432,0.880557 -1.611074,1.446296 -1.694194,1.533422 -1.669059,1.749505 0.02929,0.251839 0.375828,0.435124 0.615885,0.325747 0.09018,-0.04109 0.519351,-0.395608 0.953709,-0.787819 l 0.789743,-0.713111 0.04949,2.702886 c 0.02722,1.486588 0.04949,3.302709 0.04949,4.035828 0,1.19041 0.01402,1.34111 0.131145,1.409327 0.205852,0.119898 0.508392,0.09386 0.643447,-0.05537 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+  			"hover": "Elevator"
+  		}
+  	],
+  	"main-floor": [
+  		{
+  			"visibility": "hidden",
+  			"name": "main_access_restroom1_pin",
+  			"X": "590",
+  			"Y": "155",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 56.141495,30.720036 c -0.07097,-0.385884 -0.698489,-3.785838 -0.845452,-4.3559 -0.364657,-1.415668 -1.819464,-1.415668 -2.601113,-1.415668 h -2.309579 c -0.781647,0 -2.236694,0 -2.601112,1.415668 -0.146963,0.569855 -0.77448,3.970016 -0.845452,4.3559 -0.07551,0.410635 0.248761,0.79652 0.724776,0.8619 0.476969,0.066 0.923114,-0.214702 0.998626,-0.625336 0.164646,-0.894486 0.574945,-3.092236 0.757513,-3.961766 v 10.532122 c 0,0.415997 0.390705,0.753002 0.872454,0.753002 0.48175,0 0.872454,-0.337211 0.872454,-0.753002 v -5.27328 h 0.750584 v 5.273075 c 0,0.415996 0.390704,0.753001 0.872454,0.753001 0.48175,0 0.872454,-0.337211 0.872454,-0.753001 V 26.994834 c 0.182568,0.869736 0.592867,3.06728 0.757513,3.96156 0.06834,0.370829 0.438975,0.634823 0.860745,0.634823 0.0454,0 0.09176,-0.0031 0.13812,-0.0095 0.476254,-0.06517 0.800766,-0.451058 0.725015,-0.861692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 40.791701,24.935887 c 0.788578,0 2.246253,0 2.604698,1.423093 0.119481,0.577486 0.764682,3.980534 0.83637,4.351775 0.07169,0.412491 -0.238963,0.804357 -0.716889,0.866231 -0.477926,0.06187 -0.931956,-0.206246 -1.003645,-0.618736 -0.167274,-0.886855 -0.573511,-3.09368 -0.764682,-3.95991 -0.02389,-0.06187 -0.07169,-0.103123 -0.143377,-0.103123 -0.07169,0 -0.143378,0.06187 -0.143378,0.123748 l 1.194815,6.496727 h -0.90806 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884163,0.763108 -0.501823,0 -0.884164,-0.350617 -0.884164,-0.763108 v -4.001158 h -0.740785 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884164,0.763108 -0.501822,0 -0.884163,-0.350617 -0.884163,-0.763108 v -4.001158 h -0.90806 l 1.194815,-6.496727 c 0,-0.06187 -0.07169,-0.123748 -0.143378,-0.123748 -0.07169,0 -0.119481,0.04125 -0.143377,0.103123 -0.19117,0.86623 -0.597408,3.073055 -0.764682,3.95991 -0.07169,0.41249 -0.525719,0.68061 -1.003645,0.618736 -0.477926,-0.06187 -0.788578,-0.45374 -0.716889,-0.866231 0.07169,-0.371241 0.716889,-3.774289 0.83637,-4.351775 0.358445,-1.423093 1.81612,-1.423093 2.604698,-1.423093 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 37.758852,37.970082 c -0.09723,-0.117155 -0.180942,-1.077815 -0.205703,-2.360611 l -0.04175,-2.163064 -0.41217,-0.04743 c -0.226694,-0.02608 -0.408012,-0.127253 -0.402929,-0.22482 0.0051,-0.09757 0.265946,-1.526316 0.579696,-3.174997 0.493052,-2.590866 0.56248,-3.524519 0.237957,-3.199996 -0.04256,0.04256 -0.271629,1.038266 -0.509043,2.21268 -0.237414,1.174415 -0.490362,2.189791 -0.562107,2.256393 -0.309812,0.287601 -0.774442,0.302441 -1.104382,0.03527 l -0.341256,-0.276332 0.41778,-2.237629 c 0.706456,-3.783784 0.653294,-3.736431 4.194775,-3.736431 3.541481,0 3.488319,-0.04735 4.194775,3.736431 l 0.41778,2.237629 -0.33697,0.272862 c -0.841867,0.681702 -1.154936,0.267277 -1.649264,-2.183209 -0.385181,-1.909426 -0.612644,-2.554814 -0.789732,-2.240741 -0.03891,0.06901 0.185381,1.47439 0.498423,3.123071 0.313041,1.648681 0.573325,3.07743 0.578408,3.174997 0.0051,0.09757 -0.176235,0.198736 -0.402928,0.22482 l -0.41217,0.04743 -0.04175,2.163064 c -0.02476,1.282796 -0.108472,2.243456 -0.205702,2.360611 -0.263979,0.318075 -0.979796,0.239999 -1.242849,-0.135561 -0.183763,-0.262359 -0.233319,-0.771696 -0.233319,-2.398081 v -2.064973 h -0.3747 -0.3747 v 2.064973 c 0,1.626385 -0.04956,2.135722 -0.233319,2.398081 -0.263052,0.37556 -0.97887,0.453636 -1.242848,0.135561 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 38.629787,24.341192 c -0.502312,-0.253301 -0.710497,-0.466396 -0.836493,-0.856222 -0.323206,-0.999982 0.15531,-1.781104 1.301474,-2.124503 0.483886,-0.144976 0.693668,-0.13038 1.265644,0.08806 0.794307,0.303349 1.152784,0.765037 1.152784,1.484688 0,0.734099 -0.267719,1.132031 -0.978819,1.454897 -0.810736,0.368104 -1.095482,0.361089 -1.90459,-0.04692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.850726,24.446693 c -1.048512,-0.361416 -1.491541,-1.227029 -1.075033,-2.100455 0.709965,-1.488811 3.337046,-1.268147 3.632187,0.305089 0.245049,1.306221 -1.14496,2.28214 -2.557154,1.795366 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 49.707508,37.919992 c -0.162567,-0.19571 -0.221417,-1.366453 -0.280643,-5.583034 l -0.07494,-5.335395 -0.405797,2.084455 c -0.223189,1.14645 -0.45925,2.133699 -0.524581,2.193886 -0.304133,0.280189 -0.76833,0.286284 -1.103974,0.0145 l -0.35251,-0.285445 0.424939,-2.303456 c 0.233717,-1.266901 0.51898,-2.487791 0.633918,-2.713089 0.35835,-0.702427 0.992047,-0.920247 2.871256,-0.986937 2.326679,-0.08257 3.240869,0.04908 3.798015,0.546954 0.40316,0.360268 0.490869,0.615729 0.883479,2.573237 0.559527,2.789733 0.564364,3.109489 0.04999,3.305054 -0.300204,0.114137 -0.479953,0.09444 -0.749401,-0.0821 -0.194958,-0.127742 -0.35473,-0.247564 -0.355049,-0.266272 -0.0036,-0.210259 -0.779281,-3.936378 -0.830034,-3.98713 -0.03777,-0.03777 -0.06867,2.33209 -0.06867,5.26635 0,5.790406 -0.0022,5.806069 -0.82434,5.806069 -0.762151,0 -0.824341,-0.243915 -0.824341,-3.233127 v -2.762076 h -0.44964 -0.449641 v 2.817745 c 0,1.99174 -0.05272,2.87047 -0.179856,2.997602 -0.260075,0.260076 -0.948466,0.220805 -1.188182,-0.06778 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "M 45.230223,29.699405 V 21.23118 h 0.3747 0.3747 v 8.468225 8.468225 h -0.3747 -0.3747 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.356722,43.764747 c -4.963361,-0.783206 -9.29949,-4.710105 -10.745661,-9.73152 -0.294258,-1.021727 -0.341479,-1.529489 -0.340317,-3.659362 0.0013,-2.419194 0.01241,-2.505195 0.509738,-3.951239 1.524706,-4.433323 5.125219,-7.811573 9.527079,-8.938962 1.465163,-0.375253 4.686238,-0.419582 6.240638,-0.08589 5.325327,1.143234 9.752079,6.087054 10.349491,11.558363 0.43358,3.970894 -0.806268,7.763483 -3.463846,10.595598 -1.301202,1.38666 -2.524964,2.297503 -4.077226,3.034668 -1.963002,0.932226 -2.951347,1.153541 -5.376995,1.204044 -1.195294,0.02489 -2.375599,0.01333 -2.622901,-0.0257 z m -4.41161,-5.602389 c 0.266796,-0.142785 0.289907,-0.33396 0.289907,-2.398082 v -2.242929 h 0.3747 0.3747 v 2.242929 c 0,2.064122 0.02311,2.255297 0.289907,2.398082 0.422989,0.226376 1.002995,0.18976 1.273129,-0.08037 0.192349,-0.19235 0.235526,-0.631961 0.235526,-2.398081 v -2.162556 h 0.44964 c 0.247302,0 0.44964,-0.05703 0.44964,-0.126737 0,-0.0697 -0.167974,-1.03081 -0.373275,-2.13579 -0.3932,-2.116298 -0.492956,-3.296961 -0.138088,-1.634355 0.114366,0.535821 0.243556,1.125121 0.28709,1.309555 0.127121,0.538557 0.683909,0.821937 1.236478,0.62931 0.25441,-0.08869 0.504872,-0.271506 0.556583,-0.406264 0.05171,-0.134758 -0.120422,-1.349508 -0.38252,-2.699444 -0.370668,-1.909125 -0.554918,-2.547575 -0.829313,-2.873676 -0.408668,-0.485673 -1.280915,-0.748456 -2.559116,-0.770986 -0.693167,-0.01222 -0.778832,-0.03744 -0.420741,-0.123854 1.081592,-0.26102 1.573741,-0.803382 1.573741,-1.734305 0,-0.334269 -0.105263,-0.758047 -0.233918,-0.941728 -0.745978,-1.065032 -2.832948,-1.065032 -3.578926,0 -0.30085,0.429524 -0.30085,1.453931 0,1.883455 0.275414,0.393208 0.958458,0.773042 1.44479,0.803432 0.18957,0.01185 -0.198241,0.06913 -0.861803,0.127307 -1.343613,0.117791 -1.931558,0.344254 -2.337406,0.900315 -0.307434,0.421223 -1.233803,4.981671 -1.098518,5.407919 0.173097,0.545379 1.341408,0.628541 1.656973,0.117946 0.06478,-0.104822 0.233437,-0.733424 0.374786,-1.396894 0.39414,-1.850037 0.331503,-0.858965 -0.08863,1.402267 -0.205301,1.10498 -0.373275,2.066086 -0.373275,2.13579 0,0.06971 0.202338,0.126737 0.44964,0.126737 h 0.449641 v 2.162556 c 0,1.76612 0.04318,2.205731 0.235526,2.398081 0.270133,0.270134 0.850139,0.30675 1.273128,0.08037 z m 7.148149,-8.425483 -0.0387,-8.580635 h -0.44964 -0.44964 l -0.0387,8.580635 -0.0387,8.580636 h 0.527035 0.527035 z m 4.858074,8.332585 c 0.24656,-0.223134 0.274092,-0.524226 0.274092,-2.997601 0,-2.649632 0.01089,-2.749552 0.29976,-2.749552 0.288762,0 0.29976,0.09992 0.29976,2.72351 0,3.05286 0.06615,3.271694 0.988951,3.271694 0.938661,0 0.957671,-0.105144 0.974809,-5.391564 l 0.01532,-4.725343 0.321911,1.573411 c 0.29168,1.425653 0.360617,1.591803 0.734081,1.769269 0.339504,0.161329 0.484837,0.161192 0.82434,-7.79e-4 0.563777,-0.268964 0.576543,-0.624502 0.110221,-3.069749 -0.672377,-3.525737 -0.723819,-3.569514 -4.194453,-3.569514 -3.519753,0 -3.615507,0.07709 -4.28152,3.447067 -0.506429,2.562486 -0.523502,2.816586 -0.206897,3.079345 0.314273,0.260823 1.07904,0.244561 1.352359,-0.02876 0.122083,-0.122083 0.347826,-0.858369 0.501653,-1.636191 l 0.279685,-1.414222 0.05326,4.770926 c 0.05042,4.516424 0.06878,4.782267 0.344196,4.983514 0.389432,0.284557 0.97231,0.26876 1.308473,-0.03546 z m 2.037384,-13.904102 c 0.492844,-0.451658 0.559849,-0.596542 0.559849,-1.210557 0,-0.614016 -0.06701,-0.758899 -0.559849,-1.210558 -0.507985,-0.465533 -0.643568,-0.513063 -1.463532,-0.513063 -0.819964,0 -0.955547,0.04753 -1.463533,0.513063 -0.492843,0.451659 -0.559849,0.596542 -0.559849,1.210558 0,0.614015 0.06701,0.758899 0.559849,1.210557 0.507986,0.465533 0.643569,0.513064 1.463533,0.513064 0.819964,0 0.955547,-0.04753 1.463532,-0.513064 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+			"hover": "Gender neutral restroom, no door opener, accessibility features"
+  		},
+  		{
+  			"visibility": "hidden",
+  			"name": "main_access_elevator_pin",
+  			"X": "280",
+  			"Y": "530",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 36.046694,38.446698 c -0.113789,-0.125736 -0.124025,-0.802619 -0.124025,-8.201686 v -8.06464 l 0.166555,-0.11666 c 0.148554,-0.104051 1.163188,-0.116659 9.388301,-0.116659 8.225112,0 9.239747,0.01261 9.388301,0.116659 l 0.166555,0.11666 v 8.124109 c 0,7.955371 -0.003,8.12572 -0.144954,8.201686 -0.09768,0.05228 -3.173151,0.07758 -9.430831,0.07758 -8.900834,0 -9.29102,-0.0057 -9.409902,-0.137046 z m 9.018661,-8.14383 v -7.606414 h -4.159173 -4.159173 v 7.606414 7.606415 h 4.159173 4.159173 z m 9.217626,0 v -7.606414 h -4.196643 -4.196643 v 7.606414 7.606415 h 4.196643 4.196643 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 39.277997,33.96759 c -1.60163,-1.436725 -1.584214,-1.415837 -1.364064,-1.635987 0.259435,-0.259435 0.484487,-0.151541 1.395665,0.669107 0.48052,0.432779 0.893005,0.786871 0.916634,0.786871 0.02363,0 0.04296,-1.819131 0.04296,-4.042514 v -4.042513 l 0.166554,-0.116659 c 0.205713,-0.144087 0.28937,-0.145906 0.474848,-0.01032 0.14008,0.102396 0.146856,0.256931 0.182938,4.172121 l 0.03747,4.065785 0.893674,-0.799819 c 0.668939,-0.598685 0.944601,-0.799818 1.09619,-0.799818 0.237401,0 0.392353,0.156683 0.357765,0.361764 -0.03677,0.218048 -2.600491,2.485957 -2.810204,2.485957 -0.114399,0 -0.574049,-0.361646 -1.39043,-1.093971 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.001839,34.937688 c -0.08329,-0.100322 -0.109976,-0.88986 -0.140321,-4.152461 l -0.03747,-4.028586 -0.861811,0.779716 c -0.473996,0.428844 -0.939046,0.800773 -1.033445,0.82651 -0.198324,0.05407 -0.465356,-0.14556 -0.465356,-0.347896 0,-0.109961 2.362221,-2.316124 2.670527,-2.494101 0.0579,-0.03343 0.1747,-0.03874 0.259548,-0.01181 0.142954,0.04537 2.461588,2.079592 2.671694,2.343972 0.140822,0.177199 0.114162,0.297168 -0.09674,0.43536 -0.26217,0.17178 -0.364697,0.112504 -1.361419,-0.787102 -0.461949,-0.41694 -0.858195,-0.758072 -0.880545,-0.758072 -0.02235,0 -0.04064,1.836718 -0.04064,4.081596 0,3.958657 -0.0044,4.083932 -0.144953,4.159173 -0.21137,0.113121 -0.421701,0.09506 -0.539066,-0.0463 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.678964,43.825131 c -0.822348,-0.08176 -1.487673,-0.236234 -2.473022,-0.574171 -4.400103,-1.509064 -7.815343,-5.374993 -8.81184,-9.974687 -0.219045,-1.011084 -0.285855,-3.893691 -0.116041,-5.00674 0.206786,-1.355377 0.862797,-3.137362 1.643004,-4.463048 1.415417,-2.404998 3.347059,-4.192076 5.861016,-5.422378 1.831774,-0.89645 3.08938,-1.208667 5.177065,-1.285277 3.157299,-0.115859 5.567059,0.547002 8.067866,2.219258 2.793506,1.867979 4.838155,4.775527 5.669451,8.062119 0.299116,1.182576 0.397801,3.265052 0.228309,4.817851 -0.341085,3.124855 -2.065297,6.368864 -4.489391,8.446537 -1.7397,1.491085 -3.705602,2.480794 -5.966147,3.003582 -0.805822,0.18636 -1.051311,0.208444 -2.504599,0.225312 -0.886166,0.01029 -1.914718,-0.01148 -2.285671,-0.04836 z m 11.271486,-5.297592 0.159493,-0.131145 -0.02005,-8.166255 -0.02005,-8.166255 -0.18735,-0.09478 c -0.24794,-0.125433 -18.381366,-0.14226 -18.709873,-0.01736 -0.115191,0.0438 -0.234901,0.119673 -0.266021,0.168615 -0.03112,0.04894 -0.0571,3.737592 -0.05773,8.196998 l -0.0011,8.108011 0.166554,0.11666 c 0.148575,0.104064 1.171097,0.116659 9.471614,0.116659 8.751242,0 9.314552,-0.0078 9.464553,-0.131145 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 36.821949,30.265398 v -7.568944 h 4.084233 4.084233 v 7.568944 7.568945 h -4.084233 -4.084233 z m 5.395522,3.666038 c 1.12271,-1.002858 1.349083,-1.239264 1.349083,-1.408873 0,-0.269374 -0.126409,-0.383663 -0.424344,-0.383663 -0.203107,0 -0.387658,0.126448 -1.090378,0.747093 l -0.84589,0.747093 -0.03747,-3.976174 -0.03747,-3.976174 -0.182612,-0.147833 c -0.184983,-0.149752 -0.477431,-0.140512 -0.641728,0.02028 -0.04717,0.04616 -0.08883,1.561142 -0.11241,4.08781 l -0.03747,4.014472 -0.844597,-0.758282 C 38.596225,32.25439 38.429269,32.1389 38.215995,32.1389 c -0.256326,0 -0.355749,0.07373 -0.448807,0.332821 -0.05919,0.164789 0.256352,0.488424 1.812666,1.859175 0.640835,0.564427 0.970627,0.805605 1.101599,0.805605 0.135608,0 0.557366,-0.330885 1.536018,-1.205065 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 45.964635,30.265398 v -7.568944 h 4.121703 4.121703 v 7.568944 7.568945 h -4.121703 -4.121703 z m 4.671475,4.734791 c 0.110739,-0.122366 0.125346,-0.544613 0.14276,-4.126764 l 0.0194,-3.990451 0.787522,0.704677 c 0.964215,0.862782 1.064012,0.92199 1.352577,0.802462 0.246762,-0.102212 0.337687,-0.303854 0.228778,-0.507352 -0.09908,-0.185126 -2.528148,-2.360563 -2.71345,-2.430122 -0.240203,-0.09017 -0.446819,0.04153 -1.381432,0.880557 -1.611074,1.446296 -1.694194,1.533422 -1.669059,1.749505 0.02929,0.251839 0.375828,0.435124 0.615885,0.325747 0.09018,-0.04109 0.519351,-0.395608 0.953709,-0.787819 l 0.789743,-0.713111 0.04949,2.702886 c 0.02722,1.486588 0.04949,3.302709 0.04949,4.035828 0,1.19041 0.01402,1.34111 0.131145,1.409327 0.205852,0.119898 0.508392,0.09386 0.643447,-0.05537 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+  			"hover": "Elevator"
+  		},
+  		{
+  			"visibility": "hidden",
+  			"name": "main_access_doors_pin",
+  			"X": "325",
+  			"Y": "555",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "M 37.968879,30.446271 V 19.927634 h 7.471677 7.471677 v 10.518637 10.518637 h -7.471677 -7.471677 z m 13.618588,0 v -9.352844 h -6.146911 -6.146912 v 9.352844 9.352844 h 6.146912 6.146911 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 41.129105,31.551206 c -0.09843,-0.03288 -0.297218,-0.168724 -0.44175,-0.301882 -0.330263,-0.304271 -0.442628,-0.649512 -0.352109,-1.081849 0.04662,-0.222651 0.107757,-0.322547 0.331193,-0.54113 0.33215,-0.324936 0.616615,-0.421464 1.122401,-0.380864 1.216393,0.09764 1.60387,1.552355 0.581799,2.184262 -0.222317,0.137449 -0.316795,0.161864 -0.660982,0.170806 -0.220874,0.0057 -0.482122,-0.01647 -0.580552,-0.04934 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 39.340852,30.445359 v -9.292566 h 6.107614 6.107614 v 9.292566 9.292566 h -6.107614 -6.107614 z m 2.824108,1.119505 c 0.321778,-0.121315 0.692196,-0.519608 0.777351,-0.835848 0.242037,-0.89886 -0.705232,-1.73791 -1.669057,-1.478379 -0.408812,0.110082 -0.874063,0.556994 -0.955034,0.917387 -0.118644,0.528076 0.170905,1.097036 0.687998,1.351907 0.282203,0.139095 0.85053,0.161133 1.158742,0.04493 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 44.672192,43.897066 c -1.34136,-0.06446 -2.148231,-0.198621 -3.1583,-0.525154 -4.172197,-1.348781 -7.487376,-4.688377 -8.815913,-8.880843 -0.417174,-1.316477 -0.528568,-2.183105 -0.530125,-4.124284 -0.0014,-1.71306 0.05958,-2.26169 0.371749,-3.346265 1.093,-3.797381 3.640172,-6.866016 7.156694,-8.621829 1.074071,-0.536288 2.351646,-0.973216 3.342844,-1.143244 1.325887,-0.22744 3.453409,-0.240929 4.854425,-0.03078 1.629051,0.244356 3.45469,0.971711 5.018248,1.999325 2.357859,1.54965 4.160009,3.754954 5.212305,6.378334 0.490861,1.223718 0.727284,2.159237 0.832847,3.295544 0.08123,0.874395 0.03628,3.106115 -0.07674,3.810153 -0.327328,2.038998 -1.266607,4.205484 -2.587019,5.967073 -0.494131,0.65923 -1.562129,1.757944 -2.241676,2.306147 -1.979742,1.597094 -4.602533,2.686916 -6.970856,2.896527 -0.554952,0.04912 -1.611696,0.05758 -2.408483,0.01929 z M 53.018214,30.499262 V 19.927634 H 45.493547 37.968879 V 30.499262 41.07089 h 7.524668 7.524667 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+  			"hover": "Automatic Doors"
+  		}
+  	],
+  	"bottom-floor": [
+  		{
+  			"visibility": "hidden",
+  			"name": "bottom_access_restroom1_pin",
+  			"X": "590",
+  			"Y": "205",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 56.141495,30.720036 c -0.07097,-0.385884 -0.698489,-3.785838 -0.845452,-4.3559 -0.364657,-1.415668 -1.819464,-1.415668 -2.601113,-1.415668 h -2.309579 c -0.781647,0 -2.236694,0 -2.601112,1.415668 -0.146963,0.569855 -0.77448,3.970016 -0.845452,4.3559 -0.07551,0.410635 0.248761,0.79652 0.724776,0.8619 0.476969,0.066 0.923114,-0.214702 0.998626,-0.625336 0.164646,-0.894486 0.574945,-3.092236 0.757513,-3.961766 v 10.532122 c 0,0.415997 0.390705,0.753002 0.872454,0.753002 0.48175,0 0.872454,-0.337211 0.872454,-0.753002 v -5.27328 h 0.750584 v 5.273075 c 0,0.415996 0.390704,0.753001 0.872454,0.753001 0.48175,0 0.872454,-0.337211 0.872454,-0.753001 V 26.994834 c 0.182568,0.869736 0.592867,3.06728 0.757513,3.96156 0.06834,0.370829 0.438975,0.634823 0.860745,0.634823 0.0454,0 0.09176,-0.0031 0.13812,-0.0095 0.476254,-0.06517 0.800766,-0.451058 0.725015,-0.861692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 40.791701,24.935887 c 0.788578,0 2.246253,0 2.604698,1.423093 0.119481,0.577486 0.764682,3.980534 0.83637,4.351775 0.07169,0.412491 -0.238963,0.804357 -0.716889,0.866231 -0.477926,0.06187 -0.931956,-0.206246 -1.003645,-0.618736 -0.167274,-0.886855 -0.573511,-3.09368 -0.764682,-3.95991 -0.02389,-0.06187 -0.07169,-0.103123 -0.143377,-0.103123 -0.07169,0 -0.143378,0.06187 -0.143378,0.123748 l 1.194815,6.496727 h -0.90806 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884163,0.763108 -0.501823,0 -0.884164,-0.350617 -0.884164,-0.763108 v -4.001158 h -0.740785 v 4.001158 c 0,0.433116 -0.382341,0.763108 -0.884164,0.763108 -0.501822,0 -0.884163,-0.350617 -0.884163,-0.763108 v -4.001158 h -0.90806 l 1.194815,-6.496727 c 0,-0.06187 -0.07169,-0.123748 -0.143378,-0.123748 -0.07169,0 -0.119481,0.04125 -0.143377,0.103123 -0.19117,0.86623 -0.597408,3.073055 -0.764682,3.95991 -0.07169,0.41249 -0.525719,0.68061 -1.003645,0.618736 -0.477926,-0.06187 -0.788578,-0.45374 -0.716889,-0.866231 0.07169,-0.371241 0.716889,-3.774289 0.83637,-4.351775 0.358445,-1.423093 1.81612,-1.423093 2.604698,-1.423093 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 37.758852,37.970082 c -0.09723,-0.117155 -0.180942,-1.077815 -0.205703,-2.360611 l -0.04175,-2.163064 -0.41217,-0.04743 c -0.226694,-0.02608 -0.408012,-0.127253 -0.402929,-0.22482 0.0051,-0.09757 0.265946,-1.526316 0.579696,-3.174997 0.493052,-2.590866 0.56248,-3.524519 0.237957,-3.199996 -0.04256,0.04256 -0.271629,1.038266 -0.509043,2.21268 -0.237414,1.174415 -0.490362,2.189791 -0.562107,2.256393 -0.309812,0.287601 -0.774442,0.302441 -1.104382,0.03527 l -0.341256,-0.276332 0.41778,-2.237629 c 0.706456,-3.783784 0.653294,-3.736431 4.194775,-3.736431 3.541481,0 3.488319,-0.04735 4.194775,3.736431 l 0.41778,2.237629 -0.33697,0.272862 c -0.841867,0.681702 -1.154936,0.267277 -1.649264,-2.183209 -0.385181,-1.909426 -0.612644,-2.554814 -0.789732,-2.240741 -0.03891,0.06901 0.185381,1.47439 0.498423,3.123071 0.313041,1.648681 0.573325,3.07743 0.578408,3.174997 0.0051,0.09757 -0.176235,0.198736 -0.402928,0.22482 l -0.41217,0.04743 -0.04175,2.163064 c -0.02476,1.282796 -0.108472,2.243456 -0.205702,2.360611 -0.263979,0.318075 -0.979796,0.239999 -1.242849,-0.135561 -0.183763,-0.262359 -0.233319,-0.771696 -0.233319,-2.398081 v -2.064973 h -0.3747 -0.3747 v 2.064973 c 0,1.626385 -0.04956,2.135722 -0.233319,2.398081 -0.263052,0.37556 -0.97887,0.453636 -1.242848,0.135561 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 38.629787,24.341192 c -0.502312,-0.253301 -0.710497,-0.466396 -0.836493,-0.856222 -0.323206,-0.999982 0.15531,-1.781104 1.301474,-2.124503 0.483886,-0.144976 0.693668,-0.13038 1.265644,0.08806 0.794307,0.303349 1.152784,0.765037 1.152784,1.484688 0,0.734099 -0.267719,1.132031 -0.978819,1.454897 -0.810736,0.368104 -1.095482,0.361089 -1.90459,-0.04692 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.850726,24.446693 c -1.048512,-0.361416 -1.491541,-1.227029 -1.075033,-2.100455 0.709965,-1.488811 3.337046,-1.268147 3.632187,0.305089 0.245049,1.306221 -1.14496,2.28214 -2.557154,1.795366 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 49.707508,37.919992 c -0.162567,-0.19571 -0.221417,-1.366453 -0.280643,-5.583034 l -0.07494,-5.335395 -0.405797,2.084455 c -0.223189,1.14645 -0.45925,2.133699 -0.524581,2.193886 -0.304133,0.280189 -0.76833,0.286284 -1.103974,0.0145 l -0.35251,-0.285445 0.424939,-2.303456 c 0.233717,-1.266901 0.51898,-2.487791 0.633918,-2.713089 0.35835,-0.702427 0.992047,-0.920247 2.871256,-0.986937 2.326679,-0.08257 3.240869,0.04908 3.798015,0.546954 0.40316,0.360268 0.490869,0.615729 0.883479,2.573237 0.559527,2.789733 0.564364,3.109489 0.04999,3.305054 -0.300204,0.114137 -0.479953,0.09444 -0.749401,-0.0821 -0.194958,-0.127742 -0.35473,-0.247564 -0.355049,-0.266272 -0.0036,-0.210259 -0.779281,-3.936378 -0.830034,-3.98713 -0.03777,-0.03777 -0.06867,2.33209 -0.06867,5.26635 0,5.790406 -0.0022,5.806069 -0.82434,5.806069 -0.762151,0 -0.824341,-0.243915 -0.824341,-3.233127 v -2.762076 h -0.44964 -0.449641 v 2.817745 c 0,1.99174 -0.05272,2.87047 -0.179856,2.997602 -0.260075,0.260076 -0.948466,0.220805 -1.188182,-0.06778 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "M 45.230223,29.699405 V 21.23118 h 0.3747 0.3747 v 8.468225 8.468225 h -0.3747 -0.3747 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.356722,43.764747 c -4.963361,-0.783206 -9.29949,-4.710105 -10.745661,-9.73152 -0.294258,-1.021727 -0.341479,-1.529489 -0.340317,-3.659362 0.0013,-2.419194 0.01241,-2.505195 0.509738,-3.951239 1.524706,-4.433323 5.125219,-7.811573 9.527079,-8.938962 1.465163,-0.375253 4.686238,-0.419582 6.240638,-0.08589 5.325327,1.143234 9.752079,6.087054 10.349491,11.558363 0.43358,3.970894 -0.806268,7.763483 -3.463846,10.595598 -1.301202,1.38666 -2.524964,2.297503 -4.077226,3.034668 -1.963002,0.932226 -2.951347,1.153541 -5.376995,1.204044 -1.195294,0.02489 -2.375599,0.01333 -2.622901,-0.0257 z m -4.41161,-5.602389 c 0.266796,-0.142785 0.289907,-0.33396 0.289907,-2.398082 v -2.242929 h 0.3747 0.3747 v 2.242929 c 0,2.064122 0.02311,2.255297 0.289907,2.398082 0.422989,0.226376 1.002995,0.18976 1.273129,-0.08037 0.192349,-0.19235 0.235526,-0.631961 0.235526,-2.398081 v -2.162556 h 0.44964 c 0.247302,0 0.44964,-0.05703 0.44964,-0.126737 0,-0.0697 -0.167974,-1.03081 -0.373275,-2.13579 -0.3932,-2.116298 -0.492956,-3.296961 -0.138088,-1.634355 0.114366,0.535821 0.243556,1.125121 0.28709,1.309555 0.127121,0.538557 0.683909,0.821937 1.236478,0.62931 0.25441,-0.08869 0.504872,-0.271506 0.556583,-0.406264 0.05171,-0.134758 -0.120422,-1.349508 -0.38252,-2.699444 -0.370668,-1.909125 -0.554918,-2.547575 -0.829313,-2.873676 -0.408668,-0.485673 -1.280915,-0.748456 -2.559116,-0.770986 -0.693167,-0.01222 -0.778832,-0.03744 -0.420741,-0.123854 1.081592,-0.26102 1.573741,-0.803382 1.573741,-1.734305 0,-0.334269 -0.105263,-0.758047 -0.233918,-0.941728 -0.745978,-1.065032 -2.832948,-1.065032 -3.578926,0 -0.30085,0.429524 -0.30085,1.453931 0,1.883455 0.275414,0.393208 0.958458,0.773042 1.44479,0.803432 0.18957,0.01185 -0.198241,0.06913 -0.861803,0.127307 -1.343613,0.117791 -1.931558,0.344254 -2.337406,0.900315 -0.307434,0.421223 -1.233803,4.981671 -1.098518,5.407919 0.173097,0.545379 1.341408,0.628541 1.656973,0.117946 0.06478,-0.104822 0.233437,-0.733424 0.374786,-1.396894 0.39414,-1.850037 0.331503,-0.858965 -0.08863,1.402267 -0.205301,1.10498 -0.373275,2.066086 -0.373275,2.13579 0,0.06971 0.202338,0.126737 0.44964,0.126737 h 0.449641 v 2.162556 c 0,1.76612 0.04318,2.205731 0.235526,2.398081 0.270133,0.270134 0.850139,0.30675 1.273128,0.08037 z m 7.148149,-8.425483 -0.0387,-8.580635 h -0.44964 -0.44964 l -0.0387,8.580635 -0.0387,8.580636 h 0.527035 0.527035 z m 4.858074,8.332585 c 0.24656,-0.223134 0.274092,-0.524226 0.274092,-2.997601 0,-2.649632 0.01089,-2.749552 0.29976,-2.749552 0.288762,0 0.29976,0.09992 0.29976,2.72351 0,3.05286 0.06615,3.271694 0.988951,3.271694 0.938661,0 0.957671,-0.105144 0.974809,-5.391564 l 0.01532,-4.725343 0.321911,1.573411 c 0.29168,1.425653 0.360617,1.591803 0.734081,1.769269 0.339504,0.161329 0.484837,0.161192 0.82434,-7.79e-4 0.563777,-0.268964 0.576543,-0.624502 0.110221,-3.069749 -0.672377,-3.525737 -0.723819,-3.569514 -4.194453,-3.569514 -3.519753,0 -3.615507,0.07709 -4.28152,3.447067 -0.506429,2.562486 -0.523502,2.816586 -0.206897,3.079345 0.314273,0.260823 1.07904,0.244561 1.352359,-0.02876 0.122083,-0.122083 0.347826,-0.858369 0.501653,-1.636191 l 0.279685,-1.414222 0.05326,4.770926 c 0.05042,4.516424 0.06878,4.782267 0.344196,4.983514 0.389432,0.284557 0.97231,0.26876 1.308473,-0.03546 z m 2.037384,-13.904102 c 0.492844,-0.451658 0.559849,-0.596542 0.559849,-1.210557 0,-0.614016 -0.06701,-0.758899 -0.559849,-1.210558 -0.507985,-0.465533 -0.643568,-0.513063 -1.463532,-0.513063 -0.819964,0 -0.955547,0.04753 -1.463533,0.513063 -0.492843,0.451659 -0.559849,0.596542 -0.559849,1.210558 0,0.614015 0.06701,0.758899 0.559849,1.210557 0.507986,0.465533 0.643569,0.513064 1.463533,0.513064 0.819964,0 0.955547,-0.04753 1.463532,-0.513064 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+			"hover": "Gender neutral restroom, no door opener, accessibility features"
+  		},
+  		{
+  			"visibility": "hidden",
+  			"name": "bottom_access_elevator_pin",
+  			"X": "250",
+  			"Y": "610",
+  			"path": [
+  				{
+  					"d": "M 44.846317,65.205337 C 44.235114,64.244646 30.337278,37.065549 30.086948,36.341395 c -1.528877,-4.422739 -1.303489,-8.794303 0.665445,-12.90677 2.274221,-4.750111 6.617922,-8.092974 11.791126,-9.074314 1.534003,-0.290995 4.536034,-0.290995 6.070037,0 7.215477,1.368753 12.626503,7.30986 13.376948,14.687394 0.241742,2.376537 -0.103417,5.181389 -0.899418,7.308889 -0.283318,0.757236 -14.247561,28.014021 -14.779837,28.848743 -0.155031,0.243122 -0.359504,0.33723 -0.732711,0.33723 -0.373354,0 -0.577485,-0.09401 -0.732221,-0.33723 z M 48.88629,43.586255 c 4.985748,-1.264739 8.735445,-5.132435 9.897804,-10.209279 0.350322,-1.530102 0.352424,-4.365793 0.0043,-5.807046 -1.204067,-4.984965 -4.936925,-8.837008 -9.850759,-10.165278 -1.779748,-0.481088 -4.915984,-0.48742 -6.66628,-0.01346 -4.963101,1.343953 -8.688949,5.173198 -9.903894,10.178737 -0.373836,1.540195 -0.340235,4.413263 0.07126,6.093343 1.225343,5.002876 5.269305,8.967879 10.263365,10.062969 0.510401,0.111921 1.779292,0.210264 2.819758,0.218541 1.55684,0.01238 2.152473,-0.05109 3.364439,-0.358528 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 36.046694,38.446698 c -0.113789,-0.125736 -0.124025,-0.802619 -0.124025,-8.201686 v -8.06464 l 0.166555,-0.11666 c 0.148554,-0.104051 1.163188,-0.116659 9.388301,-0.116659 8.225112,0 9.239747,0.01261 9.388301,0.116659 l 0.166555,0.11666 v 8.124109 c 0,7.955371 -0.003,8.12572 -0.144954,8.201686 -0.09768,0.05228 -3.173151,0.07758 -9.430831,0.07758 -8.900834,0 -9.29102,-0.0057 -9.409902,-0.137046 z m 9.018661,-8.14383 v -7.606414 h -4.159173 -4.159173 v 7.606414 7.606415 h 4.159173 4.159173 z m 9.217626,0 v -7.606414 h -4.196643 -4.196643 v 7.606414 7.606415 h 4.196643 4.196643 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 39.277997,33.96759 c -1.60163,-1.436725 -1.584214,-1.415837 -1.364064,-1.635987 0.259435,-0.259435 0.484487,-0.151541 1.395665,0.669107 0.48052,0.432779 0.893005,0.786871 0.916634,0.786871 0.02363,0 0.04296,-1.819131 0.04296,-4.042514 v -4.042513 l 0.166554,-0.116659 c 0.205713,-0.144087 0.28937,-0.145906 0.474848,-0.01032 0.14008,0.102396 0.146856,0.256931 0.182938,4.172121 l 0.03747,4.065785 0.893674,-0.799819 c 0.668939,-0.598685 0.944601,-0.799818 1.09619,-0.799818 0.237401,0 0.392353,0.156683 0.357765,0.361764 -0.03677,0.218048 -2.600491,2.485957 -2.810204,2.485957 -0.114399,0 -0.574049,-0.361646 -1.39043,-1.093971 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 50.001839,34.937688 c -0.08329,-0.100322 -0.109976,-0.88986 -0.140321,-4.152461 l -0.03747,-4.028586 -0.861811,0.779716 c -0.473996,0.428844 -0.939046,0.800773 -1.033445,0.82651 -0.198324,0.05407 -0.465356,-0.14556 -0.465356,-0.347896 0,-0.109961 2.362221,-2.316124 2.670527,-2.494101 0.0579,-0.03343 0.1747,-0.03874 0.259548,-0.01181 0.142954,0.04537 2.461588,2.079592 2.671694,2.343972 0.140822,0.177199 0.114162,0.297168 -0.09674,0.43536 -0.26217,0.17178 -0.364697,0.112504 -1.361419,-0.787102 -0.461949,-0.41694 -0.858195,-0.758072 -0.880545,-0.758072 -0.02235,0 -0.04064,1.836718 -0.04064,4.081596 0,3.958657 -0.0044,4.083932 -0.144953,4.159173 -0.21137,0.113121 -0.421701,0.09506 -0.539066,-0.0463 z",
+  					"fill": "#3438ec"
+  				},
+  				{
+  					"d": "m 43.678964,43.825131 c -0.822348,-0.08176 -1.487673,-0.236234 -2.473022,-0.574171 -4.400103,-1.509064 -7.815343,-5.374993 -8.81184,-9.974687 -0.219045,-1.011084 -0.285855,-3.893691 -0.116041,-5.00674 0.206786,-1.355377 0.862797,-3.137362 1.643004,-4.463048 1.415417,-2.404998 3.347059,-4.192076 5.861016,-5.422378 1.831774,-0.89645 3.08938,-1.208667 5.177065,-1.285277 3.157299,-0.115859 5.567059,0.547002 8.067866,2.219258 2.793506,1.867979 4.838155,4.775527 5.669451,8.062119 0.299116,1.182576 0.397801,3.265052 0.228309,4.817851 -0.341085,3.124855 -2.065297,6.368864 -4.489391,8.446537 -1.7397,1.491085 -3.705602,2.480794 -5.966147,3.003582 -0.805822,0.18636 -1.051311,0.208444 -2.504599,0.225312 -0.886166,0.01029 -1.914718,-0.01148 -2.285671,-0.04836 z m 11.271486,-5.297592 0.159493,-0.131145 -0.02005,-8.166255 -0.02005,-8.166255 -0.18735,-0.09478 c -0.24794,-0.125433 -18.381366,-0.14226 -18.709873,-0.01736 -0.115191,0.0438 -0.234901,0.119673 -0.266021,0.168615 -0.03112,0.04894 -0.0571,3.737592 -0.05773,8.196998 l -0.0011,8.108011 0.166554,0.11666 c 0.148575,0.104064 1.171097,0.116659 9.471614,0.116659 8.751242,0 9.314552,-0.0078 9.464553,-0.131145 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 36.821949,30.265398 v -7.568944 h 4.084233 4.084233 v 7.568944 7.568945 h -4.084233 -4.084233 z m 5.395522,3.666038 c 1.12271,-1.002858 1.349083,-1.239264 1.349083,-1.408873 0,-0.269374 -0.126409,-0.383663 -0.424344,-0.383663 -0.203107,0 -0.387658,0.126448 -1.090378,0.747093 l -0.84589,0.747093 -0.03747,-3.976174 -0.03747,-3.976174 -0.182612,-0.147833 c -0.184983,-0.149752 -0.477431,-0.140512 -0.641728,0.02028 -0.04717,0.04616 -0.08883,1.561142 -0.11241,4.08781 l -0.03747,4.014472 -0.844597,-0.758282 C 38.596225,32.25439 38.429269,32.1389 38.215995,32.1389 c -0.256326,0 -0.355749,0.07373 -0.448807,0.332821 -0.05919,0.164789 0.256352,0.488424 1.812666,1.859175 0.640835,0.564427 0.970627,0.805605 1.101599,0.805605 0.135608,0 0.557366,-0.330885 1.536018,-1.205065 z",
+  					"fill": "#ffffff"
+  				},
+  				{
+  					"d": "m 45.964635,30.265398 v -7.568944 h 4.121703 4.121703 v 7.568944 7.568945 h -4.121703 -4.121703 z m 4.671475,4.734791 c 0.110739,-0.122366 0.125346,-0.544613 0.14276,-4.126764 l 0.0194,-3.990451 0.787522,0.704677 c 0.964215,0.862782 1.064012,0.92199 1.352577,0.802462 0.246762,-0.102212 0.337687,-0.303854 0.228778,-0.507352 -0.09908,-0.185126 -2.528148,-2.360563 -2.71345,-2.430122 -0.240203,-0.09017 -0.446819,0.04153 -1.381432,0.880557 -1.611074,1.446296 -1.694194,1.533422 -1.669059,1.749505 0.02929,0.251839 0.375828,0.435124 0.615885,0.325747 0.09018,-0.04109 0.519351,-0.395608 0.953709,-0.787819 l 0.789743,-0.713111 0.04949,2.702886 c 0.02722,1.486588 0.04949,3.302709 0.04949,4.035828 0,1.19041 0.01402,1.34111 0.131145,1.409327 0.205852,0.119898 0.508392,0.09386 0.643447,-0.05537 z",
+  					"fill": "#ffffff"
+  				}
+  			],
+  			"hover": "Elevator"
+  		}
+  	]
+  }
+}
+
+
