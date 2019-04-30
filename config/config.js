@@ -7,7 +7,7 @@ var config = {
 	"map_base": {
 		"top-floor": "top_base_tech_750_nolabels.png",
 		"main-floor": "main_base_750_nolabels.png",
-		"bottom-floor": "bottom_base_750_nolabels.png"
+		"bottom-floor": "bottom_base_750_nolabels_arrows.png"
 	},
 
 	"map_height": "750",
@@ -15,10 +15,17 @@ var config = {
 
 	"default_map": "main-floor",
 
-	"map_labels": {
+	"map_names": {
 		"top-floor": "Top Floor",
 		"main-floor": "Main Floor",
 		"bottom-floor": "Bottom Floor"
+	},
+
+	"map_labels": {
+		"fontFamily": "arial",
+		"fontSize": "13px",
+		"fontColor": "black",
+		"line_spacing": "1.2em"
 	},
 
 	"room_labels": {

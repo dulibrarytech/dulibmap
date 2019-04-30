@@ -413,9 +413,9 @@
   		{
 	      "visibility": "hidden",	
 	      "name": "main_uts",
-	      "label": ["IT @ DU", "Technology", "Services"],
+	      "label": ["IT @ DU", "Technology", "Services", "270"],
 	      "labelX": "522",
-	      "labelY": "209",
+	      "labelY": "197",
 	      "labelFontSize": "13px",
 	      "svgPath": "m560 286c0-8.2-0.38-15-0.85-15s-11-0.57-24-0.63l-23-0.1v-3.4c0-2.4 0.45-3.4 1.6-3.4 1.2 0 1.5-0.89 1.2-3.8-0.3-3.6-0.5-3.8-4.2-4.1l-3.9-0.32 0.44-9.2c0.44-9.2 2.4-17 7.5-31 3.2-8.5 4.5-11 6-13 0.69-0.73 1.2-1.8 1.2-2.3 0-0.56 1.2-2.8 2.8-4.9l2.8-3.9 66-0.043v110h-35z",
 	      "color": "#cefdd7",
@@ -437,7 +437,7 @@
 	    {
 	      "visibility": "hidden",	
 	      "name": "main_cc",
-	      "label": ["Chan", "Classroom", "285"],
+	      "label": ["Chan", "Classroom", "284"],
 	      "labelX": "166",
 	      "labelY": "37",
 	      "svgPath": "M 238.25,94.75 C 238.44572,93.771407 229.05505,93.391437 195,93 L 151.5,92.5 151.23418,64.75 150.96836,37 H 199.98418 249 v 28 c 0,27.807262 -0.0145,28 -2.10699,28 -1.46204,0 -1.93079,0.459152 -1.53138,1.5 0.45206,1.178049 -0.2762,1.5 -3.39301,1.5 -2.64156,0 -3.88502,-0.417985 -3.71862,-1.25 z",
@@ -506,7 +506,7 @@
 	      "name": "main_nsr",
 	      "label": ["Nikki's", "Study", "Room", "212"],
 	      "labelX": "394",
-	      "labelY": "597",
+	      "labelY": "596",
 	      "labelFontSize": "11px",
 	      "svgPath": "m392 630c0-15-0.25-18-1.5-18-0.91-0.35-1.5-1.9-1.5-3.9s0.59-3.5 1.5-3.9c0.82-0.32 1.5-1.7 1.5-3.1v-2.5h34v49h-34z",
 	      "color": "#def791",
@@ -516,7 +516,7 @@
 	    {
 	      "visibility": "hidden",	
 	      "name": "main_sec",
-	      "label": ["Science and", "Engineering", "Center", "285"],
+	      "label": ["Science and", "Engineering", "Center"],
 	      "labelX": "150",
 	      "labelY": "104",
 	      "svgPath": "m152 188c0-0.64-10-1-28-1h-28v-150l52 0.53 1 60 44 0.26c39 0.23 44 0.071 45-1.2 0.62-1.6 7.4-2.2 7.4-0.63 0 1.4 4.2 2.1 6.2 1 1.6-0.87 1.8-2.4 1.8-13v-12h22c14 0 22-0.36 22-1 0-0.58 3.3-1 8-1h8l0.53 119-32-1.8e-4c-21-1.1e-4 -32-0.35-32-1 0-0.65-15-1-42-1s-42 0.35-42 1c0 0.55-2.5 1-5.5 1s-5.5-0.45-5.5-1z",
@@ -539,9 +539,10 @@
 	    {
 	      "visibility": "visible",	
 	      "name": "main_lenddesk",
-	      "label": ["Perlmutter", "Lending", "Desk"],
+	      "label": ["Perlmutter", "Lending", "Desk", "220"],
 	      "labelX": "426",
 	      "labelY": "497",
+	      "labelFontSize": "13px",
 	      "svgPath": "m388 550-5.7-0.38-1.8-5.2c-2-6-2.3-7.1-2.8-11-0.19-1.6-0.89-6.8-1.6-12-0.67-4.7-0.93-11-0.59-15 0.67-6.8 3.2-18 4.8-21 0.65-1.2 0.64-2.2-0.034-2.9-1.4-1.4 0.69-5.8 2.8-5.8 0.91 0 2.7-1.4 3.9-3 2.2-3 2.2-3 4.3-1 1.2 1.1 4 2.9 6.2 4.1 6.8 3.5 10 5.6 15 8.4 2.2 1.4 4.4 2.6 4.9 2.6 1.7 0 2.3 2.1 1.3 4.3-3.6 7.5-5.4 12-5.7 15-0.2 1.6-0.64 3.3-0.99 3.9-2.2 3.6-3.8 14-3.9 25l-0.13 13-5 0.014c-2.8 8e-3 -5.9 0.16-7 0.33s-4.6 0.15-7.7-0.062z",
 	      "color": "#e68484",
 	      "hover": "The Jordon and Essie Perlmutter and Family Lending Services Desk provides help locating and checking out books and materials.",
@@ -590,7 +591,7 @@
 	      "hover": "The Front Porch Cafe, located in the Anderson Academic Commons, offers not only coffee, smoothies, tea, and desserts, but also a wide array of healthy breakfast and lunch selections."
 	    },
 	    {
-	      "visibility": "visible",	
+	      "visibility": "hidden",	
 	      "name": "main_entrance_label",
 	      "label": ["Main Entrance"],
 	      "labelX": "325",
@@ -606,7 +607,7 @@
   		{
 	      "visibility": "hidden",	
 	      "name": "bottom_fgs",
-	      "label": ["Family", "Group", "Study", "152"],
+	      "label": ["Family", "Group", "Study", "166"],
 	      "labelX": "671",
 	      "labelY": "158",
 	      "labelFontSize": "10px",
@@ -1100,32 +1101,114 @@
   				}
   			],
   			"hover": "Elevator"
-  		}
-  	]
-  },
-
-  "label_maps": {
-
-  	"bottom-floor": [
+  		},
   		{
   			"visibility": "visible",
-  			"name": "bottom_stacks_label_map",
-  			"labels": [
+  			"name": "bottom_stacks_info_label",
+  			"X": "0",
+  			"Y": "0",
+  			"label": [
   				{
-  					"X": "0",
-  					"Y": "0",
-  					"text": "label test"
+  					"X": "333",
+  					"Y": "643",
+  					"fontLabelSize": "14px",
+  					"text": ["A"]
+  				},
+  				{
+  					"X": "316",
+  					"Y": "687",
+  					"fontLabelSize": "14px",
+  					"text": ["BF 789"]
+  				},
+  				{
+  					"X": "390",
+  					"Y": "687",
+  					"fontLabelSize": "14px",
+  					"text": ["BF 789"]
+  				},
+  				{
+  					"X": "388",
+  					"Y": "643",
+  					"fontLabelSize": "14px",
+  					"text": ["BX 7321"]
+  				},
+  				{
+  					"X": "373",
+  					"Y": "604",
+  					"fontLabelSize": "14px",
+  					"text": ["BX 7615"]
+  				},
+  				{
+  					"X": "373",
+  					"Y": "337",
+  					"fontLabelSize": "14px",
+  					"text": ["HG 4534"]
+  				},
+  				{
+  					"X": "438",
+  					"Y": "247",
+  					"fontLabelSize": "14px",
+  					"text": ["HG 4539"]
+  				},
+  				{
+  					"X": "440",
+  					"Y": "604",
+  					"fontLabelSize": "14px",
+  					"text": ["PR 6066"]
+  				},
+  				{
+  					"X": "542",
+  					"Y": "604",
+  					"fontLabelSize": "14px",
+  					"text": ["PR 6066"]
+  				},
+  				{
+  					"X": "547",
+  					"Y": "296",
+  					"fontLabelSize": "14px",
+  					"text": ["TP 156"]
+  				},
+  				{
+  					"X": "605",
+  					"Y": "296",
+  					"fontLabelSize": "14px",
+  					"text": ["TP 156"]
+  				},
+  				{
+  					"X": "622",
+  					"Y": "354",
+  					"fontLabelSize": "14px",
+  					"text": ["Z"]
+  				},
+  				{
+  					"X": "600",
+  					"Y": "390",
+  					"fontLabelSize": "14px",
+  					"text": ["Oversize"]
+  				},
+  				{
+  					"X": "622",
+  					"Y": "405",
+  					"fontLabelSize": "14px",
+  					"text": ["A"]
+  				},
+  				{
+  					"X": "600",
+  					"Y": "590",
+  					"fontLabelSize": "14px",
+  					"text": ["Oversize"]
+  				},
+  				{
+  					"X": "622",
+  					"Y": "605",
+  					"fontLabelSize": "14px",
+  					"text": ["B"]
   				}
   			],
-  			"path": [
-				{
-					"d": "",
-					"fill": ""
-				}
-			]
+  			"hover": ""
   		}
   	]
-  } 
+  }
 }
 
 

@@ -41,7 +41,6 @@ var addLegend = function(mapContainer) {
 		legend.classList.add("sidebar-menu");
 
 		for(var index in config.legend_data) {
-				console.log("TEST data", config.legend_data[index]);
 			row = document.createElement("DIV");
 			img = document.createElement("IMG");
 			label = document.createElement("SPAN");
@@ -77,7 +76,7 @@ var addFloorSelectMenu = function(mapContainer) {
 		floor.setAttribute("id", id);
 		floor.setAttribute("class", "floor-option");
 		//floor.setAttribute("onclick", "onSelectFloor(this)");
-		floor.innerHTML = config.map_labels[key];
+		floor.innerHTML = config.map_names[key];
 		if(config.default_map == key) {
 			//floor.classList.add("active");
 			floor.selected = true;
@@ -211,16 +210,30 @@ var addOverlays = function(container, floor) {
 		       		})
 	        	}
 
-	        	if(d.rect) {
-
-	        	}
-
-	        	if(d.polygon) {
-
-	        	}
-
-	        	if(d.ellipse) {
-
+	        	if(d.label) {
+	        		d3.select(this).selectAll('text')
+		       		.data(d.label)
+		       		.enter().append('text')
+		       		.attr("x", function(d) {
+			        	return d.X || 0;
+			        })
+			        .attr("y", function(d) {
+			        	return d.Y || 0;
+			        })
+			        .attr("font-family", config.map_labels.fontFamily)
+			        .attr("font-size", function(d) {
+			        	return d.labelFontSize || config.map_labels.fontSize;
+			        })
+			        .attr("font-color", config.map_labels.fontColor)
+			        .html(function(d) {
+			        	var html = "", tspan = "";
+			        	for(var i=0; i<d.text.length; i++) {
+			        		var X = d.X || 0;
+			        		tspan = '<tspan x="' + X + '" dy="' + config.map_labels.line_spacing + '">' + d.text[i] + '</tspan>';
+			        		html += tspan; 
+			        	}
+			        	return html;
+			        })
 	        	}
 	        })
 	        .append("title")
