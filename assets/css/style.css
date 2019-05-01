@@ -67,19 +67,16 @@ area {
 div#content {
     width: 74%;
     background-color: #555351;
-    padding: 71px 0 100px 5%;
+    padding-bottom:100px;
+    padding-left: 5%;
 }
 
 div#sidebar-nav {
     width: 24%;
     background-color: #e5e3e1;
-    padding: 70px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     height: 1300px;
-}
-
-div#item-select-menu {
-    position:relative;
-    top: 75px;
 }
 
 form.floor-group-select > h3 {
@@ -188,13 +185,28 @@ div.base-map {
 
 div#map {
     margin: 0;
-    height: 900px;
-    width: 900px;
 }
 
 div#map-container {
     height: 100%;
     width: 100%;
+}
+
+div.map-info {
+    background-color: #555351;
+    width: 750px;
+    font-size: 0.87em;
+    color: white;
+}
+
+div.map-info h6 {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+div.map-info ul {
+    padding: 0;
+    list-style: none;
 }
 
 div#selected-list {
@@ -204,7 +216,7 @@ div#selected-list {
     width: 50%;
 }
 
-div.sidebar-menu {
+div.floor-select {
     margin: 0 auto;
     width: 100%;
 }
@@ -246,8 +258,8 @@ img.map-slide {
     max-height: 100%;
 }
 
-.responsive-img {
-
+.page-content {
+    padding-top: 50px;
 }
 
 div.floor-select {
@@ -278,8 +290,6 @@ div.floor-select ul li:hover {
 }
 
 div#map-legend {
-    position: relative;
-    top: 136px;
     margin: 0;
 }
 
@@ -292,17 +302,16 @@ div#map-legend {
     background-color: #f5f3f1;
 }
 
-div#map-select-menu {
+div.sidebar-menu {
     background-color: white;
+    margin-bottom: 50px;
 }
 
-div#map-legend h3,
-div#item-select-menu h3,
-div#map-select-menu h3 {
+div.sidebar-menu h3 {
     margin-bottom: 0;
 }
 
-div#map-legend .sidebar-menu > div {
+div#map-legend .legend > div {
     margin-left: 6px;
     margin-bottom: 12px;
 }
@@ -335,11 +344,6 @@ div.legend div > img {
 
 body {
     margin: 0;
-}
-
-div#map-container {
-    width: 900px;
-    height: 900px;
 }
 
 div#map-base {

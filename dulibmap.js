@@ -38,7 +38,7 @@ var addLegend = function(mapContainer) {
 		}
 
 		legend.setAttribute("class", "legend");
-		legend.classList.add("sidebar-menu");
+		// legend.classList.add("sidebar-menu");
 
 		for(var index in config.legend_data) {
 			row = document.createElement("DIV");
@@ -87,7 +87,7 @@ var addFloorSelectMenu = function(mapContainer) {
 	menu.setAttribute("id", "floor-menu");
 	menu.setAttribute("class", "floor-select");
 	menu.classList.add("form-group");
-	menu.classList.add("sidebar-menu");
+	// menu.classList.add("sidebar-menu");
 	menu.appendChild(list);
 	document.getElementById("map-select-menu").appendChild(menu);
 }
@@ -274,7 +274,7 @@ var addGroupSelectMenus = function(floor="") {
 	for(var map in config.maps) {
 		menu = document.createElement("DIV"),
 		menu.setAttribute("class", "select-menu");
-		menu.classList.add("sidebar-menu");
+		// menu.classList.add("sidebar-menu");
 		menu.setAttribute("id", map + "-group-select");
 		if(map != floor) {
 			menu.style.display = "none";
