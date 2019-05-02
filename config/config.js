@@ -5,9 +5,9 @@ var config = {
 	"legend_image": "Legend-V.png",
 
 	"map_base": {
-		"top-floor": "top_base_tech_750_nolabels.png",
-		"main-floor": "main_base_750_nolabels.png",
-		"bottom-floor": "bottom_base_750_nolabels_arrows.png"
+		"top-floor": "top_base_tech_750_nolabels_newstairs.png",
+		"main-floor": "main_base_750_nolabels_newstairs.png",
+		"bottom-floor": "bottom_base_750_nolabels_arrows_newstairs.png"
 	},
 
 	"map_height": "750",
