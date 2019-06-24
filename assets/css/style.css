@@ -193,15 +193,22 @@ div#map-container {
 }
 
 div.map-info {
-    background-color: #555351;
+    background-color: #e5e3e1;
     width: 750px;
     font-size: 1em;
-    color: white;
+    color: #333333;
+    padding: 20px;
+
+/*    background-color: #555351;
+    width: 750px;
+    font-size: 1em;
+    color: white;*/
 }
 
-div.map-info h6 {
-    text-decoration: underline;
+div.map-info h4 {
+    /*text-decoration: underline;*/
     font-weight: normal;
+    color: #8b2332; 
 }
 
 div.map-info ul {

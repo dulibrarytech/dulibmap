@@ -61,7 +61,7 @@ var config = {
 			"label": "Copier"
 		},
 		{
-			"image": "assets/img/legend/stairs.png",
+			"image": "assets/img/legend/stairs_new.png",
 			"label": "Stairs"
 		},
 		{
@@ -170,7 +170,8 @@ var config = {
 			"Accessible Services" : {
 				"main_access_restroom1_pin"		: "Accessible Gender Neutral Restroom",
 				"main_access_elevator_pin"		: "Elevators",
-				"main_access_doors_pin"			: "Automatic Door Opener"
+				"main_access_doors_pin"			: "Automatic Door Opener",
+				"main_access_printer1_pin"		: "Accessible Printer"
 			}
 		},
 
