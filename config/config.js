@@ -212,6 +212,25 @@ var config = {
 		}
 	},
 
+	"default_group_selections": {
+		"top-floor": [
+			"Study Rooms",
+			"Classrooms",
+			"Centers and Services"
+		],
+		"main-floor": [
+			"Technology Services",
+			"Study Rooms",
+			"Classrooms",
+			"Centers and Services"
+		],
+		"bottom-floor": [
+			"Study Rooms",
+			"Classrooms",
+			"Centers and Services"
+		]
+	},
+
 	"room_action": {
 		"top_sgs_310": {
 			"type": "external",

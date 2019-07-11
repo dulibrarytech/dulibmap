@@ -8,6 +8,7 @@ var init = function() {
 	addFloors(container);
 	addBaseImages();
 	addGroupSelectMenus(config.default_map);
+	selectDefaultGroups();
 }
 
 var addSvgContainer = function(mapContainer, floor) {
@@ -38,7 +39,6 @@ var addLegend = function(mapContainer) {
 		}
 
 		legend.setAttribute("class", "legend");
-		// legend.classList.add("sidebar-menu");
 
 		for(var index in config.legend_data) {
 			row = document.createElement("DIV");
@@ -69,6 +69,7 @@ var addFloorSelectMenu = function(mapContainer) {
 	}
 
 	list.setAttribute("onchange", "onSelectFloor(this)");
+	list.setAttribute("id", "floor-select");
 	list.setAttribute("class", "form-control");
 	for(var key in config.maps) {
 		id = key + "-select";
@@ -106,12 +107,10 @@ var addFloors = function(container) {
 		container.appendChild(floor);
 		addSvgContainer(container, floor);
 		addOverlays(container, floor);
-		//addIconOverlays(container, floor);
 	}
 }
 
 var addOverlays = function(container, floor) {
-
     d3.json("./config/data.json", function(data) {
     	try {
 
@@ -246,6 +245,9 @@ var addOverlays = function(container, floor) {
     	catch(e) {
     		console.log("Error building floor overlays: ", floor.id, "Error:", e);
     	}
+
+    	// Need this to set the default floor group selections to visible.  In the init() call to select the default groups, the slide (g) elements have not been created yet
+    	$("#floor-select").trigger("onchange");
     });
 }
 
@@ -291,8 +293,9 @@ var addGroupSelectMenus = function(floor="") {
 			slide.setAttribute("type", "checkbox");
 			checkbox = document.createElement("SPAN");
 			checkbox.setAttribute("class", "checkmark");
-			name = key.replace(" ", "").toLowerCase();
+			name = key.replace(/ /g, "").toLowerCase();
 			slide.setAttribute("name", name);
+			slide.setAttribute("id", name + "-" + map);
 			slide.setAttribute("value", key);
 			slide.setAttribute("onclick", "onSelectGroup(this, '" + map + "')");
 			label.appendChild(slide);
@@ -354,7 +357,6 @@ var onSelectGroup = function(selection, floor) {
 }
 
 var updateFloorSelectedGroups = function(floor) {
-
 	// Get the group for the current floor
 	var floorGroup = document.getElementById(floor + "-group-select").children[0];	// The form
 
@@ -379,39 +381,24 @@ var updateFloorSelectedGroups = function(floor) {
 	}
 }
 
-// var onSelectRoom = function(floorID, roomID, static=false) {
-// 	if(typeof config.room_action[roomID] == 'undefined') {
-// 		console.log("No action has been set for this room");
-// 	}
-// 	// Make sure the room slide is visible.  If not, do not execue the action
-// 	else if(static) {
-// 		action = config.room_action[roomID].type;
-// 		if(action == "internal") {
-// 			// Load stored html (for this room) in a modal dialog?
-// 		}
-// 		else if(action == "external") {
-// 			// Open the external link for this room in a new browser window
-// 			window.open(config.room_action[roomID].value);
-// 		}
-// 	}
-// }
+var selectDefaultGroups = function(floor) {
+	var selections, id, group;
 
-// var onSelectRoom = function(floorID, roomID, static=false) {
-// 	if(typeof config.room_action[roomID] == 'undefined') {
-// 		console.log("No action has been set for this room");
-// 	}
-// 	// Make sure the room slide is visible.  If not, do not execue the action
-// 	else if(static) {
-// 		action = config.room_action[roomID].type;
-// 		if(action == "internal") {
-// 			// Load stored html (for this room) in a modal dialog?
-// 		}
-// 		else if(action == "external") {
-// 			// Open the external link for this room in a new browser window
-// 			window.open(config.room_action[roomID].value);
-// 		}
-// 	}
-// }
+	for(var floor in config.maps) {
+		selections = config.default_group_selections[floor] || null;
+		if(selections) {
+			for(var index in selections) {
+				id = selections[index].replace(/ /g, "").toLowerCase() + "-" + floor;
+				group = document.getElementById(id);
+				if(group.checked == false) {
+					$("#"+id).trigger("click");
+				}
+			}
+		}
+	}
+
+
+}
 
 var addHoverDisplays = function() {
 	for(var key in config.hover_displays) {
