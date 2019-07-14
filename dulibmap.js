@@ -21,10 +21,11 @@ var addSvgContainer = function(mapContainer, floor) {
     var id = "#" + mapContainer.id;
     var svg = d3.select("#" + floor.id + "-overlays")
        .append("svg")
-       .attr("width", width)
-       .attr("height", height)
+       .attr("width", "100%")
+       .attr("height", "100%")
        .attr("id", floor.id + "-overlay-svg")
-       .attr("class", "overlay-svg");
+       .attr("class", "overlay-svg")
+       .attr("viewBox", "0 0 750 750");
 }
 
 var addLegend = function(mapContainer) {

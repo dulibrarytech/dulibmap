@@ -5,7 +5,7 @@ body {
     background-color: #e5e3e1 !important;
     font-color: #333333;
     /* Prevent image from resizing */
-    min-width: 1300px;
+    /*min-width: 1300px;*/
 }
 
 hr {
@@ -65,18 +65,18 @@ area {
 }
 
 div#content {
-    width: 74%;
+    /*width: 76%;*/
     background-color: #555351;
     padding-bottom:100px;
     padding-left: 5%;
 }
 
 div#sidebar-nav {
-    width: 24%;
+    /*width: 24%;*/
     background-color: #e5e3e1;
     padding-right: 50px;
     padding-left: 50px;
-    height: 1300px;
+    /*height: 1300px;*/
 }
 
 form.floor-group-select > h3 {
@@ -101,7 +101,8 @@ form.floor-group-select > label {
 .container {
     display: block;
     position: relative;
-    padding-left: 35px !important;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 1em;
@@ -194,10 +195,13 @@ div#map-container {
 
 div.map-info {
     background-color: #e5e3e1;
-    width: 750px;
+   /* width: 750px;*/
     font-size: 1em;
     color: #333333;
     padding: 20px;
+
+    width: 100%;
+    max-width: 750px;
 
 /*    background-color: #555351;
     width: 750px;
@@ -235,6 +239,10 @@ div.select-menu {
 
 div.select-menu > form {
     width: 100%;
+}
+
+div#item-select-menu label.container {
+    padding-left: 35px !important;
 }
 
 h3 {
@@ -367,8 +375,13 @@ div#map-base > img {
 }
 
 div.map-overlays {
+    width: 100%;
     position: absolute;
     z-index:10;
+}
+
+.overlay-svg {
+    max-width: 750px;
 }
 
 .hover-info:hover {
@@ -380,17 +393,48 @@ div.map-overlays {
 }
 
 @media (min-width:320px) {
+    .container {
+        max-width: 100%;
+    }
 
+    div#sidebar-nav {
+        padding-right: 52px;
+        padding-left: 52px;
+        padding-bottom: 52px;
+    }
 }
-@media (min-width:600px) {
-     
+@media (min-width:576px) {
+     .container {
+        max-width: 100%;
+    }
 }
 @media (min-width:768px) {
+    .container {
+        max-width: 100%;
+    }
 
+    div#sidebar-nav {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
 }
-@media (min-width:900px) {
+@media (min-width:992px) {
+    .container {
+        max-width: 100%;
+    }
 
+    div#sidebar-nav {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
 }
-@media (min-width:1281px) {
+@media (min-width:1200px) {
+    .container {
+        max-width: 100%;
+    }
 
+    div#sidebar-nav {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
 }
