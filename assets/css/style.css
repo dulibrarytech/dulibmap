@@ -234,11 +234,15 @@ div.floor-select {
 
 div.select-menu {
     background-color: white;
-    padding: 20px 5px 5px 5px;
+    padding: 20px 5px 5px 7px;
 }
 
 div.select-menu > form {
     width: 100%;
+}
+
+div#item-select-menu div.select-menu {
+    margin-right: 8px;
 }
 
 div#item-select-menu label.container {
