@@ -216,18 +216,21 @@ var config = {
 		"top-floor": [
 			"Study Rooms",
 			"Classrooms",
-			"Centers and Services"
+			"Centers and Services",
+			"Accessible Services"
 		],
 		"main-floor": [
 			"Technology Services",
 			"Study Rooms",
 			"Classrooms",
-			"Centers and Services"
+			"Centers and Services",
+			"Accessible Services"
 		],
 		"bottom-floor": [
 			"Study Rooms",
 			"Classrooms",
-			"Centers and Services"
+			"Centers and Services",
+			"Accessible Services"
 		]
 	},
 
