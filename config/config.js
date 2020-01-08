@@ -2,7 +2,7 @@ var config = {
 
 	"mapSlideFileType": "gif",
 
-	"legend_image": "Legend-V.png",
+	"legend_image": "Legend-V2.png",
 
 	"map_base": {
 		"top-floor": "top_base_750.png",
@@ -44,13 +44,13 @@ var config = {
 			"image": "assets/img/legend/tech-alcove.png",
 			"label": "Tech Alcove"
 		},
-		{
-			"image": "assets/img/legend/black-and-white-printer.png",
-			"label": "Black and White Printer"
-		},
+		// {
+		// 	"image": "assets/img/legend/black-and-white-printer.png",
+		// 	"label": "Black and White Printer"
+		// },
 		{
 			"image": "assets/img/legend/color-printer.png",
-			"label": "Color Printer"
+			"label": "Black and White / Color Printer"
 		},
 		{
 			"image": "assets/img/legend/scanner.png",
