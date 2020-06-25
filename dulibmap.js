@@ -135,7 +135,7 @@ var addOverlays = function(container, floor) {
 	        	return d.visibility == "hidden" ? "none" : "block";
 	        })
 	        .attr("onclick", function(d) {
-	        	return d.link ? "javascipt:window.open('" + d.link + "')" : "";
+	        	return d.link ? "javascript:window.open('" + d.link + "')" : "";
 	        });
 
 	        var tmp3 = tmp2.append("path")
@@ -267,7 +267,7 @@ var addBaseImages = function() {
 }
 
 // Add each floor here, hide all but main on default
-var addGroupSelectMenus = function(floor="") {
+var addGroupSelectMenus = function(floor = "") {
 	var menu, select_form, slide, img, label, checkbox, header;
 	if(config.group_select_header != "") {
 		header = document.createElement("H3");
